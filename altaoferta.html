@@ -1,0 +1,62 @@
+<!--
+:'######:::'########:'########:'##:::'##:
+'##... ##:: ##.....:: ##.....:: ##::'##::
+ ##:::..::: ##::::::: ##::::::: ##:'##:::
+ ##::'####: ######::: ######::: #####::::
+ ##::: ##:: ##...:::: ##...:::: ##. ##:::
+ ##::: ##:: ##::::::: ##::::::: ##:. ##::
+. ######::: ########: ########: ##::. ##:
+:......::::........::........::..::::..::
+::::::'##::'#######::'########:::'######::
+:::::: ##:'##.... ##: ##.... ##:'##... ##:
+:::::: ##: ##:::: ##: ##:::: ##: ##:::..::
+:::::: ##: ##:::: ##: ########::. ######::
+'##::: ##: ##:::: ##: ##.... ##::..... ##:
+ ##::: ##: ##:::: ##: ##:::: ##:'##::: ##:
+. ######::. #######:: ########::. ######::
+:......::::.......:::........::::......:::
+-->
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alta de ofertas</title>
+    <header> Geek Jobs </header>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>¿Quieres a los mejores? Publica ahora tu oferta </h1>
+
+<section>
+  <form action="index.html" method="post">
+    <p>Título de la posición</p>
+    <input type="text" name="title" placeholder="Ej. Python developer">
+    <p> Descripción de la oferta</p>
+    <input type="text" maxlength="300" name="jobdescription" placeholder="Cuéntanos sobre el puesto de trabajo y las tareas a desarrollar">
+
+
+    <div id="lateralpanel">
+    <p> <input type="text" name="training" placeholder="Formación"></p>
+    <p><input type="text" name="location" placeholder="Ubicación"></p>
+    <p>Años de experiencia</p>
+    <p>  <input type="range" min="0" max="10" name="experience" laceholder="Años de experiencia"></p>
+      <p>Salario bruto anual</p>
+      <p>
+          <input type="range" name="salary" placeholder="Salario Bruto Anual">  </p>
+    </div>
+  <p>Soft skills</p>
+      <input type="text" name="softskills" placeholder="Ej. Trabajo en equipo, Comunicación">
+  <p>Hard skills</p>
+      <input type="text" name="hardskills" placeholder="Ej. Python, Django, ...">
+  <p>Idiomas</p>
+      <input type="text" name="lang" placeholder="Ej. Inglés, Español, ...">
+  <p> <input id="sendbutton" type="button" name="send" value="Publica tu oferta"></p>
+  </form>
+</section>
+
+<footer> Footer</footer>
+</body>
+</html>

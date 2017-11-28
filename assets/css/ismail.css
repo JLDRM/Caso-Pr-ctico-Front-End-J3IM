@@ -24,21 +24,65 @@ body {
     font-size: 12px;
 }
 
-#logo {
-    display: block;
-    background: #03A9F4;
+header {
     width: 100%;
-    padding: 40px 60px;
+
+}
+
+#logo {
+    background: #03A9F4;    
+    width: 100%;
+    height: auto;
+    padding: 20px 60px;
 }
 
 #logo h1 {
     color: white;
     font-size: 4em;
-    width: 350px;
     display: none;
 }
+
+/*#logo h2 {
+    width: 200px;
+    display: block;
+}*/
 
 .title {
     font-size: 20pt;
     color: #000;
+}
+
+section {
+    padding: 20px 60px;
+}
+
+section div {
+    width: 800px;
+    margin: 0 auto;
+}
+.menu  {
+    display: block;
+    width: 800px;
+    background: white;
+    margin: 0 auto;
+    padding: 20px 0;
+    }
+.menu ul li {
+    display: inline-block;
+}
+
+.menu a {
+    padding: 8px   15px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(125, 215, 253)
+}
+
+.menu a:hover {
+    color: white;
+    background-color: orange;
+}
+.menu .active {
+    border-bottom: 2px solid red;
 }

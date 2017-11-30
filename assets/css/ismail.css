@@ -1,88 +1,301 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-size: 12px;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: rgb(226, 2226, 226, 84);
 }
-
+/*
 header {
     width: 100%;
+    display: flex;
+    background: #03A9F4;
+}*/
 
+header {
+    background-color: #03A9F4;
+    display: block;
+    text-align: center;
+    height: 108px;
+    padding-bottom: 6px;
 }
 
 #logo {
-    background: #03A9F4;    
     width: 100%;
     height: auto;
-    padding: 20px 60px;
+    padding: 0 0 0 60px;
+    flex: 1;
 }
 
-#logo h1 {
+.menu {
+    margin: auto;
+    flex: 2;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.menu ul li .active {
+    border-bottom: 3px solid white;
+}
+
+.menu ul li a {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 1.5em;
     color: white;
-    font-size: 4em;
-    display: none;
 }
 
-/*#logo h2 {
-    width: 200px;
-    display: block;
-}*/
-
-.title {
-    font-size: 20pt;
-    color: #000;
+.menu ul li a:hover {
+    color: orange;
+    background-color: white;
 }
 
 section {
-    padding: 20px 60px;
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: white;
+}
+
+section .perfil {
+    width: 800px;
+    margin: 0 auto;
 }
 
 section div {
-    width: 800px;
-    margin: 0 auto;
-}
-.menu  {
-    display: block;
-    width: 800px;
-    background: white;
-    margin: 0 auto;
-    padding: 20px 0;
-    }
-.menu ul li {
-    display: inline-block;
+    padding: 0 15px;
 }
 
-.menu a {
-    padding: 8px   15px;
-    margin: 5px;
-    text-decoration: none;
-    font-size: 2em;
-    color: rgb(125, 215, 253)
+.perfil img {
+    width: 100%;
+    height: 250px;
 }
 
-.menu a:hover {
+
+/*
+.perfil h2 {
     color: white;
-    background-color: orange;
+    margin-top: -50px;
+    margin-left: 300px;
 }
-.menu .active {
-    border-bottom: 2px solid red;
+*/
+
+.perfil .persona {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-top: -300px;
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-left: 60px;
+    align-content: center;
+    font-weight: bold;
+}
+
+.cont {
+    padding: 10px 5px;
+    clear: both;
+}
+
+.cont h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.mm ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    border: 5px solid transparent;
+}
+
+.mm ul li a {
+    display: block;
+    min-width: 100px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 10px 0 0;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.b {
+    background: #3498db;
+}
+
+.b:hover {
+    background-color: #017dd0;
+    text-shadow: #005289 2px -2px 1px;
+}
+
+.b:active {
+    background-color: #3498db;
+}
+
+.r {
+    background: #ff3800;
+}
+
+.r:hover {
+    background-color: red;
+    text-shadow: #8f1f00 2px -2px 1px;
+}
+
+.r:active {
+    background-color: #ff3800;
+}
+
+.g {
+    background: #03dd00;
+}
+
+.g:hover {
+    background-color: #27c901;
+    text-shadow: #136300 2px -2px 1px;
+}
+
+.g:active {
+    background-color: #03dd00;
+}
+
+.o {
+    background: #ffbf00;
+}
+
+.o:hover {
+    background-color: orange;
+    text-shadow: #a17900 2px -2px 1px;
+}
+
+.o:active {
+    background-color: #ffbf00;
+}
+
+.m {
+    background: #ff00ca;
+}
+
+.m:hover {
+    background-color: #bf0098;
+    text-shadow: #8b016f 2px -2px 1px;
+}
+
+.m:active {
+    background-color: #ff00ca;
+}
+
+.p {
+    background: #b231fd;
+}
+
+.p:hover {
+    background-color: #a100ff;
+    text-shadow: #400065 2px -2px 1px;
+}
+
+.p:active {
+    background-color: #b231fd;
 }

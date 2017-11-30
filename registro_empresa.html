@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="aligncenter">
+            <img src="./img/logo1.jpg" width="125px" height="125px" alt="">
+        </div> 
+        <p><a href="">¿Ya tienes cuenta? Entra</a></p>
+    </header>
+
+    <section>
+        <div>
+            <img src="./img/tic.jpg" alt="">
+            <p class="foto">Welcome to Geek Jobs!</p>
+        </div>
+
+        <section class="formulario" "section">
+            
+            <div class="box">
+                <div>
+                    <label for="idnombre">Nombre</label> <br>
+                    <input type="text" name="Nombre" id="idnombre" placeholder="Escribe tu nombre" pattern="[A-Z][a-z]*" spellcheck="" required autofocus>
+                </div>
+                <div>
+                    <label for="idapellidos">Apellidos</label><br>
+                    <input type="text" name="Apellidos" id="idapellidos" placeholder="Escribe tus apellidos" pattern="[A-Z][a-z]*" spellcheck="" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="idemail">Email</label><br>
+                <input type="email" name="Email" id="idemail" placeholder="Escribe tu e-mail" required>
+            </div>
+
+            <div>
+                <label for="idcontraseña">Contraseña</label><br>
+                <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" required>
+            </div>
+
+            <div>
+                <label for="idempresa">Empresa</label><br>
+                <input type="text" name="Empresa" id="idempresa" placeholder="Escribe el nombre de tu empresa" required>
+            </div>
+
+            <div class="box"> 
+                <div>
+                    <label for="idnif">NIF</label> <br>
+                    <input type="text" name="NIF" id="idnif" placeholder="Escribe el NIF" required>
+                </div>
+                <div>
+                    <label for="idtel">Teléfono</label> <br>
+                    <input type="number" name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="idtecno">Stack tecnológico</label><br>
+                <input type="text" name="Stack" id="idtecno" placeholder="Opcional">
+            </div>
+
+            <div>
+                <input type="number" name"Seguridad" id="idseguridad" placeholder="Por seguridad suma 4+1">
+            </div>
+
+            <div>
+                <form action="/action_page.php" method="get">
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+
+            <div>
+                <input type="checkbox" name="Registrar" id="idreg"><p>Al crear una cuenta confirmas que has leído y aceptas los Términos Generales</p> 
+            </div>
+        </section>
+
+    </section>
+</body>
+</html>

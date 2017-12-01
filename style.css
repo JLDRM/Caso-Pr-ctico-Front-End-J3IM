@@ -106,9 +106,11 @@ section {
 }
 
 #titulo{
-  width: 850px;
   margin: 0 auto;
-}
+  background-image: url(img/ofertas.png);
+  height: 500px;
+  color: white;
+  background-repeat: no-repeat;
 
 #footerlist {
     display: block;

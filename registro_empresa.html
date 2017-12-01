@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style_registro_empresa.css">
+    <link rel="stylesheet" href="style_registro_empresa.css">
 </head>
+
 <body>
     <header>
-        <div class="aligncenter">
-            <img src="./img/logo1.jpg" width="125px" height="125px" alt="">
+        <div>
+            <img src="./img/logo1.png" width="125px" height="125px" alt="">
         </div>
-        <p><a href="">¿Ya tienes cuenta? Entra</a></p>
     </header>
 
-    <section>
+    <article class="welcome">
         <div>
-            <img src="./img/tic.jpg" alt="">
-            <p class="foto">Welcome to Geek Jobs!</p>
+            <a href="">¿Ya tienes cuenta? Entra</a>
         </div>
+        <div>
+            <div>
+                <h2>¡WELCOME TO GEEK JOBS!</h2>
+                <p>
+                    Sabemos que encontrar al empleado perfecto no es tarea fácil, por eso, nosotros te ayudamos.
+                </p>
+                <p>
+                    ¡Encuentra todos los candidatos que buscas en un sólo click!
+                </p>
+            </div>
+            <div>
+                <form action="/action_page.php" method="get">
+                    <button type="submit">Únete a Geek Jobs</button>
+                </form>
 
+            </div>
+        </div>
+    </article>
+    <section>
         <section class="formulario" "section">
 
             <div class="box">
                 <div>
-                    <label for="idnombre">Nombre</label> <br>
-                    <input type="text" name="Nombre" id="idnombre" placeholder="Escribe tu nombre" pattern="[A-Z][a-z]*" spellcheck="" required autofocus>
+                    <label for="idnombre">Nombre</label>
+                    <br>
+                    <input type="text" name="Nombre" id="idnombre" placeholder="Escribe tu nombre" pattern="[A-Z][a-z]*" spellcheck="" required
+                        autofocus>
                 </div>
                 <div>
-                    <label for="idapellidos">Apellidos</label><br>
-                    <input type="text" name="Apellidos" id="idapellidos" placeholder="Escribe tus apellidos" pattern="[A-Z][a-z]*" spellcheck="" required>
+                    <label for="idapellidos">Apellidos</label>
+                    <br>
+                    <input type="text" name="Apellidos" id="idapellidos" placeholder="Escribe tus apellidos" pattern="[A-Z][a-z]*" spellcheck=""
+                        required>
                 </div>
             </div>
 
             <div>
-                <label for="idemail">Email</label><br>
+                <label for="idemail">Email</label>
+                <br>
                 <input type="email" name="Email" id="idemail" placeholder="Escribe tu e-mail" required>
             </div>
 
             <div>
-                <label for="idcontraseña">Contraseña</label><br>
+                <label for="idcontraseña">Contraseña</label>
+                <br>
                 <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" required>
             </div>
 
             <div>
-                <label for="idempresa">Empresa</label><br>
+                <label for="idempresa">Empresa</label>
+                <br>
                 <input type="text" name="Empresa" id="idempresa" placeholder="Escribe el nombre de tu empresa" required>
             </div>
 
             <div class="box">
                 <div>
-                    <label for="idnif">NIF</label> <br>
+                    <label for="idnif">NIF</label>
+                    <br>
                     <input type="text" name="NIF" id="idnif" placeholder="Escribe el NIF" required>
                 </div>
                 <div>
-                    <label for="idtel">Teléfono</label> <br>
+                    <label for="idtel">Teléfono</label>
+                    <br>
                     <input type="number" name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" required>
                 </div>
             </div>
 
             <div>
-                <label for="idtecno">Stack tecnológico</label><br>
+                <label for="idtecno">Stack tecnológico</label>
+                <br>
                 <input type="text" name="Stack" id="idtecno" placeholder="Opcional">
             </div>
 
             <div>
-                <input type="number" name"Seguridad" id="idseguridad" placeholder="Por seguridad suma 4+1">
+                <input type="number" name "Seguridad" id="idseguridad" placeholder="Por seguridad suma 4+1">
             </div>
 
             <div>
@@ -74,12 +102,47 @@
                     <button type="submit">Registrar</button>
                 </form>
             </div>
-
-            <div>
-                <input type="checkbox" name="Registrar" id="idreg"><p>Al crear una cuenta confirmas que has leído y aceptas los Términos Generales</p>
-            </div>
         </section>
-
+        <div>
+            <p>
+                <input type="checkbox" name="Registrar" id="idreg"> Al crear una cuenta confirmas que has leído y aceptas los
+                <a href="">Términos Generales</a>
+            </p>
+        </div>
     </section>
+    <footer>
+        <div id="copyright">
+            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
+        </div>
+        <div id="footerlist">
+
+
+            <ul id="geekjobs_footer">
+                <a target="_blank" href="https:www.geekjobs.com">
+                    <li>
+                        <img src="./assets/img/geek_icon.png" width="50px" height="30px" position alt=""> </li>
+                </a>
+            </ul>
+        </div>
+        <div id="social">
+            <ul>
+                <a target="_blank" href="https:www.linkedin.com">
+                    <li>
+                        <img src="./assets/img/linkedin_icon.png" width="30px" height="30px" alt=""> </li>
+                </a>
+                <a target="_blank" href="https:www.facebook.com">
+                    <li>
+                        <img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li>
+                </a>
+                <a target="_blank" href="https:www.twitter.com">
+                    <li>
+                        <img src="./assets/img/twitter_icon.png" width="30px" height="30px" alt=""> </li>
+                </a>
+
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>

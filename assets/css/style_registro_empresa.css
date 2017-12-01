@@ -1,74 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 * {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 header{
     background-color: #009688;
     display: block;
-    text-align: center; 
-    height: 108px;
     padding-bottom: 6px;
-}
-header > p{
-    font-size: 11.5pt;
-    font-family: roboto;
-    text-align: right bottom; 
-    /*color:white;*/
+    text-align: center;
 }
 body{
     margin: 0;
     padding: 0;
     font-size: 11.5pt;
     font-family: roboto, sans-serif;
+    background-color: rgba(226,226,226,.84);
 }
-footer{
+section{
+    display: block;
+    padding-top: 0px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+    width: 900px;
+}
+footer {
     background-color: #073549;
-    text-align: center;
-    position: relative;
+    width: 100%;
+    display: flex;
+    position:relative;
     margin-bottom: 0;
     height: 35px;
     overflow: hidden;
 }
-.section{
-    max-width: 600px;
-    margin:0 auto;
-}
-section{
-    background-color: rgba(226,226,226,.84);
-    border-radius: 10px;
-    display: block;
-    padding: 10px;
-}
-/*img{
-    width:100%;
-}*/
-
-.formulario{
-    width:100%;
-    padding:5px;
-}
-.formulario > div{
-    width:100%;
-    padding: 15px;
-    margin-top: 5px;
-}
-.formulario input{
-    width:100%;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 5px;
-    font-family: roboto;
-    font-size: 10.5pt;
-}
-.box{
-    display: block;
-    width: 100%
-}
-.formulario .box > div{
+  
+  #footerlist {
+    width: 25%; }
+  
+  #footerlist ul {
     display: inline-block;
-    width: 49.5%;
+    padding-right: 5%;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 3px;
+    padding-left: 0px; }
+  
+  #social {
+    width: 25%; }
+  
+  #social ul {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 3px; }
+  
+  #social li {
+    display: inline-block;
+    text-align: right; }
+  
+  #copyright {
+    width: 48%;
+    font-size: 9pt;
+    color: white;
+    font-weight: lighter;
+    display: block;
+    text-align: left;
+    padding-left: 20px; }
+
+a:visited {
+    font-family: roboto, sans-serif;
+    font-size: 11.5pt;
+    color: grey;
 }
 button{
     display: block;
@@ -80,3 +85,68 @@ button{
     margin-left: auto;
     margin-right:auto; 
 }
+input[type='checkbox']{
+    width: 15px;
+    margin:0;
+
+} 
+
+/*Clases particulares formulario registro*/
+.section{
+    margin:0 auto;
+}
+.welcome{
+ background-color: #073549;
+ color: white;
+ text-align: left;
+ padding-left:15px;
+ padding-top: 150px;
+ font-family: roboto, sans-serif;
+ font-size: 20pt;
+ padding-bottom: 10px;
+ height: 700px;
+ background-image:url("./img/empresas.png");
+}
+.welcome div button{
+
+}
+article > div > a{
+    display: block;
+    text-align: right;
+    padding: 15px;
+}
+.formulario{
+    width:578px;
+    padding:5px;
+    border:0px;
+}
+.formulario > div{
+    width:100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left:auto;
+}
+.formulario input{
+    width:100%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top:16px;
+    font-family: roboto;
+    font-size: 10.5pt;
+    height: 30px;
+}
+.box{
+    display: block;
+    width: 100%
+}
+.formulario .box > div{
+    display: inline-block;
+    width: 49.5%;
+} 
+section div p:nth-last-of-type(1){
+    text-align: center;
+}
+
+
+

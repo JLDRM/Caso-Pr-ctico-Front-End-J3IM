@@ -1,4 +1,4 @@
-
+  
 header {
     background-color: #03A9F4;
     display: block;
@@ -15,11 +15,12 @@ body {
 
 footer {
     background-color: #073549;
-    text-align: center;
     position: relative;
     margin-bottom: 0;
     height: 35px;
     overflow: hidden;
+    width:100%;
+    display: flex;
 }
 
 article {
@@ -34,7 +35,6 @@ video {
 
 article {
     width: 100%;
-    background-color:
 }
 
 button {
@@ -46,6 +46,11 @@ input {
     width: 289px;
     height: 30px;
 }
+
+a {
+    text-decoration: none;
+}
+
 .titulo {
     font-size: 15pt;
     color: #3C3C3B;
@@ -57,11 +62,6 @@ input {
     color: #B2B2B1;
     font-weight: lighter;
 }
-
-.titulobottom {
-
-}
-
 .divcenter {
     width: 600px;
     margin: 0 auto;
@@ -81,7 +81,7 @@ input {
 }
 
 #linkedin {
-    background: url(./img/linkedinicon.png) no-repeat;
+    background: url("../img/linkedinicon.png") no-repeat;
     background-position: 18em center;
     background-size: 40px;
     background-color: #283E49;
@@ -95,7 +95,7 @@ input {
 
 
 #github {
-    background: url(./img/github_icon.png) no-repeat;
+    background: url("../img/github_icon.png") no-repeat;
     background-position: 18em center;
     background-size: 40px;
     background-color: #24292D;
@@ -107,46 +107,85 @@ input {
     font-weight: regular;
 }
 #enviar {
-    background-color: #009EE3;
+    background-color: #FFF;
     font-size: 10pt;
     font-weight: regular;
+    color: #009EE3;
+}
+
+#enviar:hover {
+    background-color: #009EE3;
     color: white;
-}
-#footer{
-    margin-left: 50%;
-    width: 50%;
-    
-}
-#footer ul {
-    padding-right: 5%;
-    list-style-type: none;
-    text-align: right;
-    margin-top: 3px;
-}
+  }
+
+  #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+  #enviar:active {
+    background-color: #009EE3;
+    color: #fff;
+  }
+
 
 #navegador li a:hover{
     background-color: #333333;
     color: #ffffff;
  }
 
-#footer li {
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0;
+#footerlist {
+    display: block;
+    width:25%;
 }
-a {
-    text-decoration: none;
-}
-#copyright {
-   padding-left: 5%;
-    position: absolute;
 
-    width: 50%;
-    left: 0;
+#footerlist ul {
+    display: inline-block;
+    padding-right: 5%;
+    list-style-type: none;
     text-align: left;
-    font-size: 9pt;
-    color: white;
-    font-weight: lighter;
-    }
+    margin-top: 3px;
+    padding-left: 0px;
+}
 
+#footerlist li {
+    display: inline-block;
+    text-align: center;
+}
+
+#social {
+    display: block;
+    width: 25%;
+}
+
+#social ul {
+    width: 100%;
+    display: inline-block;
+    padding-right: 5%;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 3px;
+}
+
+#social li {
+    display: inline-block;
+    text-align:right;
+}
+
+#copyright {
+   width: 48%;
+   font-size: 9pt;
+   color: white;
+   font-weight: lighter;
+   display: block;
+   text-align: left;
+   padding-left: 20px;
+   }
+
+#geekjobs_footer {
+        margin-left: 4px;
+        width: 50px;
+        height: 30px;
+    }
 

@@ -16,47 +16,93 @@
 . ######::. #######:: ########::. ######::
 :......::::.......:::........::::......:::
 -->
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alta de ofertas</title>
-    <header> Geek Jobs </header>
+
   <link rel="stylesheet" href="style.css">
-</head>
+<header>
+    <div class="aligncenter">
+      <img src="img/logo1.png"  alt="logo">
+    </div>
+</header>
 
 <body>
-    <h1>¿Quieres a los mejores? Publica ahora tu oferta </h1>
+  <div id="titulo">
+  <h1>¿Quieres a los mejores? Publica ahora tu oferta </h1>
+</div>
 
-<section>
-  <form action="index.html" method="post">
-    <p>Título de la posición</p>
-    <input type="text" name="title" placeholder="Ej. Python developer">
-    <p> Descripción de la oferta</p>
-    <input type="text" maxlength="300" name="jobdescription" placeholder="Cuéntanos sobre el puesto de trabajo y las tareas a desarrollar">
+    <section>
 
 
-    <div id="lateralpanel">
-    <p> <input type="text" name="training" placeholder="Formación"></p>
-    <p><input type="text" name="location" placeholder="Ubicación"></p>
-    <p>Años de experiencia</p>
-    <p>  <input type="range" min="0" max="10" name="experience" laceholder="Años de experiencia"></p>
-      <p>Salario bruto anual</p>
-      <p>
-          <input type="range" name="salary" placeholder="Salario Bruto Anual">  </p>
-    </div>
-  <p>Soft skills</p>
-      <input type="text" name="softskills" placeholder="Ej. Trabajo en equipo, Comunicación">
-  <p>Hard skills</p>
-      <input type="text" name="hardskills" placeholder="Ej. Python, Django, ...">
-  <p>Idiomas</p>
-      <input type="text" name="lang" placeholder="Ej. Inglés, Español, ...">
-  <p> <input id="sendbutton" type="button" name="send" value="Publica tu oferta"></p>
-  </form>
-</section>
 
-<footer> Footer</footer>
+      <form action="index.html" method="post" style="overflow:auto;">
+
+          <div id="div_first">
+              <label> Título de la posición</label>
+              <input type="text" name="position" placeholder="Ej. Python developer">
+          </div>
+          <div id="div_second">
+
+            <div id="div_1">
+              <label> Descripción de la oferta</label>
+              <textarea name="jobdescription" maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades"> </textarea>
+            </div>
+
+            <div id="div_2">
+              <input type="text" name="training" placeholder="Formación">
+               <input type="text" name="location" placeholder="Ubicación">
+              <label>Años de experiencia</label>
+               <input type="range" name="experience">
+               <label>Salario</label>
+              <input type="range" name="salary" min="20000"max="60000">
+              <label>Trabajo remoto</label>
+              <input type="checkbox" name="remotework" value="">
+
+            </div>
+          </div>
+
+
+            <div id="div_third">
+                <label>Idiomas</label>
+                <input type="text" name="languajes" placeholder="Ej. Inglés, Francés, ...">
+              <label>Soft skills</label>
+                <input type="text" name="sskills" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc...">
+                <label>Habilidades técnicas</label>
+                <input type="text" name="hskills" placeholder="Ej. Python, Django, REST API,..">
+
+              </div>
+
+              <div id="div_button">
+                <input type="button" name="send" value="Publicar oferta" placeholder="Publicar oferta">
+              </div>
+
+      </form>
+    </section>
+
+    <footer>
+                <div id="copyright">
+                        <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
+                </div>
+               <div id="footerlist">
+
+
+                        <ul id="geekjobs_footer">
+                           <a target="_blank" href="https:www.geekjobs.com"><li><img src="./assets/img/geek_icon.png"    width="50px" height="30px" position alt=""> </li></a>
+                        </ul>
+                </div>
+               <div id="social">
+                        <ul>
+                           <a target="_blank" href="https:www.linkedin.com"><li><img src="./assets/img/linkedin_icon.png"  width="30px" height="30px" alt=""> </li></a>
+                           <a target="_blank" href="https:www.facebook.com"><li><img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li></a>
+                           <a target="_blank" href="https:www.twitter.com"><li><img src="./assets/img/twitter_icon.png"   width="30px" height="30px" alt=""> </li></a>
+
+                        </ul>
+                </div>
+           </footer>
 </body>
 </html>

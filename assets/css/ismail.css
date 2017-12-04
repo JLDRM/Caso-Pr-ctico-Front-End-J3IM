@@ -100,30 +100,32 @@ body {
 header {
   display: flex;
   background: #03A9F4;
-  padding-bottom: 6px;
+  padding: 10px;
   text-align: center; }
   header #logo {
-    flex: 1; }
+    flex: 2; }
     header #logo img {
       width: 125px;
-      height: 125px;
       margin-left: 350px; }
   header .menu {
     margin: auto 0;
-    flex: 2;
-    margin-right: 100px; }
+    flex: 1; }
     header .menu ul li {
-      display: inline-block; }
+      display: inline-block;
+      margin: 5px 0 0 0;
+      border: 2px dotted transparent;
+      padding: 5px; }
       header .menu ul li .active {
-        border-bottom: 3px dotted white; }
+        color: #073539; }
       header .menu ul li a {
         padding: 5px 10px;
         text-decoration: none;
-        font-size: 1.5em;
-        color: white; }
+        font-size: 1.3em;
+        color: white;
+        font-weight: lighter; }
         header .menu ul li a:hover {
-          color: orange;
-          background-color: white; }
+          color: #073539;
+          transition: color 200ms linear; }
 
 section {
   width: 900px;

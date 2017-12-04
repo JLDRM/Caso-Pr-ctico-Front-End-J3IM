@@ -1,3 +1,6 @@
+$lightBlue: #03A9F4;
+$darkBlue: #073539;
+$white: white;
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -103,33 +106,35 @@ body {
 header {
     display: flex;
     background: #03A9F4;
-    padding-bottom: 6px;
+    padding: 10px;
     text-align: center;
     #logo {
-        flex: 1;
+        flex: 2;
         & img {
             width: 125px;
-            height: 125px;
             margin-left: 350px;
         }
     }
     .menu {
         margin: auto 0;
-        flex: 2;
-        margin-right: 100px;
+        flex: 1;
         & ul li {
             display: inline-block;
+            margin: 5px 0 0 0;
+            border: 2px dotted transparent;
+            padding: 5px;
             & .active {
-                border-bottom: 3px dotted white;
+                color: $darkBlue;
             }
             & a {
                 padding: 5px 10px;
                 text-decoration: none;
-                font-size: 1.5em;
-                color: white;
+                font-size: 1.3em;
+                color: $white;
+                font-weight: lighter;
                 &:hover {
-                    color: orange;
-                    background-color: white;
+                    color: $darkBlue;
+                    transition: color 200ms linear;
                 }
             }
         }
@@ -139,7 +144,7 @@ header {
 section {
     width: 900px;
     margin: 0 auto;
-    background: white;
+    background: $white;
     &section .perfil {
         width: 100%;
         margin: 0 auto;

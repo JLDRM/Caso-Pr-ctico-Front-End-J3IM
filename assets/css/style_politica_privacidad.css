@@ -1,0 +1,18 @@
+#tg{
+    margin: 0;
+    padding: 0;
+    font-size: 11.5pt;
+    font-family: roboto, sans-serif;
+    background-color: rgba(226,226,226,.84);
+    text-align: center;
+}
+#tg section{
+    padding-top: 0px;
+    margin: 0 auto;
+    width: 900px;
+    line-height: 25px;
+    text-align: justify;
+}
+#tg section p{
+    text-indent: 50px;
+}

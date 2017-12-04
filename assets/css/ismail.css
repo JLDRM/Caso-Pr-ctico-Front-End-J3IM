@@ -98,7 +98,6 @@ body {
   background-color: #e2e2e2; }
 
 header {
-  height: 108px;
   display: flex;
   background: #03A9F4;
   padding-bottom: 6px;
@@ -129,7 +128,6 @@ header {
 section {
   width: 900px;
   margin: 0 auto;
-  border: 1px solid black;
   background: white; }
   sectionsection .perfil {
     width: 100%;
@@ -153,8 +151,7 @@ section {
 
 .title {
   font-size: 2em;
-  margin-bottom: 1em;
-  margin-left: 60px;
+  margin: 0 0 1em 60px;
   align-content: center;
   font-weight: bold; }
 
@@ -168,7 +165,6 @@ section {
 .mm ul li {
   list-style: none;
   display: inline-block;
-  float: left;
   border: 5px solid transparent; }
   .mm ul li a {
     display: block;

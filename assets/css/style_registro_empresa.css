@@ -73,23 +73,45 @@ footer {
 a:visited {
     font-family: roboto, sans-serif;
     font-size: 11.5pt;
-    color: grey;
+    color: #009EE3;
 }
-button{
-    display: block;
-    width: 25%;
-    padding: 5px;
-    font-family: roboto;
+a{
+    font-family: roboto, sans-serif;
     font-size: 11.5pt;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right:auto; 
+    color: #073549;
 }
 input[type='checkbox']{
     width: 15px;
     margin:0;
 
 } 
+#bot {
+    background-color: #FFF;
+    font-size: 10pt;
+    /*font-weight: regular;*/
+    color: #009EE3;
+    width: 300px;
+    height: 50px;
+}
+
+#bot:hover {
+    background-color: #009EE3;
+    color: white;
+  }
+
+  #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+  #bot:active {
+    background-color: #009EE3;
+    color: #fff;
+  }
+  #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
 
 /*Clases particulares formulario registro*/
 .section{
@@ -100,20 +122,31 @@ input[type='checkbox']{
  color: white;
  text-align: left;
  padding-left:15px;
- padding-top: 150px;
+ padding-top: 15px;
  font-family: roboto, sans-serif;
  font-size: 20pt;
  padding-bottom: 10px;
  height: 700px;
  background-image:url("./img/empresas.png");
+ display: block;
 }
-.welcome div button{
-
+header div{
+    display: inline-block;
 }
-article > div > a{
-    display: block;
-    text-align: right;
-    padding: 15px;
+header div:nth-last-of-type(1){
+    display: inline-block;
+    margin-left: 75%;
+}
+.welcome a{
+    text-decoration-line: none;
+}
+.welcome div:nth-last-of-type(2){
+    width: 49.5%;
+    display: inline-block;
+}
+.welcome div:nth-last-of-type(1){
+    width: 49.5%;
+    display: inline-block;
 }
 .formulario{
     width:578px;
@@ -136,6 +169,9 @@ article > div > a{
     font-size: 10.5pt;
     height: 30px;
 }
+.formulario div:nth-last-of-type(1){
+    text-align: center;
+}
 .box{
     display: block;
     width: 100%
@@ -146,6 +182,27 @@ article > div > a{
 } 
 section div p:nth-last-of-type(1){
     text-align: center;
+}
+#btn{
+    display: block;
+    font-family: roboto;
+    border: 0;
+    background: #009688;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #073549;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    margin-left: auto;
+    margin-right:auto; 
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    text-decoration-line: none;
+}
+#btn:active {
+    box-shadow: 0 2px 0 #073549;
+    transform: translateY(3px);
 }
 
 

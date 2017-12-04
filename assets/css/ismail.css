@@ -228,6 +228,37 @@ section {
   .p:active {
     background-color: #b231fd; }
 
+#contact {
+  padding: 30px 10px;
+  width: 700px;
+  margin: 0 auto; }
+  #contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px; }
+  #contact label {
+    width: 90%;
+    display: block;
+    padding: 5px;
+    margin-top: 10px; }
+  #contact input {
+    width: 90%;
+    display: block;
+    padding: 5px;
+    /*&[type="submit"]:hover {
+        box-shadow: 1px 2px 10px 0px rgba(3,168,244,0.75);
+    }*/ }
+    #contact input[type="submit"] {
+      width: 45%;
+      padding: 10px;
+      background: #03A9F4;
+      border: 0 solid transparent;
+      margin-top: 15px;
+      font-size: 1.2em;
+      color: white; }
+  #contact textarea {
+    width: 90%;
+    padding: 5px; }
+
 footer {
   background-color: #073549;
   width: 100%;
@@ -236,29 +267,26 @@ footer {
 
 #footerlist {
   width: 25%; }
-
-#footerlist ul {
-  display: inline-block;
-  padding-right: 5%;
-  list-style-type: none;
-  text-align: left;
-  margin-top: 3px;
-  padding-left: 0px; }
+  #footerlist ul {
+    display: inline-block;
+    padding-right: 5%;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 3px;
+    padding-left: 0px; }
 
 #social {
   width: 25%; }
-
-#social ul {
-  width: 100%;
-  padding-right: 5%;
-  padding-left: 0px;
-  list-style-type: none;
-  text-align: center;
-  margin-top: 3px; }
-
-#social li {
-  display: inline-block;
-  text-align: right; }
+  #social ul {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 3px; }
+  #social li {
+    display: inline-block;
+    text-align: right; }
 
 #copyright {
   width: 48%;

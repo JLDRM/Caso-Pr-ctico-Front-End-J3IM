@@ -23,8 +23,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alta de ofertas</title>
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="assets/css/joan.css">
 <header>
     <div class="aligncenter">
       <img src="img/logo1.png"  alt="logo">
@@ -33,9 +35,14 @@
 
 <body>
   <div id="titulo">
-  <h1>¿Quieres a los mejores? Publica ahora tu oferta </h1>
-  <img src="/img/ofertas.png" alt="">
-</div>
+  <h1>¿ QUIERES A LOS MEJORES? <br>
+      PUBLICA AHORA TU OFERTA </h1>
+<a href="#div_first"> <button id="vamos">Vamos!</button> </a>
+
+
+  </div>
+
+
 
     <section>
 
@@ -45,24 +52,24 @@
 
           <div id="div_first">
               <label> Título de la posición</label>
-              <input type="text" name="position" placeholder="Ej. Python developer">
+              <input type="text" required name="position" placeholder="Ej. Python developer">
           </div>
           <div id="div_second">
 
             <div id="div_1">
               <label> Descripción de la oferta</label>
-              <textarea name="jobdescription" maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades"> </textarea>
+              <textarea name="jobdescription" required maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades"> </textarea>
             </div>
 
             <div id="div_2">
-              <input type="text" name="training" placeholder="Formación">
-               <input type="text" name="location" placeholder="Ubicación">
+              <input type="text" required name="training" placeholder="Formación">
+               <input type="text" required name="location" placeholder="Ubicación">
               <label>Años de experiencia</label>
-               <input type="range" name="experience">
+               <input type="range" required name="experience">
                <label>Salario</label>
-              <input type="range" name="salary" min="20000"max="60000">
+              <input type="range" required name="salary" min="20000"max="60000">
               <label>Trabajo remoto</label>
-              <input type="checkbox" name="remotework" value="">
+              <input type="checkbox" required name="remotework" value="">
 
             </div>
           </div>
@@ -70,16 +77,16 @@
 
             <div id="div_third">
                 <label>Idiomas</label>
-                <input type="text" name="languajes" placeholder="Ej. Inglés, Francés, ...">
+                <input type="text" name="languajes" required placeholder="Ej. Inglés, Francés, ...">
               <label>Soft skills</label>
-                <input type="text" name="sskills" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc...">
+                <input type="text" required name="sskills" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc...">
                 <label>Habilidades técnicas</label>
-                <input type="text" name="hskills" placeholder="Ej. Python, Django, REST API,..">
+                <input type="text" required name="hskills" placeholder="Ej. Python, Django, REST API,..">
 
               </div>
 
               <div id="div_button">
-                <input type="button" name="send" value="Publicar oferta" placeholder="Publicar oferta">
+                <button id="enviar" name="send" type="submit">Publicar oferta</button>
               </div>
 
       </form>

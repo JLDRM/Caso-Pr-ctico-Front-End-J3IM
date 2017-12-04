@@ -2,18 +2,138 @@
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif; 
 }
-header{
-    background-color: #009688;
-    display: block;
-    padding-bottom: 6px;
-    text-align: center;
+header {
+    display: flex;
+    background: #009688;
+    padding: 10px;
+    text-align: center; 
+}
+header #logo {
+    flex: 2; 
+}
+header #logo img {
+    width: 125px;
+    margin-left: 350px; 
+}
+header .menu {
+    margin: auto 0;
+    flex: 1; 
+}
+header .menu ul li {
+    display: inline-block;
+    margin: 5px 0 0 0;
+    border: 2px dotted transparent;
+    padding: 5px; 
+}
+header .menu ul li .active {
+    color: #073539; 
+}
+header .menu ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: lighter; 
+}
+header .menu ul li a:hover {
+    color: #073539;
+    transition: color 200ms linear; 
 }
 body{
     margin: 0;
     padding: 0;
-    font-size: 11.5pt;
+    font-size: 12pt;
     font-family: roboto, sans-serif;
     background-color: rgba(226,226,226,.84);
 }
@@ -21,7 +141,6 @@ section{
     display: block;
     padding-top: 0px;
     margin: 0 auto;
-    border: 1px solid black;
     background-color: white;
     width: 900px;
 }
@@ -29,47 +148,50 @@ footer {
     background-color: #073549;
     width: 100%;
     display: flex;
-    position:relative;
-    margin-bottom: 0;
-    height: 35px;
-    overflow: hidden;
+    padding: 10px; 
 }
-  
-  #footerlist {
-    width: 25%; }
-  
-  #footerlist ul {
+ #footerlist {
+    width: 25%; 
+}
+#footerlist ul {
     display: inline-block;
     padding-right: 5%;
     list-style-type: none;
     text-align: left;
     margin-top: 3px;
-    padding-left: 0px; }
-  
-  #social {
+    padding-left: 0px; 
+}
+#social {
     width: 25%; }
-  
-  #social ul {
+#social ul {
     width: 100%;
     padding-right: 5%;
     padding-left: 0px;
     list-style-type: none;
     text-align: center;
-    margin-top: 3px; }
-  
-  #social li {
+    margin-top: 3px; 
+}
+#social li {
     display: inline-block;
-    text-align: right; }
-  
-  #copyright {
+    text-align: right;
+}
+#copyright {
     width: 48%;
     font-size: 9pt;
     color: white;
     font-weight: lighter;
     display: block;
     text-align: left;
-    padding-left: 20px; }
-
+    padding-left: 20px; 
+}
+h1{
+    margin:0;
+    color:white;
+    font-weight: bold;
+    font-size: 60pt;
+    padding-top: 100px;
+   
+}
 a:visited {
     font-family: roboto, sans-serif;
     font-size: 11.5pt;
@@ -77,7 +199,7 @@ a:visited {
 }
 a{
     font-family: roboto, sans-serif;
-    font-size: 11.5pt;
+    font-size: 12pt;
     color: #073549;
 }
 input[type='checkbox']{
@@ -88,30 +210,27 @@ input[type='checkbox']{
 #bot {
     background-color: #FFF;
     font-size: 10pt;
-    /*font-weight: regular;*/
+    font-weight: regular;
     color: #009EE3;
     width: 300px;
     height: 50px;
 }
-
 #bot:hover {
     background-color: #009EE3;
     color: white;
-  }
-
-  #navegador li a:hover{
+}
+#navegador li a:hover{
     background-color: #333333;
     color: #ffffff;
  }
-
-  #bot:active {
+#bot:active {
     background-color: #009EE3;
     color: #fff;
-  }
-  #navegador li a:hover{
+}
+#navegador li a:hover{
     background-color: #333333;
     color: #ffffff;
- }
+}
 
 /*Clases particulares formulario registro*/
 .section{
@@ -125,17 +244,10 @@ input[type='checkbox']{
  padding-top: 15px;
  font-family: roboto, sans-serif;
  font-size: 20pt;
- padding-bottom: 10px;
+ padding-bottom: 15px;
  height: 700px;
- background-image:url("./img/empresas.png");
+ background-image:url("./assets/img/empresas.png");
  display: block;
-}
-header div{
-    display: inline-block;
-}
-header div:nth-last-of-type(1){
-    display: inline-block;
-    margin-left: 75%;
 }
 .welcome a{
     text-decoration-line: none;
@@ -180,8 +292,9 @@ header div:nth-last-of-type(1){
     display: inline-block;
     width: 49.5%;
 } 
-section div p:nth-last-of-type(1){
+#check{
     text-align: center;
+    padding-bottom: 15px;
 }
 #btn{
     display: block;

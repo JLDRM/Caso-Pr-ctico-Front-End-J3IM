@@ -10,23 +10,29 @@
 </head>
 
 <body>
+
     <header>
-        <div>
-            <img src="./img/logo1.png" width="125px" height="125px" alt="">
+        <div id="logo">
+            <img src="./assets/img/logo1.png" alt="GeekJobs">
         </div>
-        <div>
-            <a href="home_empresa.html">¿Ya tienes cuenta? Entra</a>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="home_empresa.html">Login</a>
+                </li>
+                <li>
+                    <a href="home_usuario.html">Usuario</a>
+                </li>
+            </ul>
         </div>
     </header>
-
     <article class="welcome">
         <div>
-            <h2>¡WELCOME TO GEEK JOBS!</h2>
+            <h1>¡WELCOME TO GEEK JOBS!</h1>
             <p>
                 Sabemos que encontrar al empleado perfecto no es tarea fácil, por eso, nosotros te ayudamos.
             </p>
-            <p>
-                ¡Encuentra todos los candidatos que buscas en un sólo click!
+            <br> ¡Encuentra todos los candidatos que buscas en un sólo click!
             </p>
         </div>
         <div>
@@ -36,7 +42,7 @@
         </div>
     </article>
     <section>
-        <form action="/action_page.php" method="get">
+        <form action="pagina_construccion.html" method="get">
             <section class="formulario" "section">
                 <a name="inscripc" id="inscripc"></a>
 
@@ -98,7 +104,7 @@
                     <button type="submit" id="bot">Registrar</button>
                 </div>
             </section>
-            <div>
+            <div id="check">
                 <p>
                     <input type="checkbox" name="Registrar" id="idreg" required> Al crear una cuenta confirmas que has leído y aceptas la
                     <a href="politica_privacidad.html">Política de Privacidad</a>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro Usuario</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/josep.css">
+	<!-- Inicio Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <!-- Fin Favicons -->
+    <!-- Cambia color del toolbar en chrome -->
+    <meta name="theme-color" content="#db5945">
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+            <img src="./assets/img/logo1.png" alt="GeekJobs">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#" class="active">Empresas</a>
+                </li>
+            </ul>
+        </div>
+	</header>
+
+	<section>
+		
+		<article class="article1josep">
+			<div> 
+				<h1>¡WELCOME GEEKS!</h1>
+				
+				<p>Un buen geek siempre encuentra el trabajo de sus sueños, aquí se podrá hacer realidad. Diferentes empresas están desesperadas por encontrarte y tú lo sabes. 
+				</p>
+				
+				<p>
+				Rellena el formulario y verás como te llueven ofertas del cielo. 
+				</p> 
+			</div>
+			
+			<div>
+				<a href="#h3"><button class="buttonjosep">¡Comprueba si eres un GEEK!</button></a>
+			</div>
+		</article>
+		
+			
+		<article class="article3josep">
+			<div>	
+				<div>
+					<h2 id=h3>FORMA PARTE DE LA COMUNIDAD MÁS GEEK</h2>
+				</div>
+				
+				<div>
+					<form action="">
+						<div>
+							<div>
+								<label for="nombre"></label>Nombre y Apellido
+								<input required type="text" placeholder="Nombre y Apellido" name="nombre" autocomplete="on">
+							</div>
+							
+							<div>
+								<label for="email"></label>Email
+								<input required type="Email"	placeholder="Email" name="email" autocomplete="on">
+							</div>
+							
+							<div>
+								<label for="telefono"></label>Telefono
+								<input required type="Telefono" placeholder="Telefono" name="telefono" autocomplete="on" pattern="[0-9].*">
+							</div>
+							
+							<div>	
+								<label for="habilidad"></label>¿Cuál es tu principal habilidad técnica?
+								<input required type="text" placeholder="¿Cuál es tu principal habilidad técnica?" name="habilidad" autocomplete="on">
+							</div>	
+							
+							<div>	
+								<label for="hobby"></label>¿Y tu hobby favorito?
+								<input required type="text" placeholder="¿Y tu hobby favorito?" name="hobby" autocomplete="on">
+							</div>
+						</div>
+
+						<div>	
+							<label for="cv"></label>Sube tu CV!
+							<input required type="file" placeholder="Sube tu CV" name="cv" capture>
+						</div>
+
+						<div>
+							<input id="enviar" type="button" placeholder="Enviar" value="Enviar">
+						</div>					
+					</form>
+				</div>
+			</div>	
+		</article>
+		
+	</section>
+
+	<footer>
+			<div id="copyright">
+                    <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
+            </div>
+	        
+	        <div id="footerlist">
+            
+            
+                    <ul id="geekjobs_footer">
+                       <a target="_blank" href="https:www.geekjobs.com"><li><img src="./assets/img/geek_icon.png"    width="50px" height="30px" position alt=""> </li></a>
+                    </ul>
+            </div>
+	        
+	        <div id="social">
+                    <ul>                         
+                       <a target="_blank" href="https:www.linkedin.com"><li><img src="./assets/img/linkedin_icon.png"  width="30px" height="30px" alt=""> </li></a>
+                       <a target="_blank" href="https:www.facebook.com"><li><img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li></a>
+                       <a target="_blank" href="https:www.twitter.com"><li><img src="./assets/img/twitter_icon.png"   width="30px" height="30px" alt=""> </li></a>
+                       
+                    </ul>
+	        </div>  
+	</footer>
+	
+</body>
+</html>

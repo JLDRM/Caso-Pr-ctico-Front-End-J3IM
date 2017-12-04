@@ -1,66 +1,176 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 * {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 header{
     background-color: #009688;
     display: block;
-    text-align: center; 
-    height: 108px;
     padding-bottom: 6px;
-}
-header > p{
-    font-size: 11.5pt;
-    font-family: roboto;
-    text-align: right bottom; 
-    /*color:white;*/
+    text-align: center;
 }
 body{
     margin: 0;
     padding: 0;
     font-size: 11.5pt;
     font-family: roboto, sans-serif;
+    background-color: rgba(226,226,226,.84);
 }
-footer{
+section{
+    display: block;
+    padding-top: 0px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+    width: 900px;
+}
+footer {
     background-color: #073549;
-    text-align: center;
-    position: relative;
+    width: 100%;
+    display: flex;
+    position:relative;
     margin-bottom: 0;
     height: 35px;
     overflow: hidden;
 }
+  
+  #footerlist {
+    width: 25%; }
+  
+  #footerlist ul {
+    display: inline-block;
+    padding-right: 5%;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 3px;
+    padding-left: 0px; }
+  
+  #social {
+    width: 25%; }
+  
+  #social ul {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 3px; }
+  
+  #social li {
+    display: inline-block;
+    text-align: right; }
+  
+  #copyright {
+    width: 48%;
+    font-size: 9pt;
+    color: white;
+    font-weight: lighter;
+    display: block;
+    text-align: left;
+    padding-left: 20px; }
+
+a:visited {
+    font-family: roboto, sans-serif;
+    font-size: 11.5pt;
+    color: #009EE3;
+}
+a{
+    font-family: roboto, sans-serif;
+    font-size: 11.5pt;
+    color: #073549;
+}
+input[type='checkbox']{
+    width: 15px;
+    margin:0;
+
+} 
+#bot {
+    background-color: #FFF;
+    font-size: 10pt;
+    /*font-weight: regular;*/
+    color: #009EE3;
+    width: 300px;
+    height: 50px;
+}
+
+#bot:hover {
+    background-color: #009EE3;
+    color: white;
+  }
+
+  #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+  #bot:active {
+    background-color: #009EE3;
+    color: #fff;
+  }
+  #navegador li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
+
+/*Clases particulares formulario registro*/
 .section{
-    max-width: 600px;
     margin:0 auto;
 }
-section{
-    background-color: rgba(226,226,226,.84);
-    border-radius: 10px;
-    display: block;
-    padding: 10px;
+.welcome{
+ background-color: #073549;
+ color: white;
+ text-align: left;
+ padding-left:15px;
+ padding-top: 15px;
+ font-family: roboto, sans-serif;
+ font-size: 20pt;
+ padding-bottom: 10px;
+ height: 700px;
+ background-image:url("./img/empresas.png");
+ display: block;
 }
-/*img{
-    width:100%;
-}*/
-
+header div{
+    display: inline-block;
+}
+header div:nth-last-of-type(1){
+    display: inline-block;
+    margin-left: 75%;
+}
+.welcome a{
+    text-decoration-line: none;
+}
+.welcome div:nth-last-of-type(2){
+    width: 49.5%;
+    display: inline-block;
+}
+.welcome div:nth-last-of-type(1){
+    width: 49.5%;
+    display: inline-block;
+}
 .formulario{
-    width:100%;
+    width:578px;
     padding:5px;
+    border:0px;
 }
 .formulario > div{
     width:100%;
     padding: 15px;
     margin-top: 5px;
+    margin-right: auto;
+    margin-left:auto;
 }
 .formulario input{
     width:100%;
     padding: 15px;
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top:16px;
     font-family: roboto;
     font-size: 10.5pt;
+    height: 30px;
+}
+.formulario div:nth-last-of-type(1){
+    text-align: center;
 }
 .box{
     display: block;
@@ -69,14 +179,31 @@ section{
 .formulario .box > div{
     display: inline-block;
     width: 49.5%;
+} 
+section div p:nth-last-of-type(1){
+    text-align: center;
 }
-button{
+#btn{
     display: block;
-    width: 25%;
-    padding: 5px;
     font-family: roboto;
-    font-size: 11.5pt;
-    border-radius: 10px;
+    border: 0;
+    background: #009688;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #073549;
+    color: white;
+    cursor: pointer;
+    font: inherit;
     margin-left: auto;
     margin-right:auto; 
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    text-decoration-line: none;
 }
+#btn:active {
+    box-shadow: 0 2px 0 #073549;
+    transform: translateY(3px);
+}
+
+
+

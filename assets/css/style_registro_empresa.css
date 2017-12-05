@@ -95,7 +95,7 @@
 }
 header {
     display: flex;
-    background: #009688;
+    background: #073549;
     padding: 10px;
     text-align: center; 
 }
@@ -299,9 +299,9 @@ input[type='checkbox']{
     display: block;
     font-family: roboto;
     border: 0;
-    background: #009688;
+    background: #03A9F4;
     border-radius: 4px;
-    box-shadow: 0 5px 0 rgba(226,226,226,.84);
+    box-shadow: 0 5px 0 #006599;
     color: white;
     cursor: pointer;
     font: inherit;
@@ -315,7 +315,7 @@ input[type='checkbox']{
     height: 50px;
 }
 #btn:active {
-    box-shadow: 0 2px 0 #073549;
+    box-shadow: 0 2px 0 #006599;
     transform: translateY(3px);
 }
 

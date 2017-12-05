@@ -1,7 +1,7 @@
 #tg{
     margin: 0;
     padding: 0;
-    font-size: 11.5pt;
+    font-size: 12pt;
     font-family: roboto, sans-serif;
     background-color: rgba(226,226,226,.84);
     text-align: center;
@@ -15,4 +15,9 @@
 }
 #tg section p{
     text-indent: 50px;
+}
+h1{
+    margin:0;
+    font-weight: bold;
+    font-size: 40pt;
 }

@@ -6,20 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Geek Jobs</title>
+<!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<!-- Estilos -->
+    <link rel="stylesheet" href="./assets/css/style_home_usuario.css">
+<!-- Inicio Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+<!-- Fin Favicons -->
     <link rel="stylesheet" href="./assets/css/style_home_usuario.css">
 </head>
 
 <body>
+<!-- empieza header -->
     <header class="empresa">
         <div class="aligncenter">
-            <img src="./assets/img/logo1.png" width="125px" height="125px" alt="">
+            <img src="./assets/img/logo1.png" alt="">
         </div>
     </header>
+<!-- fin de header -->
 
+<!-- div principal video -->
     <div class="divvideo">
         <video src="./assets/video/video_2.mov" width="100%" autoplay loop>
         </video>
     </div>
+<!-- fin de div principal video -->
+
+<!-- div login -->
 
     <article>
         <div class="divcenter">
@@ -34,69 +49,89 @@
                 <input type="password" name="Contrseña" placeholder="Contraseña" spellcheck="true">
             </p>
 
-<!-- pop up de contraseña -->   
 
+<!-- empieza el pop up -->   
             <a href="#openModal" href="href=" https:www.google.com "">
-                <p class="minititulo">¿Has olvidado tu contraseña?</p>
+                <p class="minititulo">¿Has olvidado tu contraseña?
+                </p>
             </a>
-            <div id="openModal" class="modalDialog">
-                    <div>
-                        <a href="#close" title="Close" class="close">X</a>
-                            <h2>Por favor, escribe tu email :)</h2>
-                                <input type="email" name="Email" placeholder="Email" pattern="[A-Z] [a-z]*" autofocus spellcheck="true">
-                                <button id="enviar">Enviar
-                                </button>
-                    </div>
+            <div  id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X
+                    </a>
+                        <h2>Por favor, escribe tu email :)
+                        </h2>
+                            <input type="email" name="Email" placeholder="Email" pattern="[A-Z] [a-z]*" autofocus spellcheck="true">
+                            <button id="enviar">Enviar
+                            </button>
                 </div>
-     
-        <button id="enviar"> Únete ahora 
+            </div>
+<!-- fin del pop up -->   
+
+<!-- comienza el boton -->   
+        <button class="enviar">Únete ahora 
         </button>
+<!-- fin del boton -->   
                 <a href="href=" https:www.google.com "">
                     <p class="minititulo" href="https:www.google.com">¿No tienes cuenta? Crea tu perfil !</p>
                 </a>
             </form>
         </div>
     </article>
-
+<!-- fin de div login -->
+<!-- empieza footer -->
 <footer class="empresa">
-    <div id="copyright">
-        <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
-    </div>
-
-    <div id="footerlist">
-        <ul id="geekjobs_footer">
-            <a target="_blank" href="https:www.geekjobs.com">
-                <li>
-                    <img src="./assets/img/geek_icon.png" width="50px" height="30px" position alt="">
-                </li>
-            </a>
-        </ul>
-    </div>
-
-    <div id="social">
-        <ul>
-            <a target="_blank" href="https:www.linkedin.com">
-                <li>
-                    <img src="./assets/img/linkedin_icon.png" width="30px" height="30px" alt=""> 
-                </li>
-            </a>
-
-            <a target="_blank" href="https:www.facebook.com">
-                <li>
-                    <img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> 
-                </li>
-            </a>
-
-            <a target="_blank" href="https:www.twitter.com">
-                <li>
-                    <img src="./assets/img/twitter_icon.png" width="30px" height="30px" alt=""> 
-                </li>
-            </a>
-        </ul>
-    </div>
-
-</footer>
-
-</body>
-
-</html>
+        <div class="copyright">
+            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved.</p>
+    <!-- empieza contacto -->
+                <a href="contact.html">
+                    <h3> Contáctanos
+                    </h3> 
+                </a> 
+    
+                <a href="about_us.html">
+                    <h3> Sobre nosotros
+                    </h3> 
+                </a>  
+    <!-- fin de contacto -->
+        </div>
+    
+        <div class="footerlist">
+                <ul id="geekjobs_footer">
+                </ul>
+                <a target="_blank" href="https:www.geekjobs.com">
+                    <li>
+                        <img src="./assets/img/geek_icon.png" width="50px" height="30px" position alt="">
+                    </li>
+                </a>
+            </ul>
+        </div>
+    
+        <div class="social">
+            <ul>
+                <a target="_blank" href="https:www.linkedin.com">
+                    <li>
+                        <img src="./assets/img/linkedin_icon.png"> 
+                    </li>
+                </a>
+    
+                <a target="_blank" href="https:www.facebook.com">
+                    <li>
+                        <img src="./assets/img/facebook_icon.png"> 
+                    </li>
+                </a>
+    
+                <a target="_blank" href="https:www.twitter.com">
+                    <li>
+                        <img src="./assets/img/twitter_icon.png"> 
+                    </li>
+                </a>
+            </ul>
+        </div>
+    
+    </footer>
+    <!-- fin de footer -->
+    
+    </body>
+    
+    </html>

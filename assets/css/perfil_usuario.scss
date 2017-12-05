@@ -158,48 +158,55 @@ section {
     }
 }
 
-.cont {
-    margin: 10px;
+#cont {
+    margin: 10px 20px;
 }
 
-.perfil .persona {
-    width: 150px;
-    height: 150px;
-    border: 5px solid white;
-    border-radius: 50%;
-    margin-top: -300px;
-    margin-left: 50px;
+#perfil {
+    & img:nth-child(2) {
+        width: 150px;
+        height: 150px;
+        border: 5px solid white;
+        border-radius: 50%;
+        margin-top: -300px;
+        margin-left: 25px;
+    }
+    & h2 {
+        font-size: 2em;
+        margin: 0 0 1em 1.3em;
+        align-content: center;
+        font-weight: bold;
+    }
 }
 
-.title {
-    font-size: 2em;
-    margin: 0 0 1em 60px;
-    align-content: center;
-    font-weight: bold;
-}
-
-.cont {
+#cont {
     padding: 10px 5px;
     clear: both;
     & h3 {
         font-size: 1.2em;
         font-weight: bold;
+        margin-bottom: 5px;
+    }
+    & div {
+        margin-top: 20px;
     }
 }
 
-.mm ul li {
-    list-style: none;
-    display: inline-block;
-    border: 5px solid transparent;
-    & a {
-        display: block;
-        min-width: 100px;
-        text-align: center;
-        padding: 10px 15px;
-        margin: 0 10px 0 0;
-        font-size: 1.3em;
-        text-decoration: none;
-        color: #fff;
+.mm {
+    & ul li {
+        list-style: none;
+        display: inline-block;
+        border: 5px solid transparent;
+        & a {
+            display: block;
+            min-width: 100px;
+            text-align: center;
+            padding: 10px 15px;
+            margin: 0 10px 0 0;
+            font-size: 1.3em;
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 

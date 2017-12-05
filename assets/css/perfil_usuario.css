@@ -140,29 +140,31 @@ section {
   sectiondiv {
     padding: 0 15px; }
 
-.cont {
-  margin: 10px; }
+#cont {
+  margin: 10px 20px; }
 
-.perfil .persona {
+#perfil img:nth-child(2) {
   width: 150px;
   height: 150px;
   border: 5px solid white;
   border-radius: 50%;
   margin-top: -300px;
-  margin-left: 50px; }
-
-.title {
+  margin-left: 25px; }
+#perfil h2 {
   font-size: 2em;
-  margin: 0 0 1em 60px;
+  margin: 0 0 1em 1.3em;
   align-content: center;
   font-weight: bold; }
 
-.cont {
+#cont {
   padding: 10px 5px;
   clear: both; }
-  .cont h3 {
+  #cont h3 {
     font-size: 1.2em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 5px; }
+  #cont div {
+    margin-top: 20px; }
 
 .mm ul li {
   list-style: none;
@@ -295,4 +297,4 @@ footer {
   text-align: left;
   padding-left: 20px; }
 
-/*# sourceMappingURL=ismail.css.map */
+/*# sourceMappingURL=perfil_usuario.css.map */

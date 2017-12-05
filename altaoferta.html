@@ -1,132 +1,109 @@
 <!--
-:'######:::'########:'########:'##:::'##:
-'##... ##:: ##.....:: ##.....:: ##::'##::
- ##:::..::: ##::::::: ##::::::: ##:'##:::
- ##::'####: ######::: ######::: #####::::
- ##::: ##:: ##...:::: ##...:::: ##. ##:::
- ##::: ##:: ##::::::: ##::::::: ##:. ##::
-. ######::: ########: ########: ##::. ##:
-:......::::........::........::..::::..::
-::::::'##::'#######::'########:::'######::
-:::::: ##:'##.... ##: ##.... ##:'##... ##:
-:::::: ##: ##:::: ##: ##:::: ##: ##:::..::
-:::::: ##: ##:::: ##: ########::. ######::
-'##::: ##: ##:::: ##: ##.... ##::..... ##:
- ##::: ##: ##:::: ##: ##:::: ##:'##::: ##:
-. ######::. #######:: ########::. ######::
-:......::::.......:::........::::......:::
+   :'######:::'########:'########:'##:::'##:
+   '##... ##:: ##.....:: ##.....:: ##::'##::
+    ##:::..::: ##::::::: ##::::::: ##:'##:::
+    ##::'####: ######::: ######::: #####::::
+    ##::: ##:: ##...:::: ##...:::: ##. ##:::
+    ##::: ##:: ##::::::: ##::::::: ##:. ##::
+   . ######::: ########: ########: ##::. ##:
+   :......::::........::........::..::::..::
+   ::::::'##::'#######::'########:::'######::
+   :::::: ##:'##.... ##: ##.... ##:'##... ##:
+   :::::: ##: ##:::: ##: ##:::: ##: ##:::..::
+   :::::: ##: ##:::: ##: ########::. ######::
+   '##::: ##: ##:::: ##: ##.... ##::..... ##:
+    ##::: ##: ##:::: ##: ##:::: ##:'##::: ##:
+   . ######::. #######:: ########::. ######::
+   :......::::.......:::........::::......:::
 -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alta de ofertas</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-  <link rel="stylesheet" href="assets/css/joan.css">
-
-<header>
-  <div id="logo">
-      <img src="./assets/img/logo1.png" alt="GeekJobs">
-  </div>
-</header>
-
-
-<body>
-  <div id="titulo">
-  <h1>¿ QUIERES A LOS MEJORES? <br>
-      PUBLICA AHORA TU OFERTA </h1>
-<a href="#div_first"> <button id="vamos">Vamos!</button> </a>
-
-<!--
-Header and subheader end, DON'T TOUCH
--->
-
-  </div>
-
-
-
-    <section>
-
-
-
-      <form action="pagina_construccion.html" method="post" style="overflow:auto;">
-
-          <div id="div_first">
-              <label> Título de la posición</label>
-              <input type="text" required name="position" placeholder="Ej. Python developer">
-          </div>
-          <div id="div_second">
-
-            <div id="div_1">
-              <label> Descripción de la oferta</label>
-              <textarea name="jobdescription" required maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades"> </textarea>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Alta de ofertas</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+      <link rel="stylesheet" href="assets/css/joan.css">
+      <!--
+         Header and subheader, DO NOT MODIFY
+         -->
+      <header>
+         <div id="logo">
+            <img src="./assets/img/logo1.png" alt="GeekJobs">
+         </div>
+      </header>
+   <body>
+      <div id="titulo">
+         <h1>¿QUIERES A LOS MEJORES? <br>
+            PUBLICA AHORA TU OFERTA
+         </h1>
+         <a href="#div_first"> <button id="vamos">Vamos!</button> </a>
+      </div>
+      <section>
+         <form action="pagina_construccion.html" method="post" style="overflow:auto;">
+            <div id="div_first">
+               <label> Título de la posición</label>
+               <input type="text" required name="position" placeholder="Ej. Python developer">
             </div>
-
-            <div id="div_2">
-              <input type="text" required name="training" placeholder="Formación">
-               <input type="text" required name="location" placeholder="Ubicación">
-              <label>Años de experiencia</label>
-               <input type="range" required name="experience">
-               <label>Salario</label>
-              <input type="range" required name="salary" min="20000"max="60000">
-              <label>Trabajo remoto</label>
-              <input type="checkbox" name="remotework" value="">
-
+            <div id="div_second">
+               <div id="div_1">
+                  <label> Descripción de la oferta</label>
+                  <textarea name="jobdescription" required maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades"> </textarea>
+               </div>
+               <div id="div_2">
+                  <input type="text" required name="training" placeholder="Formación">
+                  <input type="text" required name="location" placeholder="Ubicación">
+                  <label>Años de experiencia</label>
+                  <input type="range" required name="experience">
+                  <label>Salario</label>
+                  <input type="range" required name="salary" min="20000"max="60000">
+                  <label>Trabajo remoto</label>
+                  <input type="checkbox" name="remotework" value="">
+               </div>
             </div>
-          </div>
-
-
             <div id="div_third">
-                <label>Idiomas</label>
-                <input type="text" name="languajes" required placeholder="Ej. Inglés, Francés, ...">
-              <label>Soft skills</label>
-                <input type="text" required name="sskills" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc...">
-                <label>Habilidades técnicas</label>
-                <input type="text" required name="hskills" placeholder="Ej. Python, Django, REST API,..">
-
-              </div>
-
-              <div id="div_button">
-                <button id="enviar" name="send" type="submit">Publicar oferta</button>
-              </div>
-
-      </form>
-    </section>
-
-<!--
-Footer starts here, DON'T TOUCH bitches
--->
-    <footer>
-                <div id="copyright">
-                        <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
-                </div>
-               <div id="footerlist">
-
-
-                        <ul id="geekjobs_footer">
-                           <a target="_blank" href="https:www.geekjobs.com"><li><img src="./assets/img/geek_icon.png"    width="50px" height="30px" position alt=""> </li></a>
-                        </ul>
-                </div>
-               <div id="social">
-                        <ul>
-                           <a target="_blank" href="https:www.linkedin.com"><li><img src="./assets/img/linkedin_icon.png"  width="30px" height="30px" alt=""> </li></a>
-                           <a target="_blank" href="https:www.facebook.com"><li><img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li></a>
-                           <a target="_blank" href="https:www.twitter.com"><li><img src="./assets/img/twitter_icon.png"   width="30px" height="30px" alt=""> </li></a>
-
-                        </ul>
-                </div>
-   </footer>
-</body>
-
-<!--
-_____                                          _    ___   ___
-|     |___ ___ ___ ___ ___ _____ ___ ___    ___| |  |_  | |   |
-| | | | -_|  _| -_|  _| -_|     | . |_ -|  | -_| |   _| |_| | |
-|_|_|_|___|_| |___|___|___|_|_|_|___|___|  |___|_|  |_____|___|
-
--->
+               <label>Idiomas</label>
+               <input type="text" name="languajes" required placeholder="Ej. Inglés, Francés, ...">
+               <label>Soft skills</label>
+               <input type="text" required name="sskills" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc...">
+               <label>Habilidades técnicas</label>
+               <input type="text" required name="hskills" placeholder="Ej. Python, Django, REST API,..">
+            </div>
+            <div id="div_button">
+               <button id="enviar" name="send" type="submit">Publicar oferta</button>
+            </div>
+         </form>
+      </section>
+      <!--
+         Footer starts here, DO NOT MODIFY
+         -->
+      <footer>
+         <div id="copyright">
+            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
+         </div>
+         <div id="footerlist">
+            <ul id="geekjobs_footer">
+               <a target="_blank" href="https:www.geekjobs.com">
+                  <li><img src="./assets/img/geek_icon.png"    width="50px" height="30px" position alt=""> </li>
+               </a>
+            </ul>
+         </div>
+         <div id="social">
+            <ul>
+               <a target="_blank" href="https:www.linkedin.com">
+                  <li><img src="./assets/img/linkedin_icon.png"  width="30px" height="30px" alt=""> </li>
+               </a>
+               <a target="_blank" href="https:www.facebook.com">
+                  <li><img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li>
+               </a>
+               <a target="_blank" href="https:www.twitter.com">
+                  <li><img src="./assets/img/twitter_icon.png"   width="30px" height="30px" alt=""> </li>
+               </a>
+            </ul>
+         </div>
+      </footer>
+   </body>
 </html>

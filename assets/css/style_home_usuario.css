@@ -200,7 +200,6 @@ h2 {
     display: block;
 }
 
-  
   .social {
     width: 25%; }
     .social ul {
@@ -219,18 +218,6 @@ h2 {
         width: 30px;
         height: 30px;
     }
-    .footerinfo {
-        width: 25%; }
-        .footerinfo ul {
-          display: inline-flex;
-        }
-        .footerinfo li {
-          display: inline-block;
-          text-align: center; 
-          font-size: 8pt;
-          color: white;
-        }
-
 
   .copyright {
     width: 48%;

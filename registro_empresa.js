@@ -52,3 +52,21 @@ telefono.addEventListener("input", function(event){
         telefono.setCustomValidity("");
     }
 });
+
+//POST
+//El NIF y el teléfono los declaro como array????
+function DatosEmpresa(){
+    this.nombre = "";
+    this.apellido = "";
+    this.email = "";
+    this.contraseña = "";
+    this.empresa = "";
+    this.nif = [];
+    this.telefono = [];
+    this.stack_tecno = [];
+}
+DatosEmpresa.prototype.getDatos = function(){
+    Ajax("GET", "http://www.mocky.io/v2/5a4ba0cb300000ed11a696d6", (data) =>{
+        
+    });
+}

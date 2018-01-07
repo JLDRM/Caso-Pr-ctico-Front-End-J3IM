@@ -17,6 +17,7 @@
     <!-- Fin Favicons -->
     <!-- Cambia color del toolbar en chrome -->
     <meta name="theme-color" content="#db5945">
+    <script src="ajax_registr_empresa.js"></script>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
 
     <!-- Formulario -->
     <section>
-        <form action="altaoferta.html" method="get">
+        <form action="altaoferta.html" method="post">
             <section class="formulario" "section">
                 <a name="inscripc" id="inscripc"></a>
 
@@ -70,9 +71,9 @@
                             autofocus>
                     </div>
                     <div>
-                        <label for="idapellidos">Apellidos</label>
+                        <label for="idapellido">Apellido</label>
                         <br>
-                        <input type="text" name="Apellidos" id="idapellidos" placeholder="Escribe tus apellidos" spellcheck="" required>
+                        <input type="text" name="Apellido" id="idapellido" placeholder="Escribe tu apellido" pattern="[A-Z][a-z]*" spellcheck="" required>
                     </div>
                 </div>
 
@@ -85,7 +86,7 @@
                 <div>
                     <label for="idcontraseña">Contraseña</label>
                     <br>
-                    <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" required>
+                    <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" minlength="8" maxlength="12" required>
                 </div>
 
                 <div>
@@ -103,7 +104,7 @@
                     <div>
                         <label for="idtel">Teléfono</label>
                         <br>
-                        <input type="number" name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" required>
+                        <input type="number" name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" maxlength="9" required>
                     </div>
                 </div>
 
@@ -162,7 +163,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="registro_empresa.js"></script>
 </body>
 
 </html>

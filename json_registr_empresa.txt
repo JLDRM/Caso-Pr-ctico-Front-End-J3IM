@@ -1,5 +1,3 @@
-¡Felicidades ya formas parte de la comunidad GEEK!
-    Tus datos se han guardado correctamente.
     [{"Nombre": "Marta",
     "Apellido": "Martínez",
     "Email": "email@gmail.com",
@@ -10,4 +8,4 @@
     "Stack tecnológico": [{"HTML", "CSS", "JS"}],
     }]
 
-http://www.mocky.io/v2/5a4ba0cb300000ed11a696d6
+http://www.mocky.io/v2/5a5331a230000054151ebe37

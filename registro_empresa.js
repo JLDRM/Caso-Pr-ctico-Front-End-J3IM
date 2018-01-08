@@ -5,6 +5,7 @@ var password = document.getElementById("idcontraseña");
 var empresa = document.getElementById("idempresa");
 var nif = document.getElementById("idnif");
 var telefono = document.getElementById("idtel");
+var stack_tecno = document.getElementById("idtecno");
 
 
 nombre.addEventListener("input", function(event){
@@ -53,7 +54,7 @@ telefono.addEventListener("input", function(event){
     }
 });
 
-//POST
+//GET
 //El NIF y el teléfono los declaro como array????
 function DatosEmpresa(){
     this.nombre = "";
@@ -65,8 +66,29 @@ function DatosEmpresa(){
     this.telefono = [];
     this.stack_tecno = [];
 }
-DatosEmpresa.prototype.getDatos = function(){
-    Ajax("GET", "http://www.mocky.io/v2/5a4ba0cb300000ed11a696d6", (data) =>{
-        
+DatosEmpresa.prototype.getDatos = function(onSucces){
+    Ajax("GET", "http://www.mocky.io/v2/5a5331a230000054151ebe37", (data) =>{
+        this.nombre = data["Nombre"];
+        this.apellido = data["Apellido"];
+        this.email = data["Email"];
+        this.password = data["Contraseña"];
+        this.empresa = data["Empresa"];
+        this.nif = data["NIF"];
+        this.telefono = data["Teléfono"];
+        this.stack_tecno = data["Stack tecnológico"];
+        onSuccess();
     });
 }
+
+function exportaDatos(dtos){
+    nombre.innerText = dtos.nombre;
+    apellido.innerText = dtos.apellido;
+    email.innerText = dtos.email;
+    password.innerText = dtos.contraseña;
+    empresa.innerText = dtos.empresa;
+    nif.innerText = dtos.nif;
+    telefono.innerText = dtos.telefono;
+    stack_tecno.innerText = dtos.stack_tecno;
+}
+var datos = new DatosEmpresa();
+datos.getDatos(exportaDatos(datos));

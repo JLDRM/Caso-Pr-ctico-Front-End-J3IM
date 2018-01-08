@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
     <!-- Fin Favicons -->
     <link rel="stylesheet" href="./assets/css/style_home_usuario.css">
+    <link rel="stylesheet" href="assets/js/validacionForm.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
     <!-- div login -->
     <article>
         <div class="divcenter">
-            <form action="perfil_usuario.html">
+            <form novalidate>
                 <p class="titulo">Welcome to Geek Jobs!</p>
                 <h3 class="titulo">Inicia sesión</h3>
                 <div>
@@ -48,13 +49,15 @@
                     </button>
                 </div>
                 <p>
-                    <input type="email" name="Email" placeholder="Email" autofocus spellcheck="true" required>
+                    <input  id="mail" type="email" name="Email" placeholder="Email" autofocus>
+                    <span class="error" aria-live="polite"></span>
                 </p>
                 <p>
-                    <input type="password" name="Contrseña" placeholder="Contraseña" spellcheck="true" required>
+                    <input  id="password" type="password" name="Contraseña" placeholder="Contraseña" >
+                    <span class="errorp" aria-live="polite"></span>
                 </p>
 
-                <!-- empieza el pop up -->
+                <!-- empieza el pop up 
 
                 <a href="#openModal" href="href=" https:www.google.com "">
                     <p class="minititulo">¿Has olvidado tu contraseña?</p>
@@ -68,8 +71,10 @@
                         </button>
                     </div>
                 </div>
+                
+                Termina el pop up -->
 
-                <button class="enviar">Únete ahora </button>
+                <button type="submit" class="enviar">Únete ahora </button>
 
                 <a href="registrousuario.html">
                     <p class="minititulo"> ¿No tienes cuenta? Crea tu perfil!</p>
@@ -115,6 +120,7 @@
                 </a>
             </ul>
         </div>
+        <script src="assets/js/validacionForm.js"></script>
     </footer>
     <!-- fin del footer social media -->
 

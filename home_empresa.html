@@ -35,17 +35,19 @@
     <!-- div login -->
     <article>
         <div class="divcenter">
-            <form action="pagina_construccion.html">
+            <form novalidate>
                 <p class="titulo">Welcome to Geek Jobs!</p>
                 <h3 class="titulo">Inicia sesión</h3>
 
                 <p>
-                    <input type="email" name="Email" placeholder="Email" autofocus spellcheck="true" required>
+                    <input id="mail" type="email" name="Email" placeholder="Email">
+                    <span class="error" aria-live="polite"></span>
                 </p>
                 <p>
-                    <input type="password" name="Contrseña" placeholder="Contraseña" spellcheck="true" required>
+                    <input id="pass" type="password" name="Contrseña" placeholder="Contraseña">
+                    <span class="error" aria-live="polite"></span>
                 </p>
-                <!-- empieza el pop up -->
+                <!-- empieza el pop up 
                 <a href="#openModal" href="href=" https:www.google.com "">
                     <p class="minititulo">¿Has olvidado tu contraseña?
                     </p>
@@ -56,14 +58,14 @@
                         </a>
                         <h2>Por favor, escribe tu email :)
                         </h2>
-                        <input type="email" name="Email" placeholder="Email" autofocus spellcheck="true">
-                        <button id="enviar">Enviar
+                        <input type="email" name="Email" placeholder="Email" autofocus>
+                        <button type="submit" id="enviar">Enviar
                         </button>
                     </div>
                 </div>
                 <!-- fin del pop up -->
                 <!-- comienza el boton -->
-                <button class="enviar">Únete ahora
+                <button type="submit" class="enviar">Únete ahora
                 </button>
                 <!-- fin del boton -->
                 <a href="registro_empresa.html">
@@ -114,5 +116,6 @@
     <!-- fin del footer social media -->
 
 </body>
+<script src="home_empresa.js"></script>
 
 </html>

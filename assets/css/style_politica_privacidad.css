@@ -21,3 +21,21 @@ h1{
     font-weight: bold;
     font-size: 40pt;
 }
+@media (max-width: 576px){
+    section{
+        width: 100%;
+        font-size: 25pt;
+    }
+    #tg section p{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 2.5%;
+        text-align: justify;
+    }
+    header > h1{
+        font-size: 40pt;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

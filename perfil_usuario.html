@@ -17,17 +17,18 @@
     <!-- Fin Favicons -->
     <!-- Cambia color del toolbar en Chromium -->
     <meta name="theme-color" content="#db5945">
+    <script src="ajax.js"></script>
 </head>
 
 <body>
 
     <header>
-        <div id="logo">
+        <div id="logo" class="column top-left ">
             <a href="./index.html">
                 <img src="./assets/img/logo1.png" alt="GeekJobs">
             </a>
         </div>
-        <div class="menu">
+        <div class="menu"  class="column top-right">
             <ul>
                 <li>
                     <a href="#">Ofertas</a>
@@ -45,12 +46,12 @@
     <section>
         <div id="perfil">
             <img src="./assets/img/perfil.png" alt="Banner">
-            <img src="./assets/img/persona.png" alt="Foto de perfil de Jhonny">
-            <h2>Johnny</h2>
+            <img src="./assets/img/persona.png" alt="Foto de perfil de Jhonny" id="fotoPerfil">
+            <h2 id="nombre">Johnny</h2>
         </div>
 
         <div id="cont">
-            <div>
+            <div id="desc">
                 <h3>Descripción</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
                     et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
@@ -58,7 +59,7 @@
             </div>
             <div>
                 <h3>Habilidades Principales</h3>
-                <div class="mm">
+                <div id="habP" class="mm">
                     <ul>
                         <li>
                             <a class="b" href="#">Programación</a>
@@ -77,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div id="hab">
                 <h3>Otras Habilidades</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
                     et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
@@ -136,6 +137,10 @@
         </div>
 
     </footer>
-</body>
 
+    <script src="Usuario.js"></script>
+    <script>
+        //Init();
+    </script>
+</body>
 </html>

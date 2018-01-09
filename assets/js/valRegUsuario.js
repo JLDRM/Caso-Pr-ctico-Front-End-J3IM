@@ -117,7 +117,7 @@ form.addEventListener("submit", function (event) {
 
   if(hobby.value==""){
     isNokHobby="¡Va que como geek el javascript seguro te pone!";
-    pintoclaseb="error.active";
+    //pintoclaseb="error.active";
   }
 
   errnombre.innerHTML = isNokNombre;

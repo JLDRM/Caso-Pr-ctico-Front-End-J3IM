@@ -1,34 +1,90 @@
-// Hay distintas formas de seleccionar un nodo del DOM; aquí obtenemos al formulario
-// y al campo del correo, así como el elemento span dentro del cual pondremos el
-// mensaje de error.
-
 var form  = document.getElementsByTagName('form')[0];
 var email = document.getElementById('mail');
+var pass = document.getElementById('password');
 var errormail = document.querySelector('.error');
 var errorpass = document.querySelector('.errorp');
 
+
 email.addEventListener("keyup", function (event) {
+  event.preventDefault();
   if (email.validity.valid) {
-    // En caso que haya un mensaje de error visible, si el campo
-    // es válido, removemos el mensaje de error.
-     
+
     errormail.innerHTML = ""; // Limpia el contenido del mensaje
     errormail.className = "error"; // Restablece el estado visual del mensaje
+
+  } else{
+    errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
+    errormail.className = "error active";
+    
   }
+
+}, false);
+
+pass.addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (pass.validity.patternMismatch===false || pass.value=="") {
+
+    errorpass.innerHTML = ""; // Limpia el contenido del mensaje
+    errorpass.className = "error"; // Restablece el estado visual del mensaje
+  }
+
 }, false);
 
 form.addEventListener("submit", function (event) {
-  // Cada vez que el usuario intenta enviar los datos, verificamos
-  // si el campo de correo es válido.
-  email.setAttribute("required","true");
-  if (!email.validity.valid) {
-    
-    // Si el campo no es válido, mostramos un mensaje de error.
-    
+  event.preventDefault();
+  
+  if(email.value==""&& pass.value==""){
+
     errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
     errormail.className = "error active";
-    alert(errormail.innerHTML);
-    // Y prevenimos que el formulario sea enviado, cancelando el evento
-    event.preventDefault();
+    errorpass.innerHTML = "¡La contraseña debe empezar por mayuscula bro!";
+    errorpass.clasName = "error.active";
+
+  } else if (pass.value==""){  
+    errorpass.innerHTML = "¡La contraseña debe empezar por mayuscula bro!";
+    errorpass.clasName = "error.active";
+
+  } else if (email.value==""){
+    errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
+    errormail.className = "error active";
+
+  } else if (!email.validity.valid && pass.validity.patternMismatch){
+
+    errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
+    errormail.className = "error active";
+    errorpass.innerHTML = "¡La contraseña debe empezar por mayuscula bro!";
+    errorpass.clasName = "error.active";
+
+  } else if (!email.validity.valid){
+    errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
+    errormail.className = "error active";
+
+  } else if (pass.validity.patternMismatch){ 
+    errorpass.innerHTML = "¡Debe empezar por mayuscula bro!"
+    errorpass.clasName = "error.active"
+
+  } else{
+    console.log('hola');
+    var url = "http://www.mocky.io/v2/5a5390ae300000e22c1ebfe4";
+    var request = new XMLHttpRequest();
+
+    request.open("POST", url);
+    request.onload = function () {
+      if (request.status == 200) {
+
+        location.href=request.response;
+
+      }
+    };
+    request.send();
   }
-}, false);
+},false); 
+
+
+
+
+
+
+
+
+

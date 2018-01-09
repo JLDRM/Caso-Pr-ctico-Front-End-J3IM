@@ -96,7 +96,7 @@ form.addEventListener("submit", function (event) {
   var pintoclaseb="error";
   
   if(email.value=="" || !email.validity.valid){
-    isNokMail="Introduce un email correcto";
+    isNokMail="¡Yo esperaba una dirección de correo, honey!";
     //pintoclasem="error.active";
   }
 

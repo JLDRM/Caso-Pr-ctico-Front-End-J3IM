@@ -271,3 +271,39 @@ footer {
   display: block;
   text-align: left;
   padding-left: 20px;       }
+
+@media (max-width: 576px) {
+    header {
+        display: inline-block;
+        padding: 5px;
+    }
+    header #logo {
+        flex: none;
+    }
+    header #logo img {
+        width: 100px;
+        margin: 0;
+    }
+    header .menu ul li a {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    section {
+        width: 100%;
+    }
+    #perfil {
+        align-content: center;
+    }
+    #perfil img:nth-child(2) {
+        width: 150px;
+        height: 150px;
+        border: 5px solid white;
+        margin-top: -300px;
+        margin-left: 35%;
+    }
+    #perfil h2 {
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-left: 25%;
+    }
+}

@@ -4,6 +4,7 @@ header {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
+    width: 100%;
 }
 
 header.empresa {
@@ -19,6 +20,7 @@ body {
 article {
     margin-bottom: 80px;
 }
+
 video {
     width: 100%;
     border: 0px;
@@ -50,9 +52,10 @@ p {
     font-size: 12pt;
 }
 
+
 /* titulos */
 
-h1 { 
+h1 {
     margin: 0;
     color: white;
     font-weight: bold;
@@ -62,7 +65,7 @@ h1 {
     text-align: center;
 }
 
-h2 {     
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 10pt;
@@ -75,7 +78,6 @@ h2 {
     padding-left: 260px;
     text-align: left;
     padding-right: 170px;
-
 }
 
 #color_grey {
@@ -99,6 +101,7 @@ h2 {
     color: #B2B2B1;
     font-weight: lighter;
 }
+
 .divcenter {
     width: 600px;
     margin: 0 auto;
@@ -116,6 +119,7 @@ h2 {
     margin-bottom: 70px;
 }
 
+
 /* botones linkedin */
 
 .linkedin {
@@ -129,7 +133,6 @@ h2 {
     font-size: 10pt;
     color: white;
     font-weight: regular;
-    
 }
 
 .github {
@@ -145,6 +148,7 @@ h2 {
     font-weight: regular;
 }
 
+
 /* boton de enviar */
 
 .enviar {
@@ -152,73 +156,79 @@ h2 {
     font-size: 10pt;
     font-weight: regular;
     color: #009EE3;
-    
 }
 
 .enviar:hover {
     background-color: #009EE3;
     color: white;
-  }
+}
 
-.navegador li a:hover{
+.navegador li a:hover {
     background-color: #333333;
     color: #ffffff;
- }
+}
 
 .enviar:active {
     background-color: #009EE3;
     color: #fff;
-  }
+}
 
-
-.navegador li a:hover{
+.navegador li a:hover {
     background-color: #333333;
     color: #ffffff;
- }
+}
 
- /* aqui empieza el footer */
- footer {
+
+/* aqui empieza el footer */
+
+footer {
     background-color: #073549;
     width: 100%;
     display: flex;
-    padding: 10px; 
+    padding: 10px;
 }
-  
+
 .footerlist {
-    width: 25%; }
-    .footerlist ul {
-      display: inline-block;
-      padding-right: 5%;
-      list-style-type: none;
-      text-align: left;
-      margin-top: 3px;
-      padding-left: 0px; 
-    }
+    width: 25%;
+}
+
+.footerlist ul {
+    display: inline-block;
+    padding-right: 5%;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 3px;
+    padding-left: 0px;
+}
 
 .info div {
     display: block;
 }
 
-  .social {
-    width: 25%; }
-    .social ul {
-      width: 100%;
-      padding-right: 5%;
-      padding-left: 0px;
-      list-style-type: none;
-      text-align: center;
-      margin-top: 3px; 
-    }
-    .social li {
-      display: inline-block;
-      text-align: right; 
-    }
-    .social img {
-        width: 30px;
-        height: 30px;
-    }
+.social {
+    width: 25%;
+}
 
-  .copyright {
+.social ul {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.social li {
+    display: inline-block;
+    text-align: right;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
     width: 48%;
     font-size: 9pt;
     color: white;
@@ -226,14 +236,15 @@ h2 {
     display: block;
     text-align: left;
     padding-left: 20px;
+}
 
- }
+.copyright a:visited {
+    color: white;
+}
 
- .copyright a:visited {
-     color: white;
- }
 
 /* aqui empieza el pop up */
+
 .modalDialog {
     position: fixed;
     font-family: 'Roboto', sans-serif;
@@ -241,19 +252,21 @@ h2 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalDialog:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
-.modalDialog > div {
+
+.modalDialog>div {
     width: 400px;
     position: relative;
     margin: 10% auto;
@@ -267,6 +280,7 @@ h2 {
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
 }
+
 .close {
     background: #606061;
     color: #FFFFFF;
@@ -285,27 +299,56 @@ h2 {
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
-.close:hover { background: #073549;
+
+.close:hover {
+    background: #073549;
 }
+
 .about {
-    width: 25%; }
-    .about ul {
-      width: 100%;
-      padding-right: 5%;
-      padding-left: 500px;
-      list-style-type: none;
-      text-align: center;
-      display: inline-flex;
+    width: 25%;
+}
+
+.about ul {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 500px;
+    list-style-type: none;
+    text-align: center;
+    display: inline-flex;
+}
+
+.about li {
+    display: inline-block;
+    text-align: right;
+}
+
+.about img {
+    height: 180px;
+}
+
+.about h3 {
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+}
+
+@media (max-width: 576px) {
+    header {
+        display: inline-block;
+        padding: 5px;
     }
-    .about li {
-      display: inline-block;
-      text-align: right; 
+    header #logo {
+        flex: none;
     }
-      .about img {
-        height: 180px;
+    header #logo img {
+        width: 100px;
+        margin: 0;
     }
-    .about h3 {
-        color: white;
-        text-align: center;
-        padding-top: 1px;
+    header .menu ul li a {
+        font-size: 1.2em;
+        font-weight: bold;
     }
+    article {
+        margin: 5%;
+    }
+}

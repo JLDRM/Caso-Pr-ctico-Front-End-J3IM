@@ -105,7 +105,7 @@ header {
     background: #03A9F4;
     padding: 10px;
     text-align: center;
-    
+    width: 100%;
 }
 
 header #logo {
@@ -376,7 +376,6 @@ footer {
     header {
         display: inline-block;
         padding: 5px;
-        width: 100%;
     }
     header #logo {
         flex: none;

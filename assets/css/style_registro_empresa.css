@@ -240,12 +240,12 @@ input[type='checkbox']{
  background-color: #073549;
  color: white;
  text-align: left;
- padding-left:50px;
- padding-top: 15px;
+ padding-left:5%;
+ padding-top: 1.5%;
  font-family: roboto, sans-serif;
  font-size: 20pt;
- padding-bottom: 15px;
- height: 700px;
+ padding-bottom: 1.5%;
+ /*height: 700px;*/
  background-image:url("../img/empresas.png");
  display: block;
 }
@@ -261,24 +261,24 @@ input[type='checkbox']{
     display: inline-block;
 }
 .formulario{
-    width:578px;
-    padding:5px;
+    width:65%;
+    padding:0.5%;
     border:0px;
 }
 .formulario > div{
     width:100%;
-    padding: 15px;
-    margin-top: 5px;
+    padding: 1.5%;
+    margin-top: 0.5%;
     margin-right: auto;
     margin-left:auto;
 }
 .formulario input{
     width:100%;
-    padding: 15px;
-    margin-top:16px;
+    padding: 1.5%;
+    margin-top:1.5%;
     font-family: roboto;
     font-size: 10.5pt;
-    height: 30px;
+    height: 3%;
 }
 .center{
     text-align: center;
@@ -293,7 +293,7 @@ input[type='checkbox']{
 } 
 #check{
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 1.5%;
 }
 #btn{
     display: block;
@@ -318,6 +318,122 @@ input[type='checkbox']{
     box-shadow: 0 2px 0 #006599;
     transform: translateY(3px);
 }
+  
+  /* This is our style for the invalid fields */
+  input:invalid{
+    border-color: #900;
+    background-color: #FDD;
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+    width  : 100%;
+    padding: 0;
+   
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+   
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
 
+  @media (max-width: 576px) {
+    header {
+        display: inline-block;
+        padding: 5px;
+        width: 100%;
+    }
+    header #logo {
+        flex: none;
+    }
+    header #logo img {
+        width: 100px;
+        margin: 0;
+    }
+    header .menu ul li a {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    body{
+        width: 100%;
+    }
+    h1{
+        margin:0;
+        font-size: 30pt;
+        padding-top: 5%;
+        padding-bottom: 5%;
+       
+    }
+    .welcome{
+        text-align: center;
+        padding-top: 1.5%;
+        font-size: 12pt;
+        padding-bottom: 1.5%;
+        background-image:url("../img/empresas.png");
+        display: block;
+       }
+    .welcome div:nth-last-of-type(2){
+        width: 100%;
+        display: block;
+    }
+    .welcome div:nth-last-of-type(1){
+        width: 100%;
+        display: block;
+    }
+    section {
+        width: 100%;
+    }
+    .section{
+        width: 100%;
+    }
+    .formulario{
+        margin: 10%;
+        width:90%;
+    }
 
-
+    .formulario input{
+        width: 90%;
+    }
+    .box{
+        width: 100%;
+        padding: 1.5%;
+        margin-top: 0.5%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+ 
+    }
+    .formulario .box > div{
+        display: block;
+        width: 100%;
+        margin-top: 1.5%;
+    } 
+    #check{
+        text-align: center;
+        padding-bottom: 1.5%;
+    }
+    article{
+        width: 100%;
+    }
+    article>div{
+        margin-bottom: 1.5%;
+    }
+    #btn{
+        width: 200px;
+        height: 40px;
+    }
+    #bot {
+        width: 200px;
+        height: 40px;
+    }
+  }

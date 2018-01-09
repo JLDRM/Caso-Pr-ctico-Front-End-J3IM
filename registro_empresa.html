@@ -67,26 +67,26 @@
                     <div>
                         <label for="idnombre">Nombre</label>
                         <br>
-                        <input type="text" name="Nombre" id="idnombre" placeholder="Escribe tu nombre" pattern="[A-Z][a-z]*" spellcheck="" required
+                        <input type="text" name="Nombre" id="idnombre" placeholder="Escribe tu nombre" pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" required
                             autofocus>
                     </div>
                     <div>
                         <label for="idapellido">Apellido</label>
                         <br>
-                        <input type="text" name="Apellido" id="idapellido" placeholder="Escribe tu apellido" pattern="[A-Z][a-z]*" spellcheck="" required>
+                        <input type="text" name="Apellido" id="idapellido" placeholder="Escribe tu apellido" pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" required>
                     </div>
                 </div>
 
                 <div>
                     <label for="idemail">Email</label>
                     <br>
-                    <input type="email" name="Email" id="idemail" placeholder="Escribe tu e-mail" required>
+                    <input type="email" name="Email" id="idemail" placeholder="Escribe tu e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                 </div>
 
                 <div>
                     <label for="idcontraseña">Contraseña</label>
                     <br>
-                    <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" minlength="8" maxlength="12" required>
+                    <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$" required>
                 </div>
 
                 <div>
@@ -99,12 +99,12 @@
                     <div>
                         <label for="idnif">NIF</label>
                         <br>
-                        <input type="text" name="NIF" id="idnif" placeholder="Escribe el NIF" required>
+                        <input type="text" name="NIF" id="idnif" placeholder="Escribe el NIF" pattern= "[A-Za-z][0-9]{8}" required>
                     </div>
                     <div>
                         <label for="idtel">Teléfono</label>
                         <br>
-                        <input type="number" name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" maxlength="9" required>
+                        <input  name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$" required>
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@
                 </div>
 
                 <div>
-                    <input type="number" name "Seguridad" id="idseguridad" placeholder="Por seguridad suma 4+1" required>
+                    <input  name "Seguridad" id="idseguridad" placeholder="Por seguridad suma 4+1" pattern="[5]{1}" required>
                 </div>
                 <div class="center">
                     <button type="submit" id="bot">Registrar</button>

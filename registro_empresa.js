@@ -6,6 +6,7 @@ var empresa = document.getElementById("idempresa");
 var nif = document.getElementById("idnif");
 var telefono = document.getElementById("idtel");
 var stack_tecno = document.getElementById("idtecno");
+var seguridad = document.getElementById("idseguridad");
 
 
 nombre.addEventListener("input", function(event){
@@ -23,72 +24,83 @@ apellido.addEventListener("input", function(event){
     }
 });
 email.addEventListener("input", function(event){
-    if(email.validity.typeMismatch){
+    if(email.validity.patternMismatch){
         email.setCustomValidity("Por favor, introduce un email correcto");
     }else{
         email.setCustomValidity("");
     }
 });
 password.addEventListener("input", function(event){
-    if(password.validity.tooLong){
-        password.setCustomValidity("Introduce entre 8 y 12 carácteres");
+    if(password.validity.patternMismatch){
+        password.setCustomValidity("Introduce un password con letras mayúsculas y minúsculas, números y símbolos");
     }else{
         password.setCustomValidity("");
     }
 });
-//Verificar nombre empresa??
-//Formato del NIF!!!! y verificación (qué patrón sigue???)
+nif.addEventListener("input", function(event){
+    if(nif.validity.patternMismatch){
+        nif.setCustomValidity("Por favor, introduce un NIF correcto");
+    }else{
+        nif.setCustomValidity("");
+    }
+});
+
 telefono.addEventListener("input", function(event){
-    if(telefono.validity.typeMismatch){
+    if(telefono.validity.patternMismatch){
         telefono.setCustomValidity("Introduce un número de teléfono correcto");
     }else{
         telefono.setCustomValidity("");
     }
 });
-//No aplica la maxlength investigar error
-telefono.addEventListener("input", function(event){
-    if(telefono.validity.tooLong){
-        telefono.setCustomValidity("El número introducido no es correcto");
+seguridad.addEventListener("input", function(event){
+    if(seguridad.validity.patternMismatch){
+        seguridad.setCustomValidity("Introduce el número correcto");
     }else{
-        telefono.setCustomValidity("");
+        seguridad.setCustomValidity("");
     }
 });
 
+
 //GET
-//El NIF y el teléfono los declaro como array????
+
 function DatosEmpresa(){
     this.nombre = "";
     this.apellido = "";
     this.email = "";
-    this.contraseña = "";
+    this.password = "";
     this.empresa = "";
     this.nif = [];
     this.telefono = [];
     this.stack_tecno = [];
+    this.seguridad = "";
 }
-DatosEmpresa.prototype.getDatos = function(onSucces){
-    Ajax("GET", "http://www.mocky.io/v2/5a5331a230000054151ebe37", (data) =>{
+DatosEmpresa.prototype.getDatos = function(onSuccess){
+    Ajax("GET", "http://www.mocky.io/v2/5a54a81e2d000026225b1cb3", (data) =>{
         this.nombre = data["Nombre"];
         this.apellido = data["Apellido"];
         this.email = data["Email"];
         this.password = data["Contraseña"];
         this.empresa = data["Empresa"];
         this.nif = data["NIF"];
-        this.telefono = data["Teléfono"];
-        this.stack_tecno = data["Stack tecnológico"];
-        onSuccess();
+        this.telefono = data["Telefono"];
+        this.stack_tecno = data["Stack tecnologico"];
+        this.seguridad = data["Seguridad"]
+        onSuccess(this);
     });
 }
 
-function exportaDatos(dtos){
-    nombre.innerText = dtos.nombre;
-    apellido.innerText = dtos.apellido;
-    email.innerText = dtos.email;
-    password.innerText = dtos.contraseña;
-    empresa.innerText = dtos.empresa;
-    nif.innerText = dtos.nif;
-    telefono.innerText = dtos.telefono;
-    stack_tecno.innerText = dtos.stack_tecno;
+function muestraDatos(datos){
+    nombre.value = datos.nombre;
+    apellido.value = datos.apellido;
+    email.value = datos.email;
+    password.value = datos.contraseña;
+    empresa.value = datos.empresa;
+    nif.value = datos.nif;
+    telefono.value = datos.telefono;
+    stack_tecno.value = datos.stack_tecno;
+    seguridad.value = datos.seguridad;
 }
 var datos = new DatosEmpresa();
-datos.getDatos(exportaDatos(datos));
+datos.getDatos(muestraDatos);
+
+

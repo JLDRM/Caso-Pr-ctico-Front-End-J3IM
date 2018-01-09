@@ -1,11 +1,11 @@
-    [{"Nombre": "Marta",
-    "Apellido": "Martínez",
+ï»¿     {"Nombre": "Marta",
+    "Apellido": "MartÃ­nez",
     "Email": "email@gmail.com",
-    "Contraseña":"password",
+    "ContraseÃ±a":"abcdE12/7",
     "Empresa": "Geek Jobs",
     "NIF":"F12345678",
-    "Teléfono":"123456789",
-    "Stack tecnológico": [{"HTML", "CSS", "JS"}],
-    }]
-
-http://www.mocky.io/v2/5a5331a230000054151ebe37
+    "Telefono":"723456789",
+    "Stack tecnologico": ["HTML", " CSS", " JS "],
+    "Seguridad":"5"
+    }
+http://www.mocky.io/v2/5a54a81e2d000026225b1cb3

@@ -44,19 +44,19 @@
          <a href="#div_first"> <button id="vamos">¡Vamos!</button> </a>
       </div>
       <section>
-       <form action="pagina_construccion.html" method="post">
+       <form  id="form">
           <div id="div_first">
             <label> Título de la posición</label>
-            <input type="text" id= "tituloPosicion" required name="position" placeholder="Ej. Python developer">
+            <input type="text" id= "tituloPosicion" required name="position" placeholder="Ej. Python developer" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$">
           </div>
           <div id="div_second">
               <div id="div_1">
                   <label> Descripción de la oferta</label>
-                  <textarea id="jobDescription" name="jobdescription" required maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades"> </textarea>
+                  <textarea id="jobDescription" name="jobdescription" required maxlength="300"placeholder="Ayuda a los candidatos a entender tus necesidades" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$"> </textarea>
                </div>
              <div id="div_2">
-                  <input type="text" required name="training" id="formacion" placeholder="Formación">
-                  <input type="text" required name="location" placeholder="Ubicación" id="ubicacion">
+                  <input type="text" required name="training" id="formacion" placeholder="Formación" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
+                  <input type="text" required name="location" placeholder="Ubicación" id="ubicacion" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
                   <label>Años de experiencia</label>
                   <input type="range" required name="experience" id="experiencia">
                   <label>Salario</label>
@@ -67,14 +67,14 @@
             </div>
             <div id="div_third">
                <label>Idiomas</label>
-               <input type="text" name="languajes" required placeholder="Ej. Inglés, Francés, ..." id="idiomas">
+               <input type="text" name="languajes" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" required placeholder="Ej. Inglés, Francés, ..." id="idiomas">
                <label>Soft skills</label>
-               <input type="text" required name="sskills" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc..." id="softSkills">
+               <input type="text" required name="sskills" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc..." id="softSkills">
                <label>Habilidades técnicas</label>
-               <input type="text" required name="hskills" placeholder="Ej. Python, Django, REST API,.." id="hardSkills">
+               <input type="text" required name="hskills" pattern="[a-zA-Z0-9,_]*$" placeholder="Ej. Python, Django, REST API,.." id="hardSkills">
             </div>
             <div id="div_button">
-               <button id="enviar" name="send" type="submit">Publicar oferta</button>
+               <button id="enviar">Publicar oferta</button>
             </div>
          </form>
       </section>

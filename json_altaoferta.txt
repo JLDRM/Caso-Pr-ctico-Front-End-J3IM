@@ -9,6 +9,6 @@ perspiciatis facere maxime accusantium modi quidem quaerat quibusdam. Quas, enim
     "Salario":"24.000€",
     "Idiomas": [{"Inglés", "Castellano", "Italiano"}],
     "Soft Skills": [{"Trabajo en equipo", "Habilidades de venta", "Resiliencia"}],
-    "Hard Skills":[{"Javascript", "HTML5", "CSS3"}],
+    "Hard Skills":[{"Javascript", "HTML5", "CSS3"}]
 
     }]

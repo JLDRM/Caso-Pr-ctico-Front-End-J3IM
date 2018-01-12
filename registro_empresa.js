@@ -60,14 +60,7 @@ function validarFormulario() {
             telefono.setCustomValidity("");
         }
     });
-    seguridad.addEventListener("keydown", function (event) {
-        if (seguridad.validity.patternMismatch) {
-            seguridad.setCustomValidity("Introduce el número correcto");
-            isOk = false;
-        } else {
-            seguridad.setCustomValidity("");
-        }
-    });
+
 }
 validarFormulario();
 
@@ -108,7 +101,7 @@ function muestraDatos(datos) {
     nif.value = datos.nif;
     telefono.value = datos.telefono;
     stack_tecno.value = datos.stack_tecno;
-    seguridad.value = datos.seguridad;
+
 }
 var datos = new DatosEmpresa();
 datos.getDatos(muestraDatos);

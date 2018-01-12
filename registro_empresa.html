@@ -9,6 +9,7 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <!-- Estilos -->
+    <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style_registro_empresa.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
@@ -21,10 +22,12 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header-->
     <header>
         <div id="logo">
-            <a href="home_empresa.html"><img src="./assets/img/logo1.png" alt="GeekJobs"></a>
+            <a href="home_empresa.html">
+                <img src="./assets/img/logo1.png" alt="GeekJobs">
+            </a>
         </div>
         <div class="menu">
             <ul>
@@ -38,97 +41,90 @@
         </div>
     </header>
 
-    <!-- Intro del formulario -->
-    <article class="welcome">
-        <div>
-            <h1>WELCOME TO GEEK JOBS!</h1>
-            <p>
+    <!--nueva versión de article imgen con texto-->
+    <article class="container articlemarta">
+        <div class="row justify-content-center ml-1 mr-1 letramarta">
+            <h1 class="pt-5">WELCOME TO GEEK JOBS!</h1>
+        </div>
+        <div class="row justify-content-center ml-1 mr-1 letramarta">
+            <p class="pt-5">
                 Sabemos que encontrar al empleado perfecto no es tarea fácil, por eso, nosotros te ayudamos.
             </p>
-            <br>
-            <p>
+        </div>
+        <div class="row justify-content-center ml-1 mr-1 letramarta">
+            <p class="pt-2">
                 ¡Encuentra todos los candidatos que buscas en un sólo click!
             </p>
         </div>
-        <div>
+        <div class="row justify-content-center pt-5 pb-5 letramarta">
             <a href="#inscripc">
-                <button id="btn">Únete a Geek Jobs</button>
+                <button class="btn btn-primary" id="btn">Únete a Geek Jobs</button>
             </a>
         </div>
     </article>
+    <!--final versión de article imgen con texto-->
 
     <!-- Formulario -->
-    <section>
+    <!--nueva version del form-->
+    <section class="container">
         <form>
-            <section class="formulario" "section">
-                <a name="inscripc" id="inscripc"></a>
-
-                <div class="box">
-                    <div>
-                        <label for="idnombre">Nombre</label>
-                        <br>
-                        <input type="text" name="Nombre" id="idnombre" placeholder="Escribe tu nombre" pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" required
-                            autofocus>
-                    </div>
-                    <div>
-                        <label for="idapellido">Apellido</label>
-                        <br>
-                        <input type="text" name="Apellido" id="idapellido" placeholder="Escribe tu apellido" pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" required>
-                    </div>
+            <a name="inscripc" id="inscripc"></a>
+            <div class=" form-row mt-5">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="idnombre">Nombre</label>
+                    <input type="text" name="Nombre" class="form-control" id="idnombre" aria-describedby="nameHelp" placeholder="Escribe tu nombre"
+                        pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" required autofocus>
                 </div>
-
-                <div>
-                    <label for="idemail">Email</label>
-                    <br>
-                    <input type="email" name="Email" id="idemail" placeholder="Escribe tu e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="idapellido">Apellido</label>
+                    <input type="text" name="Apellido" class="form-control" id="idapellido" aria-describedby="surnameHelp" placeholder="Escribe tu apellido"
+                        pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" required>
                 </div>
-
-                <div>
-                    <label for="idcontraseña">Contraseña</label>
-                    <br>
-                    <input type="password" name="Contraseña" id="idcontraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$" required>
+            </div>
+            <div class="form-row px-1">
+                <label for="idemail">Email</label>
+                <input type="email" name="Email" class="form-control" id="idemail" aria-describedby="emailHelp" placeholder="Escribe tu e-mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            </div>
+            <div class="form-row px-1">
+                <label for="idcontraseña">Contraseña</label>
+                <input type="password" name="Contraseña" class="form-control" id="idcontraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$"
+                    required>
+            </div>
+            <div class="form-row px-1">
+                <label for="idempresa">Empresa</label>
+                <input type="text" name="Empresa" class="form-control" id="idempresa" placeholder="Escribe el nombre de tu empresa" required>
+            </div>
+            <div class=" form-row">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="idnif">NIF</label>
+                    <input type="text" name="NIF" class="form-control" id="idnif" placeholder="Escribe el NIF" pattern="[A-Za-z][0-9]{8}" required>
                 </div>
-
-                <div>
-                    <label for="idempresa">Empresa</label>
-                    <br>
-                    <input type="text" name="Empresa" id="idempresa" placeholder="Escribe el nombre de tu empresa" required>
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="idtel">Teléfono</label>
+                    <input name="Teléfono" class="form-control" id="idtel" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$"
+                        required>
                 </div>
-
-                <div class="box">
-                    <div>
-                        <label for="idnif">NIF</label>
-                        <br>
-                        <input type="text" name="NIF" id="idnif" placeholder="Escribe el NIF" pattern= "[A-Za-z][0-9]{8}" required>
-                    </div>
-                    <div>
-                        <label for="idtel">Teléfono</label>
-                        <br>
-                        <input  name="Teléfono" id="idtel" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$" required>
-                    </div>
+            </div>
+            <div class="form-row px-1 mb-4">
+                <label for="idtecno">Stack Teconológico</label>
+                <input type="text" name="Stack" class="form-control" id="idtecno" placeholder="Opcional">
+            </div>
+            <div class="form-row justify-content-center mb-4">
+                <button type="submit" class="btn btn-primary" id="bot">Registrar</button>
+            </div>
+            <div class="form-row justify-content-center mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="idreg" required>
+                    <label class="form-check-label" for="idreg">
+                        Al crear una cuenta confirmas que has leído y aceptas la
+                        <a href="politica_privacidad.html">Política de Privacidad</a>
+                    </label>
                 </div>
-
-                <div>
-                    <label for="idtecno">Stack tecnológico</label>
-                    <br>
-                    <input type="text" name="Stack" id="idtecno" placeholder="Opcional">
-                </div>
-
-                <div>
-                    <input  name "Seguridad" id="idseguridad" placeholder="Por seguridad suma 4+1" pattern="[5]{1}" required>
-                </div>
-                <div class="center">
-                    <button id="bot">Registrar</button>
-                </div>
-            </section>
-            <div id="check">
-                <p>
-                    <input type="checkbox" name="Registrar" id="idreg" required> Al crear una cuenta confirmas que has leído y aceptas la
-                    <a href="politica_privacidad.html">Política de Privacidad</a>
-                </p>
             </div>
         </form>
     </section>
+    <!--fin de la nueva versión del form-->
 
     <!-- Footer -->
     <footer>
@@ -163,7 +159,7 @@
             </ul>
         </div>
     </footer>
-    <script src="registro_empresa.js"></script>
+    <!-- fin del Footer -->
 </body>
 
 </html>

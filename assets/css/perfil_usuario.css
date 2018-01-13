@@ -152,29 +152,63 @@ section {
     background: white;
 }
 
+/* =================================================== 
+BANNER DE PERFIL / FOTO DE PERFIL
+=================================================== */
+
+.profiles_banner {
+    background: url('../img/fondoUsuario.jpg') #262626;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.05);
+    min-height: 250px;
+    height: 300px;
+    max-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    /* Alinea la foto de perfil debajo */
+}
+
+.profiles_banner .profile-info-block {
+    padding-right: 8px;
+    background-image: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: #FFF;
+    padding: 20px;
+}
+
+.profiles_banner .profile-info-block .profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background: url('../img/persona.png');
+    background-size: 160px 160px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.3);
+    border: 4px solid #FFF;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.profiles_banner .profile-info-block .profile-name h1 {
+    font-size: 22px;
+}
+
+.profiles_banner .profile-info-block .profile-name h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =================================================== */
+
 #cont {
     margin: 10px 20px;
-}
-
-#perfil img:nth-child(2) {
-    width: 150px;
-    height: 150px;
-    border: 5px solid white;
-    border-radius: 50%;
-    margin-top: -300px;
-    margin-left: 25px;
-}
-
-#perfil h2 {
-    font-size: 2em;
-    margin: 0 0 1em 1.3em;
-    align-content: center;
-    font-weight: bold;
-}
-
-#cont {
-    padding: 10px 5px;
-    clear: both;
 }
 
 #cont h3 {
@@ -406,4 +440,8 @@ footer {
         font-weight: bold;
         margin-left: 25%;
     }
+}
+
+.container-fluid {
+    margin: 0;
 }

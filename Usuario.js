@@ -25,7 +25,8 @@ class UsuariosFormatter {
         container.innerHTMl = "";
 
         let img = document.getElementById("fotoPerfil");
-        img.src = this.usuarios[0].fotoPerfil;
+        img.style.backgroundImage = "url('" + this.usuarios[0].fotoPerfil + "')";
+        //img.src = this.usuarios[0].fotoPerfil;
 
         let nombreApellidos = document.getElementById("nombre");
         nombreApellidos.innerText = this.usuarios[0].nombre + " " + this.usuarios[0].apellidos;

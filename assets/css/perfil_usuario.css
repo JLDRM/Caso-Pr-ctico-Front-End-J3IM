@@ -94,6 +94,10 @@ video {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-size: 1em;
     line-height: 1.5em;
@@ -148,9 +152,11 @@ header .menu ul li a:hover {
 
 section {
     width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: white;
+    border-radius: 6px;
 }
+
 
 /* =================================================== 
 BANNER DE PERFIL / FOTO DE PERFIL
@@ -221,18 +227,21 @@ BANNER DE PERFIL / FOTO DE PERFIL
     margin-top: 20px;
 }
 
+
+/* =================================================== 
+BOTONES HABILIDADES PRINCIPALES
+=================================================== */
+
 .mm ul li {
     list-style: none;
-    display: inline-block;
-    border: 5px solid transparent;
+    display: inline-flex;
+    border: none;
 }
 
 .mm ul li a {
-    display: block;
-    min-width: 100px;
     text-align: center;
-    padding: 10px 15px;
-    margin: 0 10px 0 0;
+    padding: 10px;
+    margin: 0 10px 5px 0;
     font-size: 1.3em;
     text-decoration: none;
     color: #fff;
@@ -315,6 +324,9 @@ BANNER DE PERFIL / FOTO DE PERFIL
 .p:active {
     background-color: #b231fd;
 }
+
+
+/* =================================================== */
 
 #contact {
     padding: 30px 10px;
@@ -440,8 +452,11 @@ footer {
         font-weight: bold;
         margin-left: 25%;
     }
-}
-
-.container-fluid {
-    margin: 0;
+    .mm ul li a {
+        display: inline;
+        display: block;
+        min-width: 100px;
+        margin-right: 5px;
+        font-size: 1.1rem;
+    }
 }

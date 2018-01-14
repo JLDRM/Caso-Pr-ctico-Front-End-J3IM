@@ -35,7 +35,7 @@ class UsuariosFormatter {
         descripcion.innerHTML = "<h3>Descripción</h3>" + "<p>" + this.usuarios[0].descripcion + "</p>";
 
         let habilidadesPrincipales = document.getElementById("habP");
-        habilidadesPrincipales.innerHTML = "<ul>" + "<li class='b' href='#'>" + this.usuarios[0].habilidadesPrincipales[0] + "</a>";
+        habilidadesPrincipales.innerHTML = "<ul>" + "<li><a class='b' href='#'>" + this.usuarios[0].habilidadesPrincipales[0] + "</a></li>" + "<li><a class='b' href='#'>" + this.usuarios[0].habilidadesPrincipales[1] + "</a></li>" + "</ul>";
 
         let habilidades = document.getElementById("hab");
         habilidades.innerHTML = "<h3>Otras Habilidades</h3><p>" + this.usuarios[0].habilidades + "</p>";

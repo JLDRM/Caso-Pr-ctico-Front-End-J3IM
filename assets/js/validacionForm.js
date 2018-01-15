@@ -1,6 +1,6 @@
 var form  = document.getElementsByTagName('form')[0];
 var email = document.getElementById('mail');
-var pass = document.getElementById('password');
+var pass = document.getElementById('pass');
 var errormail = document.querySelector('.error');
 var errorpass = document.querySelector('.errorp');
 
@@ -33,16 +33,16 @@ pass.addEventListener("keyup", function (event) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   
-  if(email.value==""&& pass.value==""){
+  if(email.value=="" && pass.value==""){
 
     errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
     errormail.className = "error active";
     errorpass.innerHTML = "¡La contraseña debe empezar por mayuscula bro!";
-    errorpass.clasName = "error.active";
+    errorpass.className = "error active";
 
   } else if (pass.value==""){  
     errorpass.innerHTML = "¡La contraseña debe empezar por mayuscula bro!";
-    errorpass.clasName = "error.active";
+    errorpass.className = "error active";
 
   } else if (email.value==""){
     errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
@@ -53,15 +53,15 @@ form.addEventListener("submit", function (event) {
     errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
     errormail.className = "error active";
     errorpass.innerHTML = "¡La contraseña debe empezar por mayuscula bro!";
-    errorpass.clasName = "error.active";
+    errorpass.className = "error active";
 
   } else if (!email.validity.valid){
     errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
     errormail.className = "error active";
 
   } else if (pass.validity.patternMismatch){ 
-    errorpass.innerHTML = "¡Debe empezar por mayuscula bro!"
-    errorpass.clasName = "error.active"
+    errorpass.innerHTML = "¡Debe empezar por mayuscula bro!";
+    errorpass.className = "error active";
 
   } else{
     console.log('hola');
@@ -75,10 +75,15 @@ form.addEventListener("submit", function (event) {
         location.href=request.response;
 
       }
+
     };
     request.send();
   }
 },false); 
+
+//Deberemos informar que en el caso de que la respuesta del servidor sea
+//nula debera mostrar un mensaje de error en el que informe al usuario
+//de que la contraseña o el mail son incorrectos
 
 
 

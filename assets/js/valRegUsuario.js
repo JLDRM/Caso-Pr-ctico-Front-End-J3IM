@@ -1,5 +1,8 @@
 var form  = document.getElementsByTagName('form')[0];
 var nombre = document.getElementById('nombre');
+var apell = document.getElementById('apellido');
+var pass = document.getElementById('contraseña');
+var confipass = document.getElementById('conficontraseña');
 var email = document.getElementById('email');
 var telef = document.getElementById('telef');
 var habili = document.getElementById('habili');
@@ -7,6 +10,9 @@ var hobby = document.getElementById('hobby');
 var cv = document.getElementById('cv');
 
 var errnombre = document.querySelector('.errorn');
+var errapell = document.querySelector('.errora');
+var errorpass = document.querySelector('.errorpass');
+var errorconfipass = document.querySelector('.errorconfipass');
 var erremail = document.querySelector('.errorm');
 var errtelef = document.querySelector('.errort');
 var errhabili = document.querySelector('.errorh');
@@ -148,14 +154,16 @@ form.addEventListener("submit", function (event) {
   if(pass.value==""|| pass.validity.patternMismatch){
     isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
     +"- Una letra minuscula"
-    +"- Un numero -Minimo 8 caracteres, honey!";
+    +"- Un numero - Un caracter especial  -Minimo 6 caracteres, honey!"
+    ;
     
   }
 
   if(confipass.value=="" || confipass.validity.patternMismatch){
     isNokConfipass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
     +"- Una letra minuscula"
-    +"- Un numero -Minimo 8 caracteres, honey!";
+    +"- Un numero - Un caracter especial  -Minimo 6 caracteres, honey!"
+    ;
     
   }
 
@@ -202,7 +210,7 @@ form.addEventListener("submit", function (event) {
   errhobby.innerHTML = isNokHobby;
   errhobby.className = pintoclaseb;  
   
-  if(!isNokMail && !isNokNombre && !isNokApell && !isDiferentPass&& !isNokTelef && !isNokHabili &&!isNokHobby){
+  if(!isNokMail && !isNokNombre && !isNokApell && !isNokPass && !isNokConfipass && !isDiferentPass&& !isNokTelef && !isNokHabili &&!isNokHobby){
     console.log('hola');
     var url = "http://www.mocky.io/v2/5a5390ae300000e22c1ebfe4";
     var request = new XMLHttpRequest();

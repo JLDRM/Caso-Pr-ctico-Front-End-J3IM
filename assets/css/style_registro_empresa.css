@@ -8,6 +8,13 @@ body{
     font-family: "Roboto", sans-serif;
     background-image:url("../img/empresas.png");
 }
+
+.articlejosep{
+	background-color: #073549;
+    font-family: "Roboto", sans-serif;
+    background-image: url(../img/rubia.png);
+
+}
 /*UNIFICAR ESTA CLASE*/
 .letramarta{
     color: white;

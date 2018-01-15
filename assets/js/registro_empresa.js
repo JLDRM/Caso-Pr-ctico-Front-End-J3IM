@@ -128,44 +128,38 @@ document.getElementById("bot").onclick = function (evnt) {
         PostDatos()
     }
 };*/
-
-/*$.validator.addMethod('regex',
-function(value,element,regexp){
-    return regexp.test(value);
-},
-"Por favor, introduce datos correctos."
-);*/
-$(document).ready(function () {
-    $("form").validate({
-        rules: {
+$.validator.addMethod(
+    "regex",
+    function(value, element, regexp) {
+        var re = new RegExp(regexp);
+        return this.optional(element) || re.test(value);
+    },
+    "Por favor, introduce datos correctos."
+);
+$("#bot").click((evnt)=>{
+    evnt.preventDefault();
+    let t = $("form").validate({
+        rules: {            
             nombre: {
-                required: true,
-                //regexp:/^[a-zA-Z]+$/,
+                required: true
             },
             apellido: {
                 required: true,
-                //regexp: /^[a-zA-Z]+$/,
             },
             email: {
                 required: true,
-                //regexp: /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/,
             },
             contraseña: {
                 required: true,
-                regexp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$/,
-                minlength: 6,
-                maxlength: 8
             },
             empresa: {
                 required: true,
             },
             nif: {
                 required: true,
-               // regexp: ,
             },
             telefono: {
                 required: true,
-                //regexp: /^[0-9-()+]{8}$/,
             },
             idreg: {
                 required: true,
@@ -176,9 +170,9 @@ $(document).ready(function () {
             apellido: "Por favor, introduce tu apellido.",
             email: "Por favor, introduce tu email.",
             contraseña: "Por favor, introduce una contraseña.",
-            empresa: "Este campo es obligatorio.",
-            nif: "Este campo es obligatorio.",
-            telefono: "Este campo es obligatorio.",
+            empresa: "Por favor, introduce el nombre de tu empresa.",
+            nif: "Por favor, introduce el NIF de tu empresa.",
+            telefono: "Por favor, introduce un número de teléfono.",
             idreg: "Este campo es obligatorio.",
         },
         submitHandler: function (form) {
@@ -194,4 +188,12 @@ $(document).ready(function () {
             //event.preventDefault();
         }
     });
+    $("#nombre").rules("add", { regex: "^[a-zA-Z]+$"});
+    $("#apellido").rules("add", { regex: "^[a-zA-Z]+$"});
+    $("#email").rules("add", { regex: "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"});
+    $("#contraseña").rules("add", { regex: "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$"});
+    $("#nif").rules("add", { regex: "^[A-Za-z][0-9]{8}$"});
+    $("#telefono").rules("add", { regex: "^(\+34|0034|34)?[6|7|9][0-9]{8}$"});
+    t.form();
 });
+

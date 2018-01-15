@@ -1,4 +1,4 @@
-var nombre = document.getElementById("idnombre");
+/*var nombre = document.getElementById("idnombre");
 var apellido = document.getElementById("idapellido");
 var email = document.getElementById("idemail");
 var password = document.getElementById("idcontraseña");
@@ -127,6 +127,71 @@ document.getElementById("bot").onclick = function (evnt) {
     if(isOk && document.getElementById("idreg").checked){
         PostDatos()
     }
-};
+};*/
 
+/*$.validator.addMethod('regex',
+function(value,element,regexp){
+    return regexp.test(value);
+},
+"Por favor, introduce datos correctos."
+);*/
+$(document).ready(function () {
+    $("form").validate({
+        rules: {
+            nombre: {
+                required: true,
+                regexp:/^[a-zA-Z]+$/,
+            },
+            apellido: {
+                required: true,
+                regexp: /^[a-zA-Z]+$/,
+            },
+            email: {
+                required: true,
+                regexp: /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/,
+            },
+            contraseña: {
+                required: true,
+                regexp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/,
+                minlength: 6,
+                maxlength: 8
+            },
+            empresa: {
+                required: true,
+            },
+            nif: {
+                required: true,
+                regexp: ,
+            },
+            telefono: {
+                required: true,
+                regexp: /^[0-9-()+]{8}$/,
+            },
+            idreg: {
+                required: true,
+            }
+        },
+        messages: {
+            nombre: "Este campo es obligatorio.",
+            apellido: "Este campo es obligatorio.",
+            email: "Este campo es obligatorio.",
+            contraseña: "Este campo es obligatorio.",
+            empresa: "Este campo es obligatorio.",
+            nif: "Este campo es obligatorio.",
+            telefono: "Este campo es obligatorio.",
+            idreg: "Este campo es obligatorio.",
+        },
+        submitHandler: function (form) {
+            form.submit();
+            $.ajax({
+                type: 'POST',
+                url: '',
+                data: dataType,
+                success: function (response) {
 
+                }
+            });
+            event.preventDefault();
+        }
+    });
+});

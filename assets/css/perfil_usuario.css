@@ -245,7 +245,11 @@ BOTONES HABILIDADES PRINCIPALES
     font-size: 1.3em;
     text-decoration: none;
     color: #fff;
+    border-radius: 25px;
 }
+
+
+/* === COLORES DE LOS BOTONES === */
 
 .b {
     background: #3498db;

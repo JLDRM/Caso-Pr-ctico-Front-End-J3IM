@@ -1,13 +1,19 @@
 var form  = document.getElementsByTagName('form')[0];
 var nombre = document.getElementById('nombre');
+var apell = document.getElementById('apellido');
 var email = document.getElementById('email');
+var pass = document.getElementById('contraseña');
+var confipass = document.getElementById('conficontraseña');
 var telef = document.getElementById('telef');
 var habili = document.getElementById('habili');
 var hobby = document.getElementById('hobby');
 var cv = document.getElementById('cv');
 
 var errnombre = document.querySelector('.errorn');
+var errapell = document.querySelector('.errora');
 var erremail = document.querySelector('.errorm');
+var errorpass = document.querySelector('.errorpass');
+var errorconfipass = document.querySelector('.errorconfipass');
 var errtelef = document.querySelector('.errort');
 var errhabili = document.querySelector('.errorh');
 var errhobby = document.querySelector('.errorb');
@@ -24,6 +30,20 @@ nombre.addEventListener("keyup", function (event) {
 
   }
 }, false);
+
+//APELLIDO
+apell.addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (apell.input=="") {
+    errapell.innerHTML = ""; 
+    errapell.className = "error";
+  } else {
+    errapell.innerHTML = ""; 
+    errapell.className = "error";
+
+  }
+}, false);
+
 //MAIL
 email.addEventListener("keyup", function (event) {
   event.preventDefault();
@@ -39,6 +59,25 @@ email.addEventListener("keyup", function (event) {
   }
 
 }, false);
+
+//CONTRASEÑA
+pass.addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (pass.input==""||!pass.validity.patternMismatch) {
+    errorpass.innerHTML = ""; 
+    errorpass.className = "error";
+  }
+}, false);
+
+//CONFIRMACIÓN CONTRASEÑA
+confipass.addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (confipass.input==""||!confipass.validity.patternMismatch) {
+    errorconfipass.innerHTML = ""; 
+    errorconfipass.className = "error";
+  }
+}, false);
+
 //TELEFONO
 telef.addEventListener("keyup", function (event) {
   event.preventDefault();
@@ -54,6 +93,7 @@ telef.addEventListener("keyup", function (event) {
   }
 
 }, false);
+
 //HABILIDAD
 habili.addEventListener("keyup", function (event) {
   event.preventDefault();
@@ -61,23 +101,17 @@ habili.addEventListener("keyup", function (event) {
 
     errhabili.innerHTML = ""; 
     errhabili.className = "error"; 
-  } else {
-    errhabili.innerHTML = ""; 
-    errhabili.className = "error";
   } 
 }, false);
-//HOBBY
+
+  //HOBBY
 hobby.addEventListener("keyup", function (event) {
   event.preventDefault();
   if (hobby.value=="") {
 
     errhobby.innerHTML = ""; 
     errhobby.className = "error"; 
-  }else {
-    errhobby.innerHTML = ""; 
-    errhobby.className = "error";
   }
-
 }, false);
 
 //EVENTO DE ENVIAR INFORMACIÓN
@@ -86,11 +120,18 @@ form.addEventListener("submit", function (event) {
 
   var isNokMail="";
   var isNokNombre="";
+  var isNokApell="";
+  var isNokPass="";
+  var isNokConfipass="";
+  var isDiferentPass="";
   var isNokTelef="";
   var isNokHabili="";
   var isNokHobby="";
   var pintoclasem="error";
   var pintoclasen="error";
+  var pintoclasea="error";
+  var pintoclasep="error";
+  var pintoclasecp="error";
   var pintoclaset="error";
   var pintoclaseh="error";
   var pintoclaseb="error";
@@ -102,26 +143,58 @@ form.addEventListener("submit", function (event) {
 
   if(nombre.value==""){
     isNokNombre="¡Como te llamas, honey!";
-    //pintoclasen="error.active";
+    
+  }
+
+  if(apell.value==""){
+    isNokApell="¡Como te llamas, honey!";
+    
+  }
+
+  if(pass.value==""|| pass.validity.patternMismatch){
+    isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
+    +"- Una letra minuscula"
+    +"- Un numero -Minimo 8 caracteres, honey!";
+    
+  }
+
+  if(confipass.value=="" || confipass.validity.patternMismatch){
+    isNokConfipass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
+    +"- Una letra minuscula"
+    +"- Un numero -Minimo 8 caracteres, honey!";
+    
+  }
+
+  if(pass.value!=confipass.value){
+    isDiferentPass="Las contraseñas son diferentes"
   }
 
   if(telef.value==""||telef.validity.patternMismatch){
     isNokTelef="¡Como vamos a llamarte si nos engañas, honey!";
-    //pintoclaset="error.active";
+    
   }
 
   if(habili.value==""){
     isNokHabili="¡No seas tan humilde fella!";
-    //pintoclaseh="error.active";
+    
   }
 
   if(hobby.value==""){
     isNokHobby="¡Va que como geek el javascript seguro te pone!";
-    //pintoclaseb="error.active";
+    
   }
 
   errnombre.innerHTML = isNokNombre;
   errnombre.className = pintoclasen;
+
+  errapell.innerHTML = isNokApell;
+  errapell.className = pintoclasea;
+
+  errorpass.innerHTML = isNokPass+ " " +isDiferentPass;
+  errorpass.className = pintoclasep;
+
+  errorconfipass.innerHTML = isNokConfipass+ " " +isDiferentPass;
+  errorconfipass.className = pintoclasecp;
 
   erremail.innerHTML = isNokMail;
   erremail.className = pintoclasem;
@@ -135,7 +208,7 @@ form.addEventListener("submit", function (event) {
   errhobby.innerHTML = isNokHobby;
   errhobby.className = pintoclaseb;  
   
-  if(!isNokMail && !isNokNombre && !isNokTelef && !isNokHabili &&!isNokHobby){
+  if(!isNokMail && !isNokNombre && !isNokApell && !isDiferentPass&& !isNokTelef && !isNokHabili &&!isNokHobby){
     console.log('hola');
     var url = "http://www.mocky.io/v2/5a5390ae300000e22c1ebfe4";
     var request = new XMLHttpRequest();

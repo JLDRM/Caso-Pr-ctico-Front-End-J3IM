@@ -1,4 +1,4 @@
-* {
+/* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -90,9 +90,9 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif; }*/
 
-/*Header*/
+/*Header
 
 header {
   display: flex;
@@ -120,16 +120,16 @@ header {
         font-weight: lighter; }
         header .menu ul li a:hover {
           color: #073539;
-          transition: color 200ms linear; }
+          transition: color 200ms linear; }*/
 
     
-/* Estilo de los articulos de la seccionjosep*/
+/* Estilo de los articulos de la seccionjosep
 
 article {
 	padding: 0;
-	margin: 0;     }
+	margin: 0;     }*/
 
-/* Estilo articulo 1 */
+/* Estilo articulo 1 
 
 .buttonjosep{
 	border: 0;
@@ -175,8 +175,10 @@ article {
 
 .article1josep>img{
 	width: 40px;       }
+*/
 
-/*Estilo articulo 3*/
+
+/*Estilo articulo 3
 
 .article3josep{
 	background-color: rgba(226,226,226,.84);       }
@@ -212,9 +214,9 @@ article {
 		display: inline-grid;
 		margin-top: 16px;}
 
-/*Button Enviar*/
+Button Enviar*/
 
-#enviar {
+/*#enviar {
     background-color: #FFF;
     font-size: 10pt;
     font-weight: regular;
@@ -226,10 +228,10 @@ article {
 
 #enviar:active {
     background-color: #009EE3;
-    color: #fff;        }
+    color: #fff;        }*/
 
 
-/*FOOTER*/
+/*FOOTER
 
 footer {
   background-color: #073549;
@@ -306,4 +308,4 @@ footer {
         font-weight: bold;
         margin-left: 25%;
     }
-}
+}*/

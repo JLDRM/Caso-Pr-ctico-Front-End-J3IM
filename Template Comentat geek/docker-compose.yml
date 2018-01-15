@@ -1,7 +1,0 @@
-web:
-  image: nginx
-  volumes:
-   - .:/usr/share/nginx/html
-  ports:
-   - "1234:80"  
-  command: [nginx-debug, '-g', 'daemon off;']

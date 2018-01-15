@@ -3,230 +3,223 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Ismail">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro empresa - GeekJobs</title>
-    <!-- CAMBIA COLOR DEL TOOLBAR EN CHROMIUM -->
-    <meta name="theme-color" content="#db5945">
-    <!-- ================================= -->
-    <!-- FUENTE ROBOTO -->
+    <title>Geek Jobs</title>
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <!-- ================================= -->
-    <!-- ESTILOS -->
+    <!-- Estilos -->
     <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style_registro_empresa.css">
-    <!-- ================================= -->
-    <script src="./assets/js/ajax.js"></script>
-    <!-- FAVICONS -->
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <!-- ================================= -->
+    <!-- Fin Favicons -->
+    <!-- Cambia color del toolbar en chrome -->
+    <meta name="theme-color" content="#db5945">
+    <script src="./assets/js/ajax.js"></script>
 </head>
 
 <body>
-    <div class="cover-container">
-        <!-- Header-->
-        <header>
-            <div id="logo">
-                <a href="home_empresa.html">
-                    <img src="./assets/img/logo1.png" alt="GeekJobs">
-                </a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="home_empresa.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Usuario</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+    <!-- Header-->
+    <header>
+        <div id="logo">
+            <a href="home_empresa.html">
+                <img src="./assets/img/logo1.png" alt="GeekJobs">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="home_empresa.html">Login</a>
+                </li>
+                <li>
+                    <a href="index.html">Usuario</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-        <!--nueva versión de article imgen con texto-->
-        <article class="col-lg-10 articlemarta rounded-top">
-            <div class="row justify-content-center ml-1 mr-1 letramarta">
-                <h1 class="pt-5">WELCOME TO GEEK JOBS!</h1>
-            </div>
-            <div class="row justify-content-center ml-1 mr-1 letramarta">
-                <p class="pt-5">
-                    Sabemos que encontrar al empleado perfecto no es tarea fácil, por eso, nosotros te ayudamos.
-                </p>
-            </div>
-            <div class="row justify-content-center ml-1 mr-1 letramarta">
-                <p class="pt-2">
-                    ¡Encuentra todos los candidatos que buscas en un sólo click!
-                </p>
-            </div>
-            <div class="row justify-content-center pt-5 pb-5 letramarta">
-                <a href="#inscripc">
-                    <button class="btn btn-primary" id="btn">Únete a Geek Jobs</button>
-                </a>
-            </div>
-        </article>
-        <!--final versión de article imgen con texto-->
+    <!--nueva versión de article imgen con texto-->
+    <article class="container articlemarta rounded-top">
+        <div class="row justify-content-center ml-1 mr-1 letramarta">
+            <h1 class="pt-5">WELCOME TO GEEK JOBS!</h1>
+        </div>
+        <div class="row justify-content-center ml-1 mr-1 letramarta">
+            <p class="pt-5">
+                Sabemos que encontrar al empleado perfecto no es tarea fácil, por eso, nosotros te ayudamos.
+            </p>
+        </div>
+        <div class="row justify-content-center ml-1 mr-1 letramarta">
+            <p class="pt-2">
+                ¡Encuentra todos los candidatos que buscas en un sólo click!
+            </p>
+        </div>
+        <div class="row justify-content-center pt-5 pb-5 letramarta">
+            <a href="#inscripc">
+                <button class="btn btn-primary" id="btn">Únete a Geek Jobs</button>
+            </a>
+        </div>
+    </article>
+    <!--final versión de article imgen con texto-->
 
-        <!-- Formulario -->
-        <!--nueva version del form-->
-        <article class="col-lg-10 formul rounded-bottom">
-            <form>
-                <a name="inscripc" id="inscripc"></a>
-                <div class=" form-row pt-5">
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nameHelp" placeholder="Escribe tu nombre"
-                            pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" autofocus>
-                    </div>
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" class="form-control" id="apellido" aria-describedby="surnameHelp" placeholder="Escribe tu apellido"
-                            pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="">
-                    </div>
+    <!-- Formulario -->
+    <!--nueva version del form-->
+    <section class="container formul rounded-bottom">
+        <form>
+            <a name="inscripc" id="inscripc"></a>
+            <div class=" form-row pt-5">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nameHelp" placeholder="Escribe tu nombre"
+                        pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="" autofocus>
                 </div>
-                <div class="form-row px-1">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribe tu e-mail"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" class="form-control" id="apellido" aria-describedby="surnameHelp" placeholder="Escribe tu apellido"
+                        pattern="[A-Z ÁÉÍÓÚ][a-z áéíóú]*" spellcheck="">
                 </div>
-                <div class="form-row px-1">
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" name="contraseña" class="form-control" id="contraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$">
+            </div>
+            <div class="form-row px-1">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribe tu e-mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </div>
+            <div class="form-row px-1">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" class="form-control" id="contraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$">
+            </div>
+            <div class="form-row px-1">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa" class="form-control" id="empresa" placeholder="Escribe el nombre de tu empresa">
+            </div>
+            <div class=" form-row">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="nif">NIF</label>
+                    <input type="text" name="nif" class="form-control" id="nif" placeholder="Escribe el NIF" pattern="[A-Za-z][0-9]{8}">
                 </div>
-                <div class="form-row px-1">
-                    <label for="empresa">Empresa</label>
-                    <input type="text" name="empresa" class="form-control" id="empresa" placeholder="Escribe el nombre de tu empresa">
+                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+                    <label for="telefono">Teléfono</label>
+                    <input name="telefono" class="form-control" id="telefono" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$">
                 </div>
-                <div class=" form-row">
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-                        <label for="nif">NIF</label>
-                        <input type="text" name="nif" class="form-control" id="nif" placeholder="Escribe el NIF" pattern="[A-Za-z][0-9]{8}">
-                    </div>
-                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-                        <label for="telefono">Teléfono</label>
-                        <input name="telefono" class="form-control" id="telefono" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$">
-                    </div>
+            </div>
+            <div class="form-row px-1 mb-4">
+                <label for="stack">Stack Teconológico</label>
+                <input type="text" name="stack" class="form-control" id="stack" placeholder="Opcional">
+            </div>
+            <div class="form-row justify-content-center mb-4">
+                <button type="submit" class="btn btn-primary" id="bot">Registrar</button>
+            </div>
+            <div class="form-row justify-content-center pb-4 mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="idreg" id="idreg">
+                    <label class="form-check-label" for="idreg">
+                        Al crear una cuenta confirmas que has leído y aceptas la
+                        <a href="politica_privacidad.html">Política de Privacidad</a>
+                    </label>
                 </div>
-                <div class="form-row px-1 mb-4">
-                    <label for="stack">Stack Teconológico</label>
-                    <input type="text" name="stack" class="form-control" id="stack" placeholder="Opcional">
-                </div>
-                <div class="form-row justify-content-center mb-4">
-                    <button type="submit" class="btn btn-primary" id="bot">Registrar</button>
-                </div>
-                <div class="form-row justify-content-center pb-4 mb-4">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="idreg" id="idreg">
-                        <label class="form-check-label" for="idreg">
-                            Al crear una cuenta confirmas que has leído y aceptas la
-                            <a href="politica_privacidad.html">Política de Privacidad</a>
-                        </label>
-                    </div>
-                </div>
-            </form>
-        </article>
-        <!--fin de la nueva versión del form-->
+            </div>
+        </form>
+    </section>
+    <!--fin de la nueva versión del form-->
 
-        <!-- FOOTER -->
-        <footer>
-            <div id="gjFooter" class="container">
-                <div class="row">
-                    <!-- LOGO -->
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-                        <h5></h5>
-                        <a href="./index.html">
-                            <img src="./assets/img/logo1.png" alt="">
+    <!-- Footer nueva versión -->
+    <footer>
+        <div id="gjFooter" class="container">
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3 col-sm-3">
+                    <h5></h5>
+                    <a href="./index.html">
+                        <img src="./assets/img/logo1.png" alt="">
+                    </a>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS -->
+                <div class="col-sm-2">
+                    <h5>GeekJobs</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS GEEK -->
+                <div class="col-sm-2">
+                    <h5>Geeks</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registrousuario.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./perfil_usuario.html">Ver perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS EMPRESA -->
+                <div class="col-sm-2">
+                    <h5>Empresas</h5>
+                    <ul>
+                        <li>
+                            <a href="./home_empresa.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registro_empresa.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./pagina_construccion.html">Ver peril</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- REDES SOCIALES -->
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google-plus"></i>
                         </a>
                     </div>
-                    <!-- ================================= -->
-                    <!-- LINKS -->
-                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                        <h5>GeekJobs</h5>
-                        <ul>
-                            <li>
-                                <a href="./index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- ================================= -->
-                    <!-- LINKS GEEK -->
-                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                        <h5>Geeks</h5>
-                        <ul>
-                            <li>
-                                <a href="./index.html">Iniciar Sesión</a>
-                            </li>
-                            <li>
-                                <a href="./registrousuario.html">Regístrarse</a>
-                            </li>
-                            <li>
-                                <a href="./perfil_usuario.html">Ver perfil</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- ================================= -->
-                    <!-- LINKS EMPRESA -->
-                    <div class="col-12 col-sm-6 col-md-2 col-lg-2">
-                        <h5>Empresas</h5>
-                        <ul>
-                            <li>
-                                <a href="./home_empresa.html">Iniciar Sesión</a>
-                            </li>
-                            <li>
-                                <a href="./registro_empresa.html">Regístrarse</a>
-                            </li>
-                            <li>
-                                <a href="./pagina_construccion.html">Ver perfil</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- ================================= -->
-                    <!-- REDES SOCIALES -->
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                        <div class="social-networks">
-                            <a href="#" class="twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="#" class="facebook">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#" class="google">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </div>
-                        <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
-                    </div>
-                    <!-- ================================= -->
-                </div>
-                <!-- COPYRIGHT -->
-                <div class="footer-copyright">
-                    <div class="container-fluid">
-                        Todos los derechos reservados © 2018:
-                        <a href="./index.html">
-                            <strong> Thee GeekJobs Company</strong>
-                        </a>
-                    </div>
+                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
                 </div>
                 <!-- ================================= -->
             </div>
-        </footer>
-        <!-- ================================= -->
+            <!-- COPYRIGHT -->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    Todos los derechos reservados © 2018:
+                    <a href="https://www.MDBootstrap.com">
+                        <strong> Thee GeekJobs Company</strong>
+                    </a>
+                </div>
+            </div>
+            <!-- ================================= -->
+        </div>
+    </footer>
+    <!-- fin del Footer nueva versión -->
 </body>
 <script src="assets/libs/js/jquery/jquery.min.js"></script>
 <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/libs/jquery-validation/dist/jquery.validate.js"></script>
 <script src="assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="assets/js/registro_empresa.js"></script>
-
 </html>

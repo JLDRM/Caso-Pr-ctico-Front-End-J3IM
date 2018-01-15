@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/perfil_usuario.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/botones.css">
     <!-- ================================= -->
     <script src="./assets/js/ajax.js"></script>
     <!-- FAVICONS -->
@@ -29,8 +31,8 @@
 </head>
 
 <body>
-    <div class="cover-container">
-        <header class="">
+    <div class="row cover-container">
+        <header class="col-lg-12">
             <div id="logo">
                 <a href="./index.html">
                     <img src="./assets/img/logo1.png" alt="GeekJobs">
@@ -52,10 +54,10 @@
 
         </header>
 
-        <section class="col-lg-10">
+        <section class="col-lg-8">
             <!-- BANNER DE PERFIL / FOTO DE PERFIL -->
             <div id="perfil" class="row profiles_banner">
-                <div class="profile-info-block">
+                <div class=" profile-info-block">
                     <div class="profile-image" id="fotoPerfil"></div>
                     <div class="profile-name">
                         <h1>
@@ -66,121 +68,55 @@
             </div>
             <!-- ================================= -->
             <div id="cont">
+                <div id="desc">
+                    <h3>Descripción</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
                 <div>
-                    <div id="accordion" role="tablist">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#c1" role="button" aria-expanded="true" aria-controls="collapseOne">
-                                        Descripción
-                                    </a>
-                                </h5>
-                            </div>
-
-                            <div id="c1" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body" id="desc">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae et odit magni
-                                    dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                                    Quas, enim consequatur.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-                                        Habilidades Principales
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body mm" id="habP">
-
-                                    <ul>
-                                        <li>
-                                            <a class="b" href="#">Programación</a>
-                                        </li>
-                                        <li>
-                                            <a class="b" href="#">Diseño Web</a>
-                                        </li>
-                                        <li>
-                                            <a class="b" href="#">Diseño Gráfico</a>
-                                        </li>
-                                        <li>
-                                            <a class="b" href="#">HTML</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-                                        Otras Habilidades
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body" id="hab">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae et odit magni
-                                    dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                                    Quas, enim consequatur.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-                                        Portafolio
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body" id="por">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae et odit magni
-                                    dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                                    Quas, enim consequatur.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-                                        Experiencia
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body" id="exp">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae et odit magni
-                                    dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                                    Quas, enim consequatur.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-                                        Formación
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body" id="form">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae et odit magni
-                                    dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                                    Quas, enim consequatur.
-                                </div>
-                            </div>
-                        </div>
+                    <h3>Habilidades Principales</h3>
+                    <div id="habP" class="mm">
+                        <ul>
+                            <li>
+                                <a class="b" href="#">Programación</a>
+                            </li>
+                            <li>
+                                <a class="b" href="#">Diseño Web</a>
+                            </li>
+                            <li>
+                                <a class="b" href="#">Diseño Gráfico</a>
+                            </li>
+                            <li>
+                                <a class="b" href="#">HTML</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-
+                <div id="hab">
+                    <h3>Otras Habilidades</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Portafolio</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Experiencia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Formación</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
             </div>
         </section>
     </div>
@@ -239,7 +175,7 @@
                             <a href="./registro_empresa.html">Regístrarse</a>
                         </li>
                         <li>
-                            <a href="./pagina_construccion.html">Ver perfil</a>
+                            <a href="./pagina_construccion.html">Ver peril</a>
                         </li>
                     </ul>
                 </div>
@@ -265,7 +201,7 @@
             <div class="footer-copyright">
                 <div class="container-fluid">
                     Todos los derechos reservados © 2018:
-                    <a href="./index.html">
+                    <a href="https://www.MDBootstrap.com">
                         <strong> Thee GeekJobs Company</strong>
                     </a>
                 </div>

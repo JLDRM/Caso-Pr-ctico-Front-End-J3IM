@@ -11,6 +11,8 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style_registro_empresa.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
@@ -18,7 +20,7 @@
     <!-- Fin Favicons -->
     <!-- Cambia color del toolbar en chrome -->
     <meta name="theme-color" content="#db5945">
-    <script src="ajax_registr_empresa.js"></script>
+    <script src="./assets/js/ajax.js"></script>
 </head>
 
 <body>
@@ -42,7 +44,7 @@
     </header>
 
     <!--nueva versión de article imgen con texto-->
-    <article class="container articlemarta">
+    <article class="container articlemarta rounded-top">
         <div class="row justify-content-center ml-1 mr-1 letramarta">
             <h1 class="pt-5">WELCOME TO GEEK JOBS!</h1>
         </div>
@@ -66,10 +68,10 @@
 
     <!-- Formulario -->
     <!--nueva version del form-->
-    <section class="container">
+    <section class="container formul rounded-bottom">
         <form>
             <a name="inscripc" id="inscripc"></a>
-            <div class=" form-row mt-5">
+            <div class=" form-row pt-5">
                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nameHelp" placeholder="Escribe tu nombre"
@@ -111,7 +113,7 @@
             <div class="form-row justify-content-center mb-4">
                 <button type="submit" class="btn btn-primary" id="bot">Registrar</button>
             </div>
-            <div class="form-row justify-content-center mb-4">
+            <div class="form-row justify-content-center pb-4 mb-4">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="idreg" id="idreg">
                     <label class="form-check-label" for="idreg">
@@ -124,42 +126,100 @@
     </section>
     <!--fin de la nueva versión del form-->
 
-    <!-- Footer -->
+    <!-- Footer nueva versión -->
     <footer>
-        <div id="copyright">
-            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
-        </div>
-        <div id="footerlist">
-
-
-            <ul id="geekjobs_footer">
-                <a target="_blank" href="https:www.geekjobs.com">
-                    <li>
-                        <img src="./assets/img/geek_icon.png" width="50px" height="30px" position alt=""> </li>
-                </a>
-            </ul>
-        </div>
-        <div id="social">
-            <ul>
-                <a target="_blank" href="https:www.linkedin.com">
-                    <li>
-                        <img src="./assets/img/linkedin_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-                <a target="_blank" href="https:www.facebook.com">
-                    <li>
-                        <img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-                <a target="_blank" href="https:www.twitter.com">
-                    <li>
-                        <img src="./assets/img/twitter_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-
-            </ul>
+        <div id="gjFooter" class="container">
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3 col-sm-3">
+                    <h5></h5>
+                    <a href="./index.html">
+                        <img src="./assets/img/logo1.png" alt="">
+                    </a>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS -->
+                <div class="col-sm-2">
+                    <h5>GeekJobs</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS GEEK -->
+                <div class="col-sm-2">
+                    <h5>Geeks</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registrousuario.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./perfil_usuario.html">Ver perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS EMPRESA -->
+                <div class="col-sm-2">
+                    <h5>Empresas</h5>
+                    <ul>
+                        <li>
+                            <a href="./home_empresa.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registro_empresa.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./pagina_construccion.html">Ver peril</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- REDES SOCIALES -->
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                </div>
+                <!-- ================================= -->
+            </div>
+            <!-- COPYRIGHT -->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    Todos los derechos reservados © 2018:
+                    <a href="https://www.MDBootstrap.com">
+                        <strong> Thee GeekJobs Company</strong>
+                    </a>
+                </div>
+            </div>
+            <!-- ================================= -->
         </div>
     </footer>
-    <!-- fin del Footer -->
+    <!-- fin del Footer nueva versión -->
 </body>
 <script src="assets/libs/js/jquery/jquery.min.js"></script>
+<script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/libs/jquery-validation/dist/jquery.validate.js"></script>
 <script src="assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="assets/js/registro_empresa.js"></script>
 </html>

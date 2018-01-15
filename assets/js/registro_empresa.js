@@ -152,7 +152,7 @@ $(document).ready(function () {
             },
             contraseña: {
                 required: true,
-                //regexp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/,
+                regexp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$/,
                 minlength: 6,
                 maxlength: 8
             },
@@ -165,17 +165,17 @@ $(document).ready(function () {
             },
             telefono: {
                 required: true,
-               // regexp: /^[0-9-()+]{8}$/,
+                //regexp: /^[0-9-()+]{8}$/,
             },
             idreg: {
                 required: true,
             }
         },
         messages: {
-            nombre: "Este campo es obligatorio.",
-            apellido: "Este campo es obligatorio.",
-            email: "Este campo es obligatorio.",
-            contraseña: "Este campo es obligatorio.",
+            nombre: "Por favor, introduce tu nombre.",
+            apellido: "Por favor, introduce tu apellido.",
+            email: "Por favor, introduce tu email.",
+            contraseña: "Por favor, introduce una contraseña.",
             empresa: "Este campo es obligatorio.",
             nif: "Este campo es obligatorio.",
             telefono: "Este campo es obligatorio.",

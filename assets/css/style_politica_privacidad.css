@@ -1,41 +1,109 @@
-#tg{
-    margin: 0;
-    padding: 0;
-    font-size: 12pt;
-    font-family: roboto, sans-serif;
-    background-color: rgba(226,226,226,.84);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+body{
+    background-color: rgba(226, 226, 226, .84);
+    font-family: "Roboto", sans-serif;
+} 
+.polit{
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+}
+footer{
+    background-color: #073549;
+}
+.colorh1{
+    color:#073549;
+}
+/* =================================================== 
+FOOTER BOOTSTRAP
+=================================================== */
+
+#gjFooter {
+    color: white;
+}
+
+#gjFooter .footer-copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
-#tg section{
-    padding-top: 0px;
-    margin: 0 auto;
-    width: 900px;
-    line-height: 25px;
-    text-align: justify;
+
+#gjFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
 }
-#tg section p{
-    text-indent: 50px;
+
+#gjFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
 }
-h1{
-    margin:0;
+
+#gjFooter h5 {
+    font-size: 18px;
+    color: white;
     font-weight: bold;
-    font-size: 40pt;
+    margin-top: 30px;
 }
-@media (max-width: 576px){
-    section{
-        width: 100%;
-        font-size: 25pt;
-    }
-    #tg section p{
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 2.5%;
-        text-align: justify;
-    }
-    header > h1{
-        font-size: 40pt;
+
+#gjFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#gjFooter a:hover,
+#gjFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#gjFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#gjFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#gjFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#gjFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#gjFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#gjFooter .twitter:hover {
+    color: #00aced;
+}
+
+#gjFooter .btn {
+    color: white;
+    background-color: #4aadd4;
+    /* #d84b6b */
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #gjFooter {
         text-align: center;
-        width: 100%;
-        margin: 0 auto;
     }
 }
+
+
+/* =================================================== */   
+ 

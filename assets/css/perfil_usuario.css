@@ -1,4 +1,6 @@
-@import url("reset.css");
+@import url("./reset.css");
+@import url("./botones.css");
+@import url("./footer.css");
 html {
     font-size: 16px;
 }
@@ -119,17 +121,11 @@ BANNER DE PERFIL / FOTO DE PERFIL
 /* =================================================== */
 
 #cont {
-    margin: 10px 20px;
-}
-
-#cont h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin: 20px 10px;
 }
 
 #cont div {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #contact {

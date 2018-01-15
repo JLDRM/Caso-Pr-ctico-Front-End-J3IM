@@ -3,282 +3,222 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ismail">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perfil Usuario - GeekJobs</title>
-    <!-- Fuentes -->
+    <!-- CAMBIA COLOR DEL TOOLBAR EN CHROMIUM -->
+    <meta name="theme-color" content="#db5945">
+    <!-- ================================= -->
+    <!-- FUENTE ROBOTO -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <!-- Estilos -->
+    <!-- ================================= -->
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/perfil_usuario.css">
-    <!-- Inicio Favicons -->
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <!-- ================================= -->
+    <script src="./assets/js/ajax.js"></script>
+    <!-- FAVICONS -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <!-- Fin Favicons -->
-    <!-- Cambia color del toolbar en Chromium -->
-    <meta name="theme-color" content="#db5945">
-    <script src="ajax.js"></script>
+    <!-- ================================= -->
 </head>
 
 <body>
-
-    <header>
-        <div id="logo">
-            <a href="./index.html">
-                <img src="./assets/img/logo1.png" alt="GeekJobs">
-            </a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="#">Ofertas</a>
-                </li>
-                <li>
-                    <a href="#" class="active">Perfil</a>
-                </li>
-                <li>
-                    <a href="#">Cerrar sesión</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <section>
-        <div id="perfil">
-            <img src="./assets/img/perfil.png" alt="Banner">
-            <img src="./assets/img/persona.png" alt="Foto de perfil de Jhonny" id="fotoPerfil">
-            <h2 id="nombre">Batman</h2>
-        </div>
-
-        <div id="cont">
-            <div id="desc">
-                <h3>Descripción</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
-                    et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                    Quas, enim consequatur.</p>
+    <div class="cover-container">
+        <header>
+            <div id="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/logo1.png" alt="GeekJobs">
+                </a>
             </div>
-            <div>
-                <h3>Habilidades Principales</h3>
-                <div id="habP" class="mm">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+        <section>
+            <!-- BANNER DE PERFIL / FOTO DE PERFIL -->
+            <div id="perfil" class="profiles_banner">
+                <div class="profile-info-block">
+                    <div class="profile-image" id="fotoPerfil"></div>
+                    <div class="profile-name">
+                        <h1>
+                            <a href="#" title="Batman" alt="Foto de perfil de Batman" id="nombre">Batman</a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <!-- ================================= -->
+            <div id="cont">
+                <div id="desc">
+                    <h3>Descripción</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Habilidades Principales</h3>
+                    <div id="habP" class="mm">
+                        <ul>
+                            <li>
+                                <a class="b" href="#">Programación</a>
+                            </li>
+                            <li>
+                                <a class="b" href="#">Diseño Web</a>
+                            </li>
+                            <li>
+                                <a class="b" href="#">Diseño Gráfico</a>
+                            </li>
+                            <li>
+                                <a class="b" href="#">HTML</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="hab">
+                    <h3>Otras Habilidades</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Portafolio</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Experiencia</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+                <div>
+                    <h3>Formación</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore?
+                        Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
+                        Quas, enim consequatur.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div id="gjFooter" class="container">
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3 col-sm-3">
+                    <h5></h5>
+                    <a href="./index.html">
+                        <img src="./assets/img/logo1.png" alt="">
+                    </a>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS -->
+                <div class="col-sm-2">
+                    <h5>GeekJobs</h5>
                     <ul>
                         <li>
-                            <a class="b" href="#">Programación</a>
+                            <a href="./index.html">Inicio</a>
                         </li>
                         <li>
-                            <a class="b" href="#">Diseño Web</a>
+                            <a href="#">FAQ</a>
                         </li>
                         <li>
-                            <a class="b" href="#">Diseño Gráfico</a>
+                            <a href="#"></a>
                         </li>
-                        <li>
-                            <a class="b" href="#">HTML</a>
-                        </li>
-
-
                     </ul>
                 </div>
-            </div>
-            <div id="hab">
-                <h3>Otras Habilidades</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
-                    et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                    Quas, enim consequatur.</p>
-            </div>
-            <div>
-                <h3>Portafolio</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
-                    et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                    Quas, enim consequatur.</p>
-            </div>
-            <div>
-                <h3>Experiencia</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
-                    et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                    Quas, enim consequatur.</p>
-            </div>
-            <div>
-                <h3>Formación</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae
-                    et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.
-                    Quas, enim consequatur.</p>
-            </div>
-        </div>
-    </section>
-    <footer class="page-footer center-on-small-only blue-grey lighten-5 pt-0">
-
-        <div style="background-color: #5991fb;">
-            <div class="container">
-                <!--Grid row-->
-                <div class="row py-4 d-flex align-items-center">
-
-                    <!--Grid column-->
-                    <div class="col-12 col-md-5 text-left mb-md-0">
-                        <h6 class="mb-0 white-text text-center text-md-left">
-                            <strong>Get connected with us on social networks!</strong>
-                        </h6>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-12 col-md-7 text-center text-md-right">
-                        <!--Facebook-->
-                        <a class="icons-sm fb-ic ml-0">
-                            <i class="fa fa-facebook white-text mr-lg-4"> </i>
+                <!-- ================================= -->
+                <!-- LINKS GEEK -->
+                <div class="col-sm-2">
+                    <h5>Geeks</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registrousuario.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./perfil_usuario.html">Ver perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS EMPRESA -->
+                <div class="col-sm-2">
+                    <h5>Empresas</h5>
+                    <ul>
+                        <li>
+                            <a href="./home_empresa.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registro_empresa.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./pagina_construccion.html">Ver peril</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- REDES SOCIALES -->
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>
                         </a>
-                        <!--Twitter-->
-                        <a class="icons-sm tw-ic">
-                            <i class="fa fa-twitter white-text mr-lg-4"> </i>
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>
                         </a>
-                        <!--Google +-->
-                        <a class="icons-sm gplus-ic">
-                            <i class="fa fa-google-plus white-text mr-lg-4"> </i>
-                        </a>
-                        <!--Linkedin-->
-                        <a class="icons-sm li-ic">
-                            <i class="fa fa-linkedin white-text mr-lg-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="icons-sm ins-ic">
-                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                        <a href="#" class="google">
+                            <i class="fa fa-google-plus"></i>
                         </a>
                     </div>
-                    <!--Grid column-->
-
+                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
                 </div>
-                <!--Grid row-->
+                <!-- ================================= -->
             </div>
-        </div>
-
-        <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-center text-md-left">
-            <div class="row mt-3">
-
-                <!--First column-->
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-r dark-grey-text">
-                    <h6 class="title font-bold">
-                        <strong>Company name</strong>
-                    </h6>
-                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit.</p>
+            <!-- COPYRIGHT -->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    Todos los derechos reservados © 2018:
+                    <a href="https://www.MDBootstrap.com">
+                        <strong> Thee GeekJobs Company</strong>
+                    </a>
                 </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
-                    <h6 class="title font-bold">
-                        <strong>Products</strong>
-                    </h6>
-                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!" class="dark-grey-text">MDBootstrap</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="dark-grey-text">MDWordPress</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="dark-grey-text">BrandFlow</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="dark-grey-text">Bootstrap Angular</a>
-                    </p>
-                </div>
-                <!--/.Second column-->
-
-                <!--Third column-->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
-                    <h6 class="title font-bold">
-                        <strong>Useful links</strong>
-                    </h6>
-                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!" class="dark-grey-text">Your Account</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="dark-grey-text">Become an Affiliate</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="dark-grey-text">Shipping Rates</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="dark-grey-text">Help</a>
-                    </p>
-                </div>
-                <!--/.Third column-->
-
-                <!--Fourth column-->
-                <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
-                    <h6 class="title font-bold">
-                        <strong>Contact</strong>
-                    </h6>
-                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p>
-                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
-                    <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
-                </div>
-                <!--/.Fourth column-->
-
             </div>
+            <!-- ================================= -->
         </div>
-        <!--/.Footer Links-->
-
-        <!-- Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 Copyright:
-                <a href="https://www.MDBootstrap.com">
-                    <strong> MDBootstrap.com</strong>
-                </a>
-            </div>
-        </div>
-        <!--/.Copyright -->
-
     </footer>
-
-    <!--     <footer>
-
-        <div id="copyright">
-            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
-        </div>
-        <div id="footerlist">
-            <ul>
-                <a target="_blank" href="https:www.geekjobs.com">
-                    <li>
-                        <img src="./assets/img/geek_icon.png" width="50px" height="30px" alt=""> </li>
-                </a>
-            </ul>
-        </div>
-        <div id="social">
-            <ul>
-                <a target="_blank" href="https:www.linkedin.com">
-                    <li>
-                        <img src="./assets/img/linkedin_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-                <a target="_blank" href="https:www.facebook.com">
-                    <li>
-                        <img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-                <a target="_blank" href="https:www.twitter.com">
-                    <li>
-                        <img src="./assets/img/twitter_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-
-            </ul>
-        </div>
-
-    </footer> -->
+    <!-- ================================= -->
+    <!-- LIBRERIAS JAVASCRIPT -->
     <script src="./assets/libs/js/jquery/jquery.min.js"></script>
     <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="Usuario.js"></script>
+    <!-- ================================= -->
+    <!-- JAVASCRIPT PERFIL USUARIO -->
+    <script src="./assets/js/Usuario.js"></script>
     <script>
         //Init();
     </script>
+    <!-- ================================= -->
 </body>
 
 </html>

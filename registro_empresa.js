@@ -140,19 +140,19 @@ $(document).ready(function () {
         rules: {
             nombre: {
                 required: true,
-                regexp:/^[a-zA-Z]+$/,
+                //regexp:/^[a-zA-Z]+$/,
             },
             apellido: {
                 required: true,
-                regexp: /^[a-zA-Z]+$/,
+                //regexp: /^[a-zA-Z]+$/,
             },
             email: {
                 required: true,
-                regexp: /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/,
+                //regexp: /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/,
             },
             contraseña: {
                 required: true,
-                regexp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/,
+                //regexp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/,
                 minlength: 6,
                 maxlength: 8
             },
@@ -161,11 +161,11 @@ $(document).ready(function () {
             },
             nif: {
                 required: true,
-                regexp: ,
+               // regexp: ,
             },
             telefono: {
                 required: true,
-                regexp: /^[0-9-()+]{8}$/,
+               // regexp: /^[0-9-()+]{8}$/,
             },
             idreg: {
                 required: true,
@@ -183,15 +183,15 @@ $(document).ready(function () {
         },
         submitHandler: function (form) {
             form.submit();
-            $.ajax({
+           /* $.ajax({
                 type: 'POST',
                 url: '',
                 data: dataType,
                 success: function (response) {
 
                 }
-            });
-            event.preventDefault();
+            });*/
+            //event.preventDefault();
         }
     });
 });

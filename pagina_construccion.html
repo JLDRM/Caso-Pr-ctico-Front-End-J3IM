@@ -1,49 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>En Construcción</title>
+  <title>Geek Jobs</title>
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap-social.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="homebootsjoh.css">
+  <!-- Inicio Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-  <link rel="stylesheet" href="assets/css/joan.css">
-  <header>
-      <div id="logo">
-      <img src="./assets/img/logo1.png" alt="GeekJobs">
-  </div>
-  </header>
+  <!-- Fin Favicons -->
 </head>
 
 <body>
+  <!-- empieza navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
+    <!-- contenedor con el logo -->
+    <div class="container">
+      <a class="navbar-brand" href="index_boots.html">
+        <img src="./assets/img/logo1.png" width="115" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <section>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- dropdown de HOME -->
+          <li class="dropdown" class="nav-item active">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+              Home
+            </a>
+            <ul class="dropdown-menu" id="menuhome">
+              <li>
+                <a href="index_boots.html">Home Usuario</a>
+              </li>
+              <li>
+                <a href="home_empresa.html">Home Empresa</a>
+              </li>
+            </ul>
+          </li>
 
-    <img src="https://78.media.tumblr.com/e2d00ecb4e7127c04fa350bd33784813/tumblr_nwe6e8Kujv1uo15q5o1_500.gif" alt="">
+          <li class="nav-item">
+            <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- div en construccion -->
+  <div class="jumbotron">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <img src="https://78.media.tumblr.com/e2d00ecb4e7127c04fa350bd33784813/tumblr_nwe6e8Kujv1uo15q5o1_500.gif" alt="">
+    </div>
 
 
-  </section>
-
-<footer>
-            <div id="copyright">
-                    <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
+    <!-- FOOTER -->
+    <footer>
+      <div id="gjFooter" class="container">
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3 col-sm-3">
+            <h5></h5>
+            <a href="./index.html">
+              <img src="./assets/img/logo1.png" alt="">
+            </a>
+          </div>
+          <!-- ================================= -->
+          <!-- LINKS -->
+          <div class="col-sm-2">
+            <h5>GeekJobs</h5>
+            <ul>
+              <li>
+                <a href="./index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- ================================= -->
+          <!-- LINKS GEEK -->
+          <div class="col-sm-2">
+            <h5>Geeks</h5>
+            <ul>
+              <li>
+                <a href="./index.html">Iniciar Sesión</a>
+              </li>
+              <li>
+                <a href="./registrousuario.html">Regístrarse</a>
+              </li>
+              <li>
+                <a href="./perfil_usuario.html">Ver perfil</a>
+              </li>
+            </ul>
+          </div>
+          <!-- ================================= -->
+          <!-- LINKS EMPRESA -->
+          <div class="col-sm-2">
+            <h5>Empresas</h5>
+            <ul>
+              <li>
+                <a href="./home_empresa.html">Iniciar Sesión</a>
+              </li>
+              <li>
+                <a href="./registro_empresa.html">Regístrarse</a>
+              </li>
+              <li>
+                <a href="./pagina_construccion.html">Ver peril</a>
+              </li>
+            </ul>
+          </div>
+          <!-- ================================= -->
+          <!-- REDES SOCIALES -->
+          <div class="col-sm-3">
+            <div class="social-networks">
+              <a href="#" class="twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#" class="facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" class="google">
+                <i class="fa fa-google-plus"></i>
+              </a>
             </div>
-           <div id="footerlist">
-
-
-                    <ul id="geekjobs_footer">
-                       <a target="_blank" href="https:www.geekjobs.com"><li><img src="./assets/img/geek_icon.png"    width="50px" height="30px" position alt=""> </li></a>
-                    </ul>
-            </div>
-           <div id="social">
-                    <ul>
-                       <a target="_blank" href="https:www.linkedin.com"><li><img src="./assets/img/linkedin_icon.png"  width="30px" height="30px" alt=""> </li></a>
-                       <a target="_blank" href="https:www.facebook.com"><li><img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li></a>
-                       <a target="_blank" href="https:www.twitter.com"><li><img src="./assets/img/twitter_icon.png"   width="30px" height="30px" alt=""> </li></a>
-
-                    </ul>
-            </div>
-</footer>
+            <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+          </div>
+          <!-- ================================= -->
+        </div>
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright">
+          <div class="container-fluid">
+            Todos los derechos reservados © 2018:
+            <a href="https://www.MDBootstrap.com">
+              <strong> Thee GeekJobs Company</strong>
+            </a>
+          </div>
+        </div>
+        <!-- ================================= -->
+      </div>
+    </footer>
 </body>
+<script src="./assets/libs/js/jquery/jquery.min.js"></script>
+<script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="home_johnny.js"></script>
+
 </html>

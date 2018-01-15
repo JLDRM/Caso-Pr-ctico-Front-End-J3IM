@@ -1,114 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Geek Jobs</title>
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <!-- Estilos -->
-    <link rel="stylesheet" href="./assets/css/style_home_usuario.css">
+    <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap-social.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="homebootsjoh.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
     <!-- Fin Favicons -->
-    <link rel="stylesheet" href="./assets/css/style_home_usuario.css">
-    <link rel="stylesheet" href="assets/js/validacionForm.css">
 </head>
-
 <body>
-    <!-- empieza header -->
-    <header>
-        <div class="aligncenter" id="logo">
-            <img src="./assets/img/logo1.png" alt="">
-        </div>
-    </header>
-    <!-- fin del header -->
+    <!-- empieza navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
+        <!-- contenedor con el logo -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo1.png" width="115" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- div principal video -->
-    <div class="divvideo">
-        <video src="./assets/video/video_1.mp4" width="100%" autoplay loop></video>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!-- dropdown de HOME -->
+                    <li class="dropdown" class="nav-item active">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" id="menuhome">
+                            <li>
+                                <a href="index.html">Home Usuario</a>
+                            </li>
+                            <li>
+                                <a href="home_empresa.html">Home Empresa</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- vídeo principal -->
+    <div class="cover-container">
+        <span class="titulos"> La Mayor Comunidad de Geeks</span>
+        <video preload="" muted="" autoplay="" loop="">
+            <source src="./assets/video/video_1.mp4" type="video/mp4">
+        </video>
     </div>
-    <!-- fin de div principal video -->
     <!-- div login -->
-    <article>
-        <div class="divcenter">
-            <form novalidate>
-                <p class="titulo">Welcome to Geek Jobs!</p>
-                <h3 class="titulo">Inicia sesión</h3>
-                <div>
-                    <button class="github">Continúa con GitHub
-                    </button>
+    <div class="row titulform">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2>Bienvenidos a Geek Jobs</h2>
+            <h3>Inicia Sesión</h3>
+            <hr>
+        </div>
+    </div>
+    <!-- container con redes sociales  -->
+    <form class="form-horizontal" role="form" method="POST" action="/login">
+        <div class="container-fluid sociallinks">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <a class="btn btn-block btn-social btn-github" href="#">
+                        <span class="fa fa-github"></span> Iniciar sesión con GitHub
+                    </a>
+                    <a class="btn btn-block btn-social btn-linkedin" href="#">
+                        <span class="fa fa-linkedin"></span> Iniciar sesión con LinkedIn
+                    </a>
                 </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <!-- inputs email y contraseña  -->
+        <div class="container-fluid formlogin">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="form-group has-danger">
+                        <label class="sr-only" for="email">E-Mail Address</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon" style="width: 2.6rem">
+                                <i class="fa fa-at"></i>
+                            </div>
 
-                <div>
-                    <button class="linkedin">Continúa con Linkedin
-                    </button>
+                            <input type="text" name="email" class="form-control" id="email" placeholder="usuario@email.com" required autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group has-danger">
+                        <label class="sr-only" for="email">Contraseña</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon" style="width: 2.6rem">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <input type="password" name="password" class="form-control" id="password" required>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    <input  id="mail" type="email" name="Email" placeholder="Email" autofocus>
-                    <span class="error" aria-live="polite"></span>
-                </p>
-                <p>
-                    <input pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$"  id="pass" type="password" name="Contraseña" placeholder="Contraseña" >
-                    <span class="errorp" aria-live="polite"></span>
-                </p>
-
-                
-
-                <button type="submit" class="enviar">Únete ahora </button>
-
-                <a href="registrousuario.html">
-                    <p class="minititulo"> ¿No tienes cuenta? Crea tu perfil!</p>
-                </a>
-            </form>
+                <div class="col-md-4"></div>
+            </div>
         </div>
-    </article>
-
-    <!-- empieza footer -->
-    <footer class="empresa">
-        <div class="copyright">
-            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved.</p>
+        <!-- container entrar al login y check-box  -->
+        <div class="container-fluid formlogin">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style=>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-paper-plane-o" style="padding-right: 1em"></i>Entra</button>
+                        <label class="form-check-label"></label>
+                        <label>
+                            <input class="form-check-input" name="remember" type="checkbox">
+                            <span style="padding-left: 5em" name="remember" type="checkbox">Recuérdame</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="footerlist">
-            <ul id="geekjobs_footer">
-                <a target="_blank" href="https:www.geekjobs.com">
-                    <li>
-                        <img src="./assets/img/geek_icon.png" width="50px" height="30px" position alt="">
-                    </li>
-                </a>
-            </ul>
+        <!-- crea tu perfil y no tienes cuenta?  -->
+        <div class="container-fluid">
+            <div class="row formremember" style="padding-top: 1rem">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <a class="btn btn-link" href="registrousuario.html">No tienes cuenta? Crea tu perfil!</a>
+                    <a class="btn btn-link" href="/password/reset">Has olvidado la contraseña?</a>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
-        <!-- footer social media -->
-        <div class="social">
-            <ul>
-                <a target="_blank" href="https:www.linkedin.com">
-                    <li>
-                        <img src="./assets/img/linkedin_icon.png">
-                    </li>
-                </a>
+    </form>
+    </div>
+    </div>
 
-                <a target="_blank" href="https:www.facebook.com">
-                    <li>
-                        <img src="./assets/img/facebook_icon.png">
-                    </li>
-                </a>
+    </div>
+    </div>
 
-                <a target="_blank" href="https:www.twitter.com">
-                    <li>
-                        <img src="./assets/img/twitter_icon.png">
-                    </li>
-                </a>
-            </ul>
+    <!-- FOOTER -->
+    <footer>
+        <div id="gjFooter" class="container">
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3 col-sm-3">
+                    <h5></h5>
+                    <a href="./index.html">
+                        <img src="./assets/img/logo1.png" alt="">
+                    </a>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS -->
+                <div class="col-sm-2">
+                    <h5>GeekJobs</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS GEEK -->
+                <div class="col-sm-2">
+                    <h5>Geeks</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registrousuario.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./perfil_usuario.html">Ver perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS EMPRESA -->
+                <div class="col-sm-2">
+                    <h5>Empresas</h5>
+                    <ul>
+                        <li>
+                            <a href="./home_empresa.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registro_empresa.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./pagina_construccion.html">Ver peril</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- REDES SOCIALES -->
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                </div>
+                <!-- ================================= -->
+            </div>
+            <!-- COPYRIGHT -->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    Todos los derechos reservados © 2018:
+                    <a href="https://www.MDBootstrap.com">
+                        <strong> Thee GeekJobs Company</strong>
+                    </a>
+                </div>
+            </div>
+            <!-- ================================= -->
         </div>
-        <script src="assets/js/validacionForm.js"></script>
     </footer>
-    <!-- fin del footer social media -->
-
 </body>
-
+<script src="./assets/libs/js/jquery/jquery.min.js"></script>
+<script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="home_johnny.js"></script>
 </html>

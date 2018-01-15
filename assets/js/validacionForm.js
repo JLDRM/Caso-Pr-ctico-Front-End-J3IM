@@ -11,8 +11,8 @@ email.addEventListener("keyup", function (event) {
   event.preventDefault();
   if (email.validity.valid) {
 
-    errormail.innerHTML = ""; // Limpia el contenido del mensaje
-    errormail.className = "error"; // Restablece el estado visual del mensaje
+    errormail.innerHTML = ""; 
+    errormail.className = "error";
 
   } else{
     errormail.innerHTML = "¡Yo esperaba una dirección de correo, cariño!";
@@ -24,10 +24,10 @@ email.addEventListener("keyup", function (event) {
 
 pass.addEventListener("keyup", function (event) {
   event.preventDefault();
-  if (pass.validity.patternMismatch===false || pass.value=="") {
+  if (!pass.validity.patternMismatch || pass.value=="") {
 
-    errorpass.innerHTML = ""; // Limpia el contenido del mensaje
-    errorpass.className = "error"; // Restablece el estado visual del mensaje
+    errorpass.innerHTML = ""; 
+    errorpass.className = "error";
   }
 
 }, false);
@@ -52,8 +52,8 @@ if(email.value=="" || !email.validity.valid){
 
 if(pass.value==""|| pass.validity.patternMismatch){
     isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
-    +"- Una letra minuscula"
-    +"- Un numero - Un caracter especial  -Minimo 6 caracteres, honey!";
+    +" - Una letra minuscula"
+    +" - Un numero - Un caracter especial  - Minimo 6 caracteres, honey!";
     
   }
 

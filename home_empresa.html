@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="homebootsjoh.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/validacionForm.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
@@ -28,42 +29,42 @@
                 <img src="./assets/img/logo1.png" width="115" height="50" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <!-- dropdown de HOME -->
-                    <li class="dropdown" class="nav-item active">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu" id="menuhome">
-                            <li>
-                                <a href="index.html">Home Usuario</a>
-                            </li>
-                            <li>
-                                <a href="home_empresa.html">Home Empresa</a>
-                            </li>
-                        </ul>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!-- dropdown de HOME -->
+                <li class="dropdown" class="nav-item active">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu" id="menuhome">
+                        <li>
+                            <a href="index.html">Home Usuario</a>
+                        </li>
+                        <li>
+                            <a href="home_empresa.html">Home Empresa</a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pagina_construccion.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <!-- vídeo principal -->
-    <div class="cover-container">
-        <span class="titulos"> La Mayor Comunidad de Geeks</span>
-        <video preload="" muted="" autoplay="" loop="">
-            <source src="./assets/video/video_2.mov" type="video/mp4">
+    </div>
+</nav>
+<!-- vídeo principal -->
+<div class="cover-container">
+    <span class="titulos"> La Mayor Comunidad de Geeks</span>
+    <video preload="" muted="" autoplay="" loop="">
+        <source src="./assets/video/video_2.mov" type="video/mp4">
         </video>
     </div>
     <!-- div login -->
@@ -76,7 +77,7 @@
         </div>
     </div>
     <!-- container con redes sociales  -->
-    <form class="form-horizontal" role="form" method="POST" action="/login">
+    <form novalidate>
         <div class="container-fluid sociallinks">
             <div class="row">
                 <div class="col-md-4"></div>
@@ -103,7 +104,8 @@
                                 <i class="fa fa-at"></i>
                             </div>
 
-                            <input type="text" name="email" class="form-control" id="email" placeholder="usuario@email.com" required autofocus>
+                            <input type="text" name="email" class="form-control" id="mail" placeholder="usuario@email.com">
+                            <span class="error" aria-live="polite"></span>
                         </div>
                     </div>
                     <div class="form-group has-danger">
@@ -112,7 +114,9 @@
                             <div class="input-group-addon" style="width: 2.6rem">
                                 <i class="fa fa-key"></i>
                             </div>
-                            <input type="password" name="password" class="form-control" id="password" required>
+                            <input type="password" name="pass" class="form-control" id="pass" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$"" >
+                            <span class="errorp" aria-live="polite"></span>
+
                         </div>
                     </div>
                 </div>
@@ -127,124 +131,125 @@
                     <div class="form-check">
                         <button type="submit" class="btn btn-success">
                             <i class="fa fa-paper-plane-o" style="padding-right: 1em"></i>Entra</button>
-                        <label class="form-check-label"></label>
-                        <label>
-                            <input class="form-check-input" name="remember" type="checkbox">
-                            <span style="padding-left: 5em" name="remember" type="checkbox">Recuérdame</span>
-                        </label>
+                            <label class="form-check-label"></label>
+                            <label>
+                                <input class="form-check-input" name="remember" type="checkbox">
+                                <span style="padding-left: 5em" name="remember" type="checkbox">Recuérdame</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- crea tu perfil y no tienes cuenta?  -->
-        <div class="container-fluid">
-            <div class="row formremember" style="padding-top: 1rem">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <a class="btn btn-link" href="registrousuario.html">No tienes cuenta? Crea tu perfil!</a>
-                    <a class="btn btn-link" href="/password/reset">Has olvidado la contraseña?</a>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-    </form>
-    </div>
-    </div>
-
-    </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <div id="gjFooter" class="container">
-            <div class="row">
-                <!-- LOGO -->
-                <div class="col-md-3 col-sm-3">
-                    <h5></h5>
-                    <a href="./index.html">
-                        <img src="./assets/img/logo1.png" alt="">
-                    </a>
-                </div>
-                <!-- ================================= -->
-                <!-- LINKS -->
-                <div class="col-sm-2">
-                    <h5>GeekJobs</h5>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- ================================= -->
-                <!-- LINKS GEEK -->
-                <div class="col-sm-2">
-                    <h5>Geeks</h5>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Iniciar Sesión</a>
-                        </li>
-                        <li>
-                            <a href="./registrousuario.html">Regístrarse</a>
-                        </li>
-                        <li>
-                            <a href="./perfil_usuario.html">Ver perfil</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- ================================= -->
-                <!-- LINKS EMPRESA -->
-                <div class="col-sm-2">
-                    <h5>Empresas</h5>
-                    <ul>
-                        <li>
-                            <a href="./home_empresa.html">Iniciar Sesión</a>
-                        </li>
-                        <li>
-                            <a href="./registro_empresa.html">Regístrarse</a>
-                        </li>
-                        <li>
-                            <a href="./pagina_construccion.html">Ver peril</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- ================================= -->
-                <!-- REDES SOCIALES -->
-                <div class="col-sm-3">
-                    <div class="social-networks">
-                        <a href="#" class="twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="#" class="facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="#" class="google">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
+            <!-- crea tu perfil y no tienes cuenta?  -->
+            <div class="container-fluid">
+                <div class="row formremember" style="padding-top: 1rem">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <a class="btn btn-link" href="registrousuario.html">No tienes cuenta? Crea tu perfil!</a>
+                        <a class="btn btn-link" href="/password/reset">Has olvidado la contraseña?</a>
                     </div>
-                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                    <div class="col-md-4"></div>
                 </div>
-                <!-- ================================= -->
             </div>
-            <!-- COPYRIGHT -->
-            <div class="footer-copyright">
-                <div class="container-fluid">
-                    Todos los derechos reservados © 2018:
-                    <a href="https://www.MDBootstrap.com">
-                        <strong> Thee GeekJobs Company</strong>
+        </form>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div id="gjFooter" class="container">
+        <div class="row">
+            <!-- LOGO -->
+            <div class="col-md-3 col-sm-3">
+                <h5></h5>
+                <a href="./index.html">
+                    <img src="./assets/img/logo1.png" alt="">
+                </a>
+            </div>
+            <!-- ================================= -->
+            <!-- LINKS -->
+            <div class="col-sm-2">
+                <h5>GeekJobs</h5>
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ================================= -->
+            <!-- LINKS GEEK -->
+            <div class="col-sm-2">
+                <h5>Geeks</h5>
+                <ul>
+                    <li>
+                        <a href="./index.html">Iniciar Sesión</a>
+                    </li>
+                    <li>
+                        <a href="./registrousuario.html">Regístrarse</a>
+                    </li>
+                    <li>
+                        <a href="./perfil_usuario.html">Ver perfil</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ================================= -->
+            <!-- LINKS EMPRESA -->
+            <div class="col-sm-2">
+                <h5>Empresas</h5>
+                <ul>
+                    <li>
+                        <a href="./home_empresa.html">Iniciar Sesión</a>
+                    </li>
+                    <li>
+                        <a href="./registro_empresa.html">Regístrarse</a>
+                    </li>
+                    <li>
+                        <a href="./pagina_construccion.html">Ver peril</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ================================= -->
+            <!-- REDES SOCIALES -->
+            <div class="col-sm-3">
+                <div class="social-networks">
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="google">
+                        <i class="fa fa-google-plus"></i>
                     </a>
                 </div>
+                <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
             </div>
             <!-- ================================= -->
         </div>
-    </footer>
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                Todos los derechos reservados © 2018:
+                <a href="https://www.MDBootstrap.com">
+                    <strong> Thee GeekJobs Company</strong>
+                </a>
+            </div>
+        </div>
+        <!-- ================================= -->
+    </div>
+</footer>
 </body>
 <script src="./assets/libs/js/jquery/jquery.min.js"></script>
 <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="home_johnny.js"></script>
+<script src="assets/js/validacionForm.js"></script>
 </html>

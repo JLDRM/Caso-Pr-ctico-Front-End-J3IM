@@ -7,9 +7,7 @@ body{
     background-color: white;
     font-family: "Roboto", sans-serif;
 }
-footer{
-    background-color: #073549;
-}
+
 .colorh1{
     color:#073549;
 }
@@ -107,3 +105,46 @@ FOOTER BOOTSTRAP
 
 /* =================================================== */   
  
+/* stylo del navbar */
+.navbar-brand {
+    width:50px;
+}
+.navbar {
+    background-color: #073549;
+}
+.navbarscroll {
+    background-color: #272727;
+    transition: 1s;
+}
+video { 
+        max-width: 100%;
+        height: auto;
+  }
+
+.jumbotron {
+      margin: 100px auto;
+  }
+
+  .dropdown-menu {
+    background-color: #073549;
+    transition: 1s;
+    padding-left: 30%;
+    border: 0;
+  }
+
+  .dropdown-scroll {
+    background-color: #272727;
+    transition: 1s;
+    padding-left: 30%;
+    border: 0;
+  }
+
+  .dropdown-menu a {
+    color: white;
+  }
+footer {
+    background-color: #073549;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}

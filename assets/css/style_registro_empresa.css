@@ -47,7 +47,9 @@ footer {
 footer {
     background-color: #073549;
 }
-
+label.error{
+    color: red;
+}
 
 /* =================================================== 
 FOOTER BOOTSTRAP

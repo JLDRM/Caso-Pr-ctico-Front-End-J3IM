@@ -188,12 +188,12 @@ $("#bot").click((evnt)=>{
             //event.preventDefault();
         }
     });
-    $("#nombre").rules("add", { regex: "^[a-zA-Z]+$"});
-    $("#apellido").rules("add", { regex: "^[a-zA-Z]+$"});
+    $("#nombre").rules("add", { regex: "^[A-Z ÁÉÍÓÚ][a-z áéíóú]+$"});
+    $("#apellido").rules("add", { regex: "^[A-Z ÁÉÍÓÚ][a-z áéíóú]+$"});
     $("#email").rules("add", { regex: "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"});
     $("#contraseña").rules("add", { regex: "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$"});
     $("#nif").rules("add", { regex: "^[A-Za-z][0-9]{8}$"});
-    $("#telefono").rules("add", { regex: "^(\+34|0034|34)?[6|7|9][0-9]{8}$"});
+    $("#telefono").rules("add", { regex: "^[0-9]{9}$"});
     t.form();
 });
 

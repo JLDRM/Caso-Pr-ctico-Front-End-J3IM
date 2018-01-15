@@ -1,0 +1,103 @@
+/* =================================================== 
+BOTONES HABILIDADES PRINCIPALES EN PERFIL USUARIO
+=================================================== */
+
+.mm ul li {
+    list-style: none;
+    display: inline-flex;
+    border: none;
+}
+
+.mm ul li a {
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px 5px 0;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+}
+
+
+/* === COLORES DE LOS BOTONES === */
+
+.b {
+    background: #3498db;
+}
+
+.b:hover {
+    background-color: #017dd0;
+    text-shadow: #005289 2px -2px 1px;
+}
+
+.b:active {
+    background-color: #3498db;
+}
+
+.r {
+    background: #ff3800;
+}
+
+.r:hover {
+    background-color: red;
+    text-shadow: #8f1f00 2px -2px 1px;
+}
+
+.r:active {
+    background-color: #ff3800;
+}
+
+.g {
+    background: #03dd00;
+}
+
+.g:hover {
+    background-color: #27c901;
+    text-shadow: #136300 2px -2px 1px;
+}
+
+.g:active {
+    background-color: #03dd00;
+}
+
+.o {
+    background: #ffbf00;
+}
+
+.o:hover {
+    background-color: orange;
+    text-shadow: #a17900 2px -2px 1px;
+}
+
+.o:active {
+    background-color: #ffbf00;
+}
+
+.m {
+    background: #ff00ca;
+}
+
+.m:hover {
+    background-color: #bf0098;
+    text-shadow: #8b016f 2px -2px 1px;
+}
+
+.m:active {
+    background-color: #ff00ca;
+}
+
+.p {
+    background: #b231fd;
+}
+
+.p:hover {
+    background-color: #a100ff;
+    text-shadow: #400065 2px -2px 1px;
+}
+
+.p:active {
+    background-color: #b231fd;
+}
+
+
+/* =================================================== */

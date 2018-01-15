@@ -53,26 +53,11 @@
                     <span class="error" aria-live="polite"></span>
                 </p>
                 <p>
-                    <input pattern="[A-Z]([A-Za-z0-9-]+)"  id="password" type="password" name="Contraseña" placeholder="Contraseña" >
+                    <input pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$"  id="pass" type="password" name="Contraseña" placeholder="Contraseña" >
                     <span class="errorp" aria-live="polite"></span>
                 </p>
 
-                <!-- empieza el pop up 
-
-                <a href="#openModal" href="href=" https:www.google.com "">
-                    <p class="minititulo">¿Has olvidado tu contraseña?</p>
-                </a>
-                <div id="openModal" class="modalDialog">
-                    <div>
-                        <a href="#close" title="Close" class="close">X</a>
-                        <h2>Por favor, escribe tu email :)</h2>
-                        <input type="email" name="Email" placeholder="Email" autofocus spellcheck="true">
-                        <button id="enviar">Enviar
-                        </button>
-                    </div>
-                </div>
                 
-                Termina el pop up -->
 
                 <button type="submit" class="enviar">Únete ahora </button>
 

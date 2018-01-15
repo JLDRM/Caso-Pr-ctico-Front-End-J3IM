@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registro Usuario</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/josep.css">
+	<link rel="stylesheet" href="./assets/css/style_registro_empresa.css">
 	<link rel="stylesheet" type="text/css" href="assets/js/validacionForm.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
@@ -19,125 +19,116 @@
 
 <body>
 	<header>
-		<div id="logo">
-			<a href="home_usuario.html"><img src="./assets/img/logo1.png" alt="GeekJobs"></a>
-		</div>
-		<div class="menu">
-			<ul>
-				<li>
-					<a href="index.html">Login</a>
-				</li>
-				<li>
-					<a href="home_empresa.html" class="active">Empresas</a>
-				</li>
-			</ul>
-		</div>
+		<!-- A la epera de header -->
 	</header>
 
 	<section>
 		
-		<article class="article1josep">
-			<div> 
-				<h1>¡WELCOME GEEKS!</h1>
-				
-				<p>Un buen geek siempre encuentra el trabajo de sus sueños, aquí se podrá hacer realidad. Diferentes empresas están desesperadas por encontrarte y tú lo sabes. 
-				</p>
-				
-				<p>
-					Rellena el formulario y verás como te llueven ofertas del cielo. 
-				</p> 
-			</div>
+		<article class="container articlejosep rounded-top">
 			
-			<div>
-				<a href="#h3"><button class="buttonjosep">¡Unete a la comunidad!</button></a>
+
+
+			<div class="row justify-content-center ml-1 mr-1 letramarta">
+				<h1 class="pt-5">¡WELCOME GEEKS!</h1>
+			</div>
+
+			<div class="row justify-content-center ml-1 mr-1 letramarta">
+				<p class="pt-5">Un buen geek siempre encuentra el trabajo de sus sueños, aquí se podrá hacer realidad. Diferentes empresas están desesperadas por encontrarte y tú lo sabes. 
+				</p>
+			</div>
+
+			<div class="row justify-content-center ml-1 mr-1 letramarta">
+				<p class="pt-2">Rellena el formulario y verás como te llueven ofertas del cielo. 
+				</p>
+			</div> 
+			
+			
+			<div class="row justify-content-center pt-5 pb-5 letramarta">
+				<a href="#h3"><button class="btn btn-primary">¡Unete a la comunidad!</button></a>
 			</div>
 		</article>
 		
 
 		<article class="container">
 
-			<div>
-				<h2 id=h3>FORMA PARTE DE LA COMUNIDAD MÁS GEEK</h2>
-			</div>
-
 			<div >
-			<form novalidate>
-				<div class="form-row" >
-					<div class="form-group col-12 col-lg-6 col-md-6 col-sm-12" >
-						<label for="nombre"></label>Nombre
-						<input  class="form-control" id="nombre"  type="text" placeholder="Nombre" name="nombre" autocomplete="on">
-						<span class="errorn" aria-live="polite"></span>
+				<form novalidate>
+					<div class="form-row pt-5" >
+						<div class="form-group col-12 col-lg-6 col-md-6 col-sm-12" >
+							<label for="nombre"></label>Nombre
+							<input  class="form-control" id="nombre"  type="text" placeholder="Nombre" name="nombre" autocomplete="on">
+							<span class="errorn" aria-live="polite"></span>
+						</div>
+
+						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-12" >
+							<label for="apellido"></label>Apellido
+							<input class="form-control" id="apellido"  type="text" placeholder="Apellido" name="apellido" autocomplete="on">
+							<span class="errora" aria-live="polite"></span>
+						</div>
 					</div>
 
-					<div class="form-group col-lg-6 col-md-6 col-sm-12 col-12" >
-						<label for="apellido"></label>Apellido
-						<input class="form-control" id="apellido"  type="text" placeholder="Apellido" name="apellido" autocomplete="on">
-						<span class="errora" aria-live="polite"></span>
+					<div class="form-row">
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
+							<label for="email"></label>Email
+							<input class="form-control" id="email"  type="Email"	placeholder="Email" name="email" autocomplete="on">
+							<span class="errorm" aria-live="polite"></span>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
-						<label for="email"></label>Email
-						<input class="form-control" id="email"  type="Email"	placeholder="Email" name="email" autocomplete="on">
-						<span class="errorm" aria-live="polite"></span>
+					<div class="form-row">	
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12">
+							<label for="contraseña"></label>Contraseña
+							<input class="form-control" id="contraseña"  type="password" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$" 	placeholder="Contraseña" name="contraseña" autocomplete="on">
+							<span class="errorpass" aria-live="polite"></span>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">	
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12">
-						<label for="contraseña"></label>Contraseña
-						<input class="form-control" id="contraseña"  type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 	placeholder="Contraseña" name="contraseña" autocomplete="on">
-						<span class="errorpass" aria-live="polite"></span>
+					<div class="form-row">
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
+							<label for="conficontraseña"></label>Confirmación Contraseña
+							<input class="form-control" id="conficontraseña"  type="password" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$" 	placeholder="Confirmación Contraseña" name="conficontraseña" autocomplete="on">
+							<span class="errorconfipass" aria-live="polite"></span>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
-						<label for="conficontraseña"></label>Confirmación Contraseña
-						<input class="form-control" id="conficontraseña"  type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 	placeholder="Confirmación Contraseña" name="conficontraseña" autocomplete="on">
-						<span class="errorconfipass" aria-live="polite"></span>
+					<div class="form-row">
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
+							<label for="telefono"></label>Telefono
+							<input class="form-control" id="telef"  type="Telefono" placeholder="Telefono" name="telefono" autocomplete="on" pattern="[0-9]{9}">
+							<span class="errort" aria-live="polite"></span>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
-						<label for="telefono"></label>Telefono
-						<input class="form-control" id="telef"  type="Telefono" placeholder="Telefono" name="telefono" autocomplete="on" pattern="[0-9]{9}">
-						<span class="errort" aria-live="polite"></span>
+					<div class="form-row">
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >	
+							<label for="habilidad"></label>¿Cuál es tu principal habilidad técnica?
+							<input class="form-control" id="habili"  type="text" placeholder="¿Cuál es tu principal habilidad técnica?" name="habilidad" autocomplete="on">
+							<span class="errorh" aria-live="polite"></span>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >	
-						<label for="habilidad"></label>¿Cuál es tu principal habilidad técnica?
-						<input class="form-control" id="habili"  type="text" placeholder="¿Cuál es tu principal habilidad técnica?" name="habilidad" autocomplete="on">
-						<span class="errorh" aria-live="polite"></span>
+					<div class="form-row">	
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >	
+							<label for="hobby"></label>¿Y tu hobby favorito?
+							<input class="form-control" id="hobby"  type="text" placeholder="¿Y tu hobby favorito?" name="hobby" autocomplete="on">
+							<span class="errorb" aria-live="polite"></span>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">	
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >	
-						<label for="hobby"></label>¿Y tu hobby favorito?
-						<input class="form-control" id="hobby"  type="text" placeholder="¿Y tu hobby favorito?" name="hobby" autocomplete="on">
-						<span class="errorb" aria-live="polite"></span>
+					<div class="form-row">
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >	
+							<label for="cv"></label>Sube tu CV!
+							<input id="cv"  type="file" placeholder="Sube tu CV" name="cv" capture>
+						</div>
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >	
-						<label for="cv"></label>Sube tu CV!
-						<input id="cv"  type="file" placeholder="Sube tu CV" name="cv" capture>
+					<div class="form-row">
+						<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
+							<input class="btn btn-primary" id="enviar" type="submit" placeholder="Enviar" value="Enviar">
+						</div>
 					</div>
-				</div>
-
-				<div class="form-row">
-					<div class="form-group col-12 col-lg-12 col-md-12 col-sm-12" >
-						<input class="btn btn-primary" id="enviar" type="submit" placeholder="Enviar" value="Enviar">
-					</div>
-				</div>
-			</form>
-		</div>
+				</form>
+			</div>
 		</div>	
 	</article>
 

@@ -51,8 +51,8 @@ if(email.value=="" || !email.validity.valid){
   }
 
 if(pass.value==""|| pass.validity.patternMismatch){
-    isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
-    +" - Una letra minuscula"
+    isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula " 
+    +" - Una letra minuscula "
     +" - Un numero - Un caracter especial  - Minimo 6 caracteres, honey!";
     
   }

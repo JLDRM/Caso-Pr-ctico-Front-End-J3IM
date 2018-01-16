@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-
+@import url("./navbar.css");
+@import url('./footer.css');
 body {
     margin: 0;
     padding: 0;
@@ -8,36 +9,32 @@ body {
 }
 
 header {
-  display: flex;
-  background: #073549;
-
-  }
+    display: flex;
+    background: #073549;
+}
 
 #tituloJoan {
     background-image: url(../img/ofertas.png);
     color: white;
     background-repeat: no-repeat;
- 
 }
 
-#dorm{ color: white;
-
-
+#dorm {
+    color: white;
 }
 
-#jobDescription{
+#jobDescription {
     height: 300px;
-
 }
 
-#form{
+#form {
     background-color: white;
 }
 
-.form-row mt-5{
+.form-row mt-5 {
     background-color: white;
 }
 
-label.error{
+label.error {
     color: red;
 }

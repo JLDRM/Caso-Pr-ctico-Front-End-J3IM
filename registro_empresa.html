@@ -37,39 +37,39 @@
                     <img src="./assets/img/logo1.png" width="115" height="50" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <!-- dropdown de HOME -->
-                    <li class="dropdown" class="nav-item active">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu" id="menuhome">
-                            <li>
-                                <a href="index.html">Home Usuario</a>
-                            </li>
-                            <li>
-                                <a href="home_empresa.html">Home Empresa</a>
-                            </li>
-                        </ul>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- dropdown de HOME -->
+                        <li class="dropdown" class="nav-item active">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" id="menuhome">
+                                <li>
+                                    <a href="index.html">Home Usuario</a>
+                                </li>
+                                <li>
+                                    <a href="home_empresa.html">Home Empresa</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pagina_construccion.html">Contacto</a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
-<!-- ===============HEADER=================== -->
+        </nav>
+    </header>
+    <!-- ===============HEADER=================== -->
 
     <!--nueva versión de article imgen con texto-->
     <article class="container articlemarta rounded-top mt-5 pt-5">
@@ -118,11 +118,13 @@
             </div>
             <div class="form-row px-1">
                 <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" class="form-control" id="contraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$" value="Abcd45">
+                <input type="password" name="contraseña" class="form-control" id="contraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$"
+                    value="Abcd45">
             </div>
             <div class="form-row px-1">
                 <label for="ccontraseña">Confirmación Contraseña</label>
-                <input type="password" name="ccontraseña" class="form-control" id="ccontraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$" value="Abcd45">
+                <input type="password" name="ccontraseña" class="form-control" id="ccontraseña" placeholder="Elige una contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$"
+                    value="Abcd45">
             </div>
             <div class="form-row px-1">
                 <label for="empresa">Empresa</label>
@@ -135,7 +137,8 @@
                 </div>
                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
                     <label for="telefono">Teléfono</label>
-                    <input name="telefono" class="form-control" id="telefono" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$" value="712345745">
+                    <input name="telefono" class="form-control" id="telefono" placeholder="Escribe tu teléfono" pattern="^(\+34|0034|34)?[6|7|9][0-9]{8}$"
+                        value="712345745">
                 </div>
             </div>
             <div class="form-row px-1 mb-4">
@@ -159,13 +162,12 @@
         </form>
     </section>
     <!--fin de la nueva versión del form-->
-
-    <!-- Footer nueva versión -->
+    <!-- FOOTER -->
     <footer>
         <div id="gjFooter" class="container">
             <div class="row">
                 <!-- LOGO -->
-                <div class="col-md-3 col-sm-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                     <h5></h5>
                     <a href="./index.html">
                         <img src="./assets/img/logo1.png" alt="">
@@ -173,7 +175,7 @@
                 </div>
                 <!-- ================================= -->
                 <!-- LINKS -->
-                <div class="col-sm-2">
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
                     <h5>GeekJobs</h5>
                     <ul>
                         <li>
@@ -189,7 +191,7 @@
                 </div>
                 <!-- ================================= -->
                 <!-- LINKS GEEK -->
-                <div class="col-sm-2">
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
                     <h5>Geeks</h5>
                     <ul>
                         <li>
@@ -205,7 +207,7 @@
                 </div>
                 <!-- ================================= -->
                 <!-- LINKS EMPRESA -->
-                <div class="col-sm-2">
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
                     <h5>Empresas</h5>
                     <ul>
                         <li>
@@ -215,13 +217,13 @@
                             <a href="./registro_empresa.html">Regístrarse</a>
                         </li>
                         <li>
-                            <a href="./pagina_construccion.html">Ver peril</a>
+                            <a href="./pagina_construccion.html">Ver perfil</a>
                         </li>
                     </ul>
                 </div>
                 <!-- ================================= -->
                 <!-- REDES SOCIALES -->
-                <div class="col-sm-3">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
                     <div class="social-networks">
                         <a href="#" class="twitter">
                             <i class="fa fa-twitter"></i>
@@ -233,7 +235,7 @@
                             <i class="fa fa-google-plus"></i>
                         </a>
                     </div>
-                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                    <a class="btn btn-default" href="./contact.html">Contáctenos</a>
                 </div>
                 <!-- ================================= -->
             </div>
@@ -241,15 +243,15 @@
             <div class="footer-copyright">
                 <div class="container-fluid">
                     Todos los derechos reservados © 2018:
-                    <a href="#">
-                        <strong> Thee GeekJobs Company</strong>
+                    <a href="./index.html">
+                        <strong> The GeekJobs Company</strong>
                     </a>
                 </div>
             </div>
             <!-- ================================= -->
         </div>
     </footer>
-    <!-- fin del Footer nueva versión -->
+    <!-- ================================= -->
 </body>
 <script src="assets/libs/js/jquery/jquery.min.js"></script>
 <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>

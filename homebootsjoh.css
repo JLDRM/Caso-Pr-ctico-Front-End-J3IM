@@ -155,3 +155,8 @@ video {
     font-size: 10pt;
     padding-bottom: 6%;
 }
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}

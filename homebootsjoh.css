@@ -1,11 +1,11 @@
-
+@import url("./assets/css/reset.css");
 .videoabsolute {
     position: absolute;
     margin-top: 20%;
     margin-left: 15%;
     color: white;
-
 }
+
 #tituloportada {
     color: white;
     font-size: 3em;
@@ -15,10 +15,11 @@
 #subtituloportada {
     color: whitesmoke;
     font-size: 2em;
-
 }
 
+
 /*devices (landscape phones, 576px and up)*/
+
 @media (min-width: 300px) {
     .videoabsolute {
         position: absolute;
@@ -26,97 +27,104 @@
         margin-left: 10%;
         color: white;
     }
-    #tituloportada  {
+    #tituloportada {
         font-size: 200%;
-      }
-
-    #subtituloportada  {
+    }
+    #subtituloportada {
         font-size: 130%;
+    }
+}
 
-      }
-    } 
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {   
+
+@media (min-width: 768px) {
     .videoabsolute {
         position: absolute;
         margin-top: 25%;
         margin-left: 10%;
         color: white;
     }
-    #tituloportada  {
+    #tituloportada {
         font-size: 350%;
-      }
-
-    #subtituloportada  {
+    }
+    #subtituloportada {
         font-size: 250%;
+    }
+}
 
-      }
-    } 
+
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
+
+@media (min-width: 992px) {
     .videoabsolute {
         position: absolute;
         margin-top: 20%;
         margin-left: 10%;
         color: white;
     }
-    #tituloportada  {
+    #tituloportada {
         font-size: 500%;
-      }
-
-    #subtituloportada  {
+    }
+    #subtituloportada {
         font-size: 400%;
+    }
+}
 
-      }
-    } 
-    
 .cover-container {
     position: relative;
 }
+
+
 /* stylo del navbar */
+
 .navbar-brand {
-    width:50px;
+    width: 50px;
 }
+
 .navbar {
     background-color: #073549;
 }
+
 .navbarscroll {
     background-color: #272727;
     transition: 1s;
 }
-video { 
-        max-width: 100%;
-        height: auto;
-        background: rgba(0,0,0,1);
-  }
+
+video {
+    max-width: 100%;
+    height: auto;
+}
 
 .videorelative {
     position: relative;
 }
 
 .jumbotron {
-      margin: 100px auto;
-  }
+    margin: 100px auto;
+}
 
-  .dropdown-menu {
+.dropdown-menu {
     background-color: #073549;
     transition: 1s;
     padding-left: 30%;
     border: 0;
-  }
+}
 
-  .dropdown-scroll {
+.dropdown-scroll {
     background-color: #272727;
     transition: 1s;
     padding-left: 30%;
     border: 0;
-  }
+}
 
-  .dropdown-menu a {
+.dropdown-menu a {
     color: white;
-  }
+}
+
+
 /* stylo del form login */
+
 .social {
     margin: 100px auto;
 }
@@ -147,11 +155,3 @@ video {
     font-size: 10pt;
     padding-bottom: 6%;
 }
-
-footer {
-    background-color: #073549;
-    width: 100%;
-    display: flex;
-    padding: 10px;
-}
-

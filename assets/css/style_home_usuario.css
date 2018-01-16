@@ -1,15 +1,5 @@
 @import url("./reset.css");
 
-header {
-    background-color: #03A9F4;
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width: 100%;
-}
-
-
 header.empresa {
     background-color: #073549;
 }

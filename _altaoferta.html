@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Alta de ofertas</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Alta de ofertas</title>
+</head>
+
+<body>
+
+  <body>
+    <article id="tituloJoan" class="container">
+      <div class="row justify-content-center ml-1 mr-1 ">
+        <h1 class="pt-5">¿QUIERES A LOS MEJORES? </h1>
+      </div>
+      <div class="row justify-content-center ml-1 mr-1">
+        <h2 class="pt-5">PUBLICA AHORA TU OFERTA</h2>
+
+      </div>
+      <div class="row justify-content-center pt-5 pb-5 ml-1 mr-1">
+        <a href="#tituloPosicion">
+          <button id="vamos" class="btn btn-primary">¡Vamos!</button>
+        </a>
+      </div>
+
+    </article>
+
+    <section class="container" id="form">
+      <form action="">
+
+        <div class="form-row mt-5">
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+            <label for="inputTitulo">Título de la posición</label>
+            <input type="text" id="tituloPosicion" class="form-control" required name="position" placeholder="Ej. Python developer" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="inputDescripcion">Título de la posición</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+            <textarea class="form-control" id="jobDescription" class="form-control" name="jobdescription" required maxlength="300" placeholder="Ayuda a los candidatos a entender tus necesidades"
+              pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$"> </textarea>
+          </div>
+
+
+
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+            <input type="text" class="form-control" required name="training" id="formacion" placeholder="Formación" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
+            <input type="text" class="form-control" required name="location" placeholder="Ubicación" id="ubicacion" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
+            <label>Años de experiencia</label>
+            <input type="range" class="form-control" required name="experience" id="experiencia">
+            <label>Salario</label>
+            <input type="range" class="form-control" required name="salary" min="20000" max="60000" id="salario">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Trabajo Remoto
+              </label>
+
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+            <label>Idiomas</label>
+            <input type="text" class="form-control" name="languajes" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" required placeholder="Ej. Inglés, Francés, ..."
+              id="idiomas">
+            <label>Soft skills</label>
+            <input type="text" class="form-control" required name="sskills" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc..."
+              id="softSkills">
+            <label>Habilidades técnicas</label>
+            <input type="text" class="form-control" required name="hskills" pattern="[a-zA-Z0-9,_]*$" placeholder="Ej. Python, Django, REST API,.."
+              id="hardSkills">
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+          <button type="submit" class="btn btn-primary ">Publicar</button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

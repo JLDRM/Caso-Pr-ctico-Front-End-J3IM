@@ -9,7 +9,10 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,500,700" rel="stylesheet">
     <!-- Estilos -->
+    <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/perfil_usuario.css">
+
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
@@ -21,6 +24,42 @@
 
 <body>
 
+    <!-- empieza navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
+        <!-- contenedor con el logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/img/logo1.png" width="115" height="50" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!-- dropdown de HOME -->
+                <li class="dropdown" class="nav-item active">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu" id="menuhome">
+                        <li>
+                            <a href="index.html">Home Usuario</a>
+                        </li>
+                        <li>
+                            <a href="home_empresa.html">Home Empresa</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section>
         <div class="cont">
             <div id="contact">
@@ -42,38 +81,115 @@
                 </form>
             </div>
         </div>
+
+        <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <div id="copyright">
-            <p> © 2011-2017 Geek Jobs, S.L. All rights Reserved. </p>
-        </div>
-        <div id="footerlist">
-            <ul>
-                <a target="_blank" href="https:www.geekjobs.com">
-                    <li>
-                        <img src="./assets/img/geek_icon.png" width="50px" height="30px" position alt=""> </li>
-                </a>
-            </ul>
-        </div>
-        <div id="social">
-            <ul>
-                <a target="_blank" href="https:www.linkedin.com">
-                    <li>
-                        <img src="./assets/img/linkedin_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-                <a target="_blank" href="https:www.facebook.com">
-                    <li>
-                        <img src="./assets/img/facebook_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-                <a target="_blank" href="https:www.twitter.com">
-                    <li>
-                        <img src="./assets/img/twitter_icon.png" width="30px" height="30px" alt=""> </li>
-                </a>
-
-            </ul>
+        <div id="gjFooter" class="container">
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                    <h5></h5>
+                    <a href="./index.html">
+                        <img src="./assets/img/logo1.png" alt="">
+                    </a>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS -->
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                    <h5>GeekJobs</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS GEEK -->
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                    <h5>Geeks</h5>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registrousuario.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./perfil_usuario.html">Ver perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- LINKS EMPRESA -->
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                    <h5>Empresas</h5>
+                    <ul>
+                        <li>
+                            <a href="./home_empresa.html">Iniciar Sesión</a>
+                        </li>
+                        <li>
+                            <a href="./registro_empresa.html">Regístrarse</a>
+                        </li>
+                        <li>
+                            <a href="./pagina_construccion.html">Ver perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ================================= -->
+                <!-- REDES SOCIALES -->
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                </div>
+                <!-- ================================= -->
+            </div>
+            <!-- COPYRIGHT -->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    Todos los derechos reservados © 2018:
+                    <a href="./index.html">
+                        <strong> Thee GeekJobs Company</strong>
+                    </a>
+                </div>
+            </div>
+            <!-- ================================= -->
         </div>
     </footer>
+    <!-- ================================= -->
 </body>
 
 </html>

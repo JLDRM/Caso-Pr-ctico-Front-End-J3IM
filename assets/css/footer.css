@@ -2,6 +2,10 @@
 FOOTER BOOTSTRAP
 =================================================== */
 
+footer {
+    background-color: #073549;
+}
+
 #gjFooter {
     color: white;
 }

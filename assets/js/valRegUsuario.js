@@ -21,26 +21,24 @@ var errhobby = document.querySelector('.errorb');
 //NOMBRE
 nombre.addEventListener("keyup", function (event) {
   event.preventDefault();
-  if (nombre.input=="") {
+  if (nombre.input=="" || !nombre.validity.patternMismatch) {
     errnombre.innerHTML = ""; 
     errnombre.className = "error";
-  } else {
-    errnombre.innerHTML = ""; 
+    }else{
+      errnombre.innerHTML = "Debe empezar por mayuscula y sin !#¢%&..."; 
     errnombre.className = "error";
-
-  }
+    }
 }, false);
 
 //APELLIDO
 apell.addEventListener("keyup", function (event) {
   event.preventDefault();
-  if (apell.input=="") {
+  if (apell.input=="" || !apell.validity.patternMismatch) {
     errapell.innerHTML = ""; 
     errapell.className = "error";
-  } else {
-    errapell.innerHTML = ""; 
+  }else{
+    errapell.innerHTML = "Debe empezar por mayuscula y sin !#¢%&..."; 
     errapell.className = "error";
-
   }
 }, false);
 
@@ -81,7 +79,7 @@ confipass.addEventListener("keyup", function (event) {
 //TELEFONO
 telef.addEventListener("keyup", function (event) {
   event.preventDefault();
-  if (!telef.validity.patternMismatch) {
+  if (!telef.validity.patternMismatch || telef.value =="") {
 
     errtelef.innerHTML = ""; 
     errtelef.className = "error"; 
@@ -97,20 +95,26 @@ telef.addEventListener("keyup", function (event) {
 //HABILIDAD
 habili.addEventListener("keyup", function (event) {
   event.preventDefault();
-  if (habili.value=="") {
+  if (habili.value=="" ) {
 
     errhabili.innerHTML = ""; 
     errhabili.className = "error"; 
+  } else {
+    errhabili.innerHTML = "Debe empezar por mayuscula y sin !#¢%&..."; 
+    errhabili.className = "error"
   } 
 }, false);
 
   //HOBBY
 hobby.addEventListener("keyup", function (event) {
   event.preventDefault();
-  if (hobby.value=="") {
+  if (hobby.value=="" || !hobby.validity.patternMismatch) {
 
     errhobby.innerHTML = ""; 
     errhobby.className = "error"; 
+  } else {
+    errhobby.innerHTML = "Debe empezar por mayuscula y sin !#¢%&..."; 
+    errhobby.className = "error";
   }
 }, false);
 
@@ -138,31 +142,31 @@ form.addEventListener("submit", function (event) {
   
   if(email.value=="" || !email.validity.valid){
     isNokMail="¡Yo esperaba una dirección de correo, honey!";
-    //pintoclasem="error.active";
-  }
-
-  if(nombre.value==""){
-    isNokNombre="¡Como te llamas, honey!";
     
   }
 
-  if(apell.value==""){
-    isNokApell="¡Como te llamas, honey!";
+  if(nombre.value=="" || nombre.validity.patternMismatch){
+    isNokNombre="¡Como te llamas, honey! No pongas cosas raras!";
+    
+  }
+
+  if(apell.value=="" || apell.validity.patternMismatch){
+    isNokApell="¡Como te llamas, honey! No pongas cosas raras!";
     
   }
 
   if(pass.value==""|| pass.validity.patternMismatch){
-    isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
-    +"- Una letra minuscula"
-    +"- Un numero - Un caracter especial  -Minimo 6 caracteres, honey!"
+    isNokPass="¡Debes establecer una password que contenga: - Una letra mayuscula " 
+    +"- Una letra minuscula "
+    +"- Un numero - Un caracter especial  - Minimo 6 caracteres, honey!"
     ;
     
   }
 
   if(confipass.value=="" || confipass.validity.patternMismatch){
-    isNokConfipass="¡Debes establecer una password que contenga: - Una letra mayuscula" 
-    +"- Una letra minuscula"
-    +"- Un numero - Un caracter especial  -Minimo 6 caracteres, honey!"
+    isNokConfipass="¡Debes establecer una password que contenga: - Una letra mayuscula " 
+    +"- Una letra minuscula "
+    +"- Un numero - Un caracter especial  - Minimo 6 caracteres, honey!"
     ;
     
   }
@@ -176,13 +180,13 @@ form.addEventListener("submit", function (event) {
     
   }
 
-  if(habili.value==""){
-    isNokHabili="¡No seas tan humilde fella!";
+  if(habili.value=="" || habili.validity.patternMismatch){
+    isNokHabili="¡No seas tan humilde fella! a No pongas cosas raras!";
     
   }
 
-  if(hobby.value==""){
-    isNokHobby="¡Va que como geek el javascript seguro te pone!";
+  if(hobby.value=="" || hobby.validity.patternMismatch){
+    isNokHobby="¡Va que como geek el javascript seguro te pone! No escribas cosas raras!";
     
   }
 
@@ -211,13 +215,15 @@ form.addEventListener("submit", function (event) {
   errhobby.className = pintoclaseb;  
   
   if(!isNokMail && !isNokNombre && !isNokApell && !isNokPass && !isNokConfipass && !isDiferentPass&& !isNokTelef && !isNokHabili &&!isNokHobby){
-    console.log('hola');
+    console.log('capiscado');
     var url = "http://www.mocky.io/v2/5a5390ae300000e22c1ebfe4";
     var request = new XMLHttpRequest();
 
     request.open("POST", url);
     request.onload = function () {
       if (request.status == 200) {
+
+        console.log(request.response);
 
         location.href=request.response;
 

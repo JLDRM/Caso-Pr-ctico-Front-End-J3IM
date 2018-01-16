@@ -1,4 +1,72 @@
-/* stylo del navbar */
+
+.videoabsolute {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 15%;
+    color: white;
+
+}
+#tituloportada {
+    color: white;
+    font-size: 3em;
+    justify-content: center;
+}
+
+#subtituloportada {
+    color: whitesmoke;
+    font-size: 2em;
+
+}
+
+/*devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) {
+    .videoabsolute {
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+    #tituloportada  {
+        font-size: 200%;
+      }
+
+    #subtituloportada  {
+        font-size: 130%;
+      }
+    } 
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {   
+    .videoabsolute {
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+    #tituloportada  {
+        font-size: 350%;
+      }
+
+    #subtituloportada  {
+        font-size: 250%;
+
+      }
+    } 
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .videoabsolute {
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+    #tituloportada  {
+        font-size: 500%;
+      }
+
+    #subtituloportada  {
+        font-size: 400%;
+      }
+    } 
+
+.cover-container {
+    position: relative;
+}
+/* NAVBAR */
 .navbar-brand {
     width:50px;
 }
@@ -12,12 +80,13 @@
 video { 
         max-width: 100%;
         height: auto;
+        background: rgba(0,0,0,1);
   }
 
-.jumbotron {
-      margin: 100px auto;
-  }
-
+.videorelative {
+    position: relative;
+}
+/* EFECTO DROPDOWN*/
   .dropdown-menu {
     background-color: #073549;
     transition: 1s;
@@ -35,7 +104,7 @@ video {
   .dropdown-menu a {
     color: white;
   }
-/* stylo del form login */
+/* LOGIN */
 .social {
     margin: 100px auto;
 }
@@ -50,6 +119,7 @@ video {
 .titulform {
     padding-top: 3%;
     text-align: center;
+    position: relative;
 }
 
 .form-check-input {
@@ -66,10 +136,8 @@ video {
     padding-bottom: 6%;
 }
 
-footer {
-    background-color: #073549;
-    width: 100%;
-    display: flex;
-    padding: 10px;
-}
 
+.row { 
+    margin-right: 0; 
+    margin-left: 0; 
+}

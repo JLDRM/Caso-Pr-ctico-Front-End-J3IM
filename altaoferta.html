@@ -11,148 +11,101 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-  crossorigin="anonymous">
-
+    crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/joanstyle.css">
-  <link rel="stylesheet" href="homebootsjoh.css">
-  <!-- Estilo Header -->
-
   <title>Alta de ofertas</title>
 </head>
 
 <body>
-  <!-- ===============HEADER=================== -->
-  <header>
-    <!-- empieza navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
-      <!-- contenedor con el logo -->
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/logo1.png" width="115" height="50" alt="">
+
+  <body>
+    <article id="tituloJoan" class="container">
+      <div class="row justify-content-center ml-1 mr-1 ">
+        <h1 class="pt-5">¿QUIERES A LOS MEJORES? </h1>
+      </div>
+      <div class="row justify-content-center ml-1 mr-1">
+        <h2 class="pt-5">PUBLICA AHORA TU OFERTA</h2>
+
+      </div>
+      <div class="row justify-content-center pt-5 pb-5 ml-1 mr-1">
+        <a href="#aqui">
+          <button id="vamos" class="btn btn-primary">¡Vamos!</button>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <!-- dropdown de HOME -->
-          <li class="dropdown" class="nav-item active">
-            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
-              Home
-            </a>
-            <ul class="dropdown-menu" id="menuhome">
-              <li>
-                <a href="index.html">Home Usuario</a>
-              </li>
-              <li>
-                <a href="home_empresa.html">Home Empresa</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pagina_construccion.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- ===============HEADER=================== -->
-
-<body>
-  <article id="tituloJoan" class="container pt-5 mt-5">
-    <div class="row justify-content-center ml-1 mr-1 ">
-      <h1 class="pt-5">¿QUIERES A LOS MEJORES? </h1>
-    </div>
-    <div class="row justify-content-center ml-1 mr-1">
-      <h2 class="pt-5">PUBLICA AHORA TU OFERTA</h2>
-
-    </div>
-    <div class="row justify-content-center pt-5 pb-5 ml-1 mr-1">
-      <a href="#aqui">
-        <button id="vamos" class="btn btn-primary">¡Vamos!</button>
-      </a>
-    </div>
-
-  </article>
-
-  <section class="container" id="form">
-    <form action="./pagina_construccion.html" name="registration">
-
-      <div class="form-row pt-5">
-        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-          <label for="inputTitulo" id="aqui">Título de la posición</label>
-          <input type="text" id="tituloPosicion" class="form-control"  name="position" placeholder="Ej. Python developer" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$">
-        </div>
       </div>
 
-      <div class="form-row">
-        <label for="inputDescripcion">Título de la posición</label>
-      </div>
+    </article>
 
-      <div class="form-row">
-        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-          <textarea class="form-control" id="jobDescription" class="form-control" name="jobdescription"  maxlength="300" placeholder="Ayuda a los candidatos a entender tus necesidades"
-          pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$"> </textarea>
-        </div>
+    <section class="container" id="form">
+      <form action="./pagina_construccion.html" name="registration">
 
-
-
-        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
-         <div><input type="text" class="form-control mb-4"  name="training" id="formacion" placeholder="Formación" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
-          <input type="text" class="form-control"  name="location" placeholder="Ubicación" id="ubicacion" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
-        </div> 
-        <div> <label>Años de experiencia</label>
-          <input type="range" class="form-control"  name="experience" id="experiencia"></div>
-          <label>Salario</label>
-          <input type="range" class="form-control"  name="salary" min="20000" max="60000" id="salario">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              Trabajo Remoto
-            </label>
-
+        <div class="form-row pt-5">
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+            <label for="inputTitulo" id="aqui">Título de la posición</label>
+            <input type="text" id="tituloPosicion" class="form-control"  name="position" placeholder="Ej. Python developer" pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$">
           </div>
         </div>
-      </div>
-      <div class="row mb-4">
-        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+
+        <div class="form-row">
+          <label for="inputDescripcion">Título de la posición</label>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+            <textarea class="form-control" id="jobDescription" class="form-control" name="jobdescription"  maxlength="300" placeholder="Ayuda a los candidatos a entender tus necesidades"
+              pattern="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$"> </textarea>
+          </div>
+
+
+
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
+           <div><input type="text" class="form-control mb-4"  name="training" id="formacion" placeholder="Formación" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
+            <input type="text" class="form-control"  name="location" placeholder="Ubicación" id="ubicacion" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+">
+          </div> 
+          <div> <label>Años de experiencia</label>
+            <input type="range" class="form-control"  name="experience" id="experiencia"></div>
+            <label>Salario</label>
+            <input type="range" class="form-control"  name="salary" min="20000" max="60000" id="salario">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Trabajo Remoto
+              </label>
+
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="form-group col-lg-6 col-md-6 col-sm-12 col-12">
           <div> <label>Idiomas</label>
             <input type="text" class="form-control" name="languajes" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" placeholder="Ej. Inglés, Francés, ..."
-            id="idiomas"></div> 
-            <div>  <label>Soft skills</label>
-              <input type="text" class="form-control"  name="sskills" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc..."
+              id="idiomas"></div> 
+              <div>  <label>Soft skills</label>
+            <input type="text" class="form-control"  name="sskills" pattern="[a-zA-ZáéíóúÁÉÍÓÚ, ]+" placeholder="Ej. Trabajo en equipo, Orientación al cliente, etc..."
               id="softSkills"></div>
               <div> <label>Habilidades técnicas</label>
-                <input type="text" class="form-control"  name="hskills" pattern="[a-zA-Z0-9,_]*$" placeholder="Ej. Python, Django, REST API,.."
-                id="hardSkills"></div>
-              </div>
-            </div>
+            <input type="text" class="form-control"  name="hskills" pattern="[a-zA-Z0-9,_]*$" placeholder="Ej. Python, Django, REST API,.."
+              id="hardSkills"></div>
+          </div>
+        </div>
 
-            <div class="row justify-content-center mb-4">
-              <button type="submit" id="bot" class="btn btn-primary ">Publicar</button>
-            </div>
+        <div class="row justify-content-center mb-4">
+          <button type="submit" id="bot" class="btn btn-primary ">Publicar</button>
+        </div>
 
-          </form>
-        </section>
+      </form>
+    </section>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous"></script>
-        <script src="assets/validation/jquery.validate.min.js"></script>
-        <script src="assets/validation/form-validation.js"></script>
-        <script src="test.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+      crossorigin="anonymous"></script>
+      <script src="assets/validation/jquery.validate.min.js"></script>
+      <script src="assets/validation/form-validation.js"></script>
+      <script src="test.js"></script>
+    
+  </body>
 
-      </body>
-
-      </html>
+</html>

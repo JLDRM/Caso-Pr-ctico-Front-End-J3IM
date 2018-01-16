@@ -141,3 +141,27 @@ video {
     margin-right: 0; 
     margin-left: 0; 
 }
+
+/* Estos son los estilos para nuestros campos inválidos */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* Estos son los estilos para nuestros mensajes de error */
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: #900;
+  
+}
+
+.error.active {
+  padding: 0.3em;
+}

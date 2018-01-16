@@ -1,3 +1,5 @@
+@import url("./reset.css");
+
 header {
     background-color: #03A9F4;
     display: block;
@@ -6,6 +8,7 @@ header {
     padding-top: 10px;
     width: 100%;
 }
+
 
 header.empresa {
     background-color: #073549;
@@ -23,8 +26,8 @@ article {
 
 video {
     width: 100%;
-    border: 0px;
-    padding: 0px;
+    border: 0;
+    padding: 0;
     background-color: black;
 }
 
@@ -178,68 +181,8 @@ h2 {
     color: #ffffff;
 }
 
-
-/* aqui empieza el footer */
-
-footer {
-    background-color: #073549;
-    width: 100%;
-    display: flex;
-    padding: 10px;
-}
-
-.footerlist {
-    width: 25%;
-}
-
-.footerlist ul {
-    display: inline-block;
-    padding-right: 5%;
-    list-style-type: none;
-    text-align: left;
-    margin-top: 3px;
-    padding-left: 0px;
-}
-
 .info div {
     display: block;
-}
-
-.social {
-    width: 25%;
-}
-
-.social ul {
-    width: 100%;
-    padding-right: 5%;
-    padding-left: 0px;
-    list-style-type: none;
-    text-align: center;
-    margin-top: 3px;
-}
-
-.social li {
-    display: inline-block;
-    text-align: right;
-}
-
-.social img {
-    width: 30px;
-    height: 30px;
-}
-
-.copyright {
-    width: 48%;
-    font-size: 9pt;
-    color: white;
-    font-weight: lighter;
-    display: block;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.copyright a:visited {
-    color: white;
 }
 
 
@@ -332,23 +275,3 @@ footer {
     padding-top: 1px;
 }
 
-@media (max-width: 576px) {
-    header {
-        display: inline-block;
-        padding: 5px;
-    }
-    header #logo {
-        flex: none;
-    }
-    header #logo img {
-        width: 100px;
-        margin: 0;
-    }
-    header .menu ul li a {
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-    article {
-        margin: 5%;
-    }
-}

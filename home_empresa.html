@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,127 +14,130 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="homebootsjoh.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/validacionForm.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
     <!-- Fin Favicons -->
 </head>
+
 <body>
-    <!-- empieza navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
-        <!-- contenedor con el logo -->
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/img/logo1.png" width="115" height="50" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <!-- dropdown de HOME -->
-                <li class="dropdown" class="nav-item active">
-                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
-                        Home
+    <div class="cover-container">
+        <!-- empieza navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
+                <!-- contenedor con el logo -->
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/img/logo1.png" width="115" height="50" alt="">
                     </a>
-                    <ul class="dropdown-menu" id="menuhome">
-                        <li>
-                            <a href="index.html">Home Usuario</a>
-                        </li>
-                        <li>
-                            <a href="home_empresa.html">Home Empresa</a>
-                        </li>
-                    </ul>
-                </li>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pagina_construccion.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- VIDEO PRINCIPAL -->
-<div class="row-fluid videorelative">
-    <div class="videoabsolute">
-        <h1 id="tituloportada">El Mejor Talento Geek</h1>
-        <h6 id="subtituloportada">Aquí encontrarás a tu Equipo-A</h6>
-    </div>
-    <video preload="" autoplay loop>
-        <source src="./assets/video/video_2.mov" type="video/mp4">
-    </video>
-</div>
-    <!-- LOGIN -->
-    <div class="row titulform">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <h2>Bienvenidos a Geek Jobs</h2>
-            <h3>Inicia Sesión</h3>
-            <hr>
-        </div>
-    </div>
-    <!-- INICIA SESION REDES SOCIALES  -->
-    <form novalidate>
-        <div class="container-fluid sociallinks">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <a class="btn btn-block btn-social btn-github" href="#">
-                        <span class="fa fa-github"></span> Iniciar sesión con GitHub
-                    </a>
-                    <a class="btn btn-block btn-social btn-linkedin" href="#">
-                        <span class="fa fa-linkedin"></span> Iniciar sesión con LinkedIn
-                    </a>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-        <!-- INPUTS EMAIL Y CONTRASEÑA  -->
-        <div class="container-fluid formlogin">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="form-group has-danger">
-                        <label class="sr-only" for="email">E-Mail Address</label>
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-at"></i>
-                            </div>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <!-- dropdown de HOME -->
+                            <li class="dropdown" class="nav-item active">
+                                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu" id="menuhome">
+                                    <li>
+                                        <a href="index.html">Home Usuario</a>
+                                    </li>
+                                    <li>
+                                        <a href="home_empresa.html">Home Empresa</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                            <input type="text" name="email" class="form-control" id="mail" placeholder="usuario@email.com">
-                            <span class="error" aria-live="polite"></span>
-                        </div>
-                    </div>
-                    <div class="form-group has-danger">
-                        <label class="sr-only" for="email">Contraseña</label>
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-key"></i>
-                            </div>
-                            <input type="password" name="pass" class="form-control" id="pass" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$">
-                            <span class="errorp" aria-live="polite"></span>
-
-                        </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
+            </nav>
+        </header>
+
+        <div class="row-fluid videorelative">
+            <div class="videoabsolute">
+                <h1 id="tituloportada">El Mejor Talento Geek</h1>
+                <h6 id="subtituloportada">Aquí encontrarás a tu Equipo-A</h6>
+            </div>
+
+            <video preload="" autoplay loop>
+                <source src="./assets/video/video_2.mov" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- div login -->
+
+        <div class="row titulform">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h2>Bienvenidos a Geek Jobs</h2>
+                <h3>Inicia Sesión</h3>
+                <hr>
             </div>
         </div>
-        <!-- container entrar al login y check-box  -->
-        <div class="container-fluid formlogin">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4" style=>
-                    <div class="form-check">
-                        <button type="submit" class="btn btn-success">
-                            <i class="fa fa-paper-plane-o" style="padding-right: 1em"></i>Entra</button>
+        <!-- container con redes sociales  -->
+        <form class="form-horizontal" role="form" method="POST" action="/login">
+            <div class="row-fluid sociallinks">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <a class="btn btn-block btn-social btn-github" href="#">
+                            <span class="fa fa-github"></span> Iniciar sesión con GitHub
+                        </a>
+                        <a class="btn btn-block btn-social btn-linkedin" href="#">
+                            <span class="fa fa-linkedin"></span> Iniciar sesión con LinkedIn
+                        </a>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <!-- inputs email y contraseña  -->
+            <div class="row-fluid formlogin">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="email">E-Mail Address</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-at"></i>
+                                </div>
+
+                                <input type="text" name="email" class="form-control" id="email" placeholder="usuario@email.com" required autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group has-danger">
+                            <label class="sr-only" for="email">Contraseña</label>
+                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                <div class="input-group-addon" style="width: 2.6rem">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                                <input type="password" name="password" class="form-control" id="password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <!-- entrar al login y check-box  -->
+            <div class="row-fluid formlogin">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" style=>
+                        <div class="form-check">
+                            <button type="submit" class="btn btn-success">
+                                <i class="fa fa-paper-plane-o" style="padding-right: 1em"></i>Entra</button>
                             <label class="form-check-label"></label>
                             <label>
                                 <input class="form-check-input" name="remember" type="checkbox">
@@ -144,7 +148,7 @@
                 </div>
             </div>
             <!-- crea tu perfil y no tienes cuenta?  -->
-            <div class="container-fluid">
+            <div class="row-fluid">
                 <div class="row formremember" style="padding-top: 1rem">
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
@@ -155,104 +159,101 @@
                 </div>
             </div>
         </form>
-    </div>
-</div>
 
-</div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-    <div id="gjFooter" class="container">
-        <div class="row">
-            <!-- LOGO -->
-            <div class="col-md-3 col-sm-3">
-                <h5></h5>
-                <a href="./index.html">
-                    <img src="./assets/img/logo1.png" alt="">
-                </a>
-            </div>
-            <!-- ================================= -->
-            <!-- LINKS -->
-            <div class="col-sm-2">
-                <h5>GeekJobs</h5>
-                <ul>
-                    <li>
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- ================================= -->
-            <!-- LINKS GEEK -->
-            <div class="col-sm-2">
-                <h5>Geeks</h5>
-                <ul>
-                    <li>
-                        <a href="./index.html">Iniciar Sesión</a>
-                    </li>
-                    <li>
-                        <a href="./registrousuario.html">Regístrarse</a>
-                    </li>
-                    <li>
-                        <a href="./perfil_usuario.html">Ver perfil</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- ================================= -->
-            <!-- LINKS EMPRESA -->
-            <div class="col-sm-2">
-                <h5>Empresas</h5>
-                <ul>
-                    <li>
-                        <a href="./home_empresa.html">Iniciar Sesión</a>
-                    </li>
-                    <li>
-                        <a href="./registro_empresa.html">Regístrarse</a>
-                    </li>
-                    <li>
-                        <a href="./pagina_construccion.html">Ver peril</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- ================================= -->
-            <!-- REDES SOCIALES -->
-            <div class="col-sm-3">
-                <div class="social-networks">
-                    <a href="#" class="twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" class="facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" class="google">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
+        <!-- FOOTER -->
+        <footer>
+            <div id="gjFooter" class="container">
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-md-3 col-sm-3">
+                        <h5></h5>
+                        <a href="./index.html">
+                            <img src="./assets/img/logo1.png" alt="">
+                        </a>
+                    </div>
+                    <!-- ================================= -->
+                    <!-- LINKS -->
+                    <div class="col-sm-2">
+                        <h5>GeekJobs</h5>
+                        <ul>
+                            <li>
+                                <a href="./index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ================================= -->
+                    <!-- LINKS GEEK -->
+                    <div class="col-sm-2">
+                        <h5>Geeks</h5>
+                        <ul>
+                            <li>
+                                <a href="./index.html">Iniciar Sesión</a>
+                            </li>
+                            <li>
+                                <a href="./registrousuario.html">Regístrarse</a>
+                            </li>
+                            <li>
+                                <a href="./perfil_usuario.html">Ver perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ================================= -->
+                    <!-- LINKS EMPRESA -->
+                    <div class="col-sm-2">
+                        <h5>Empresas</h5>
+                        <ul>
+                            <li>
+                                <a href="./home_empresa.html">Iniciar Sesión</a>
+                            </li>
+                            <li>
+                                <a href="./registro_empresa.html">Regístrarse</a>
+                            </li>
+                            <li>
+                                <a href="./pagina_construccion.html">Ver peril</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ================================= -->
+                    <!-- REDES SOCIALES -->
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <a href="#" class="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="google">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                        <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                    </div>
+                    <!-- ================================= -->
                 </div>
-                <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
+                <!-- COPYRIGHT -->
+                <div class="footer-copyright">
+                    <div class="container-fluid">
+                        Todos los derechos reservados © 2018:
+                        <a href="https://www.MDBootstrap.com">
+                            <strong> Thee GeekJobs Company</strong>
+                        </a>
+                    </div>
+                </div>
+                <!-- ================================= -->
             </div>
-            <!-- ================================= -->
-        </div>
-        <!-- COPYRIGHT -->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                Todos los derechos reservados © 2018:
-                <a href="https://www.MDBootstrap.com">
-                    <strong> Thee GeekJobs Company</strong>
-                </a>
-            </div>
-        </div>
-        <!-- ================================= -->
+        </footer>
     </div>
-</footer>
 </body>
+
 <script src="./assets/libs/js/jquery/jquery.min.js"></script>
 <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="home_johnny.js"></script>
-<script src="assets/js/validacionForm.js"></script>
+
 </html>

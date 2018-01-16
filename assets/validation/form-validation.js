@@ -54,9 +54,9 @@ $("#bot").click((evnt) => {
     // Specify validation error messages
     messages: {
       position: "Porfavor, introduce un título. Carácteres admitidos: letras y números",
-      jobdescription: "Porfavor, introduce una job description",
-      training: "Porfavor, introduce la formación requerida",
-      location: "Porfavor, introduce la ubicación",
+      jobdescription: "Porfavor, introduce una job description. Carácteres admitidos: letras y números",
+      training: "Porfavor, introduce la formación requerida. Debe empezar en mayuscula, no se aceptan números",
+      location: "Porfavor, introduce la ubicación. Debe empezar en mayuscula, no se aceptan números",
       languajes: "Porfavor, introduce los idiomas necesarios seguidos de coma",
       sskills: "Porfavor, introduce las Soft Skills necesarias",
       hskills: "Porfavor, introduce las Hard Skills necesarias",
@@ -71,7 +71,7 @@ $("#bot").click((evnt) => {
         url: "http://www.mocky.io/v2/5a5dcc5c330000a50219190b",
         type: "POST"}).done(
         function () {
-          alert('Registrado correctamente.');
+          alert('Oferta publicada.');
           form.submit();
         }
         ).fail(function () {

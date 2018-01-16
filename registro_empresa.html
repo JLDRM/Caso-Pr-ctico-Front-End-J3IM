@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./assets/css/style_registro_empresa.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Estilo Header -->
+    <link rel="stylesheet" href="homebootsjoh.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
@@ -24,27 +27,52 @@
 </head>
 
 <body>
-    <!-- Header-->
+    <!-- ===============HEADER=================== -->
     <header>
-        <div id="logo">
-            <a href="home_empresa.html">
-                <img src="./assets/img/logo1.png" alt="GeekJobs">
-            </a>
+        <!-- empieza navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
+            <!-- contenedor con el logo -->
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo1.png" width="115" height="50" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!-- dropdown de HOME -->
+                    <li class="dropdown" class="nav-item active">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" id="menuhome">
+                            <li>
+                                <a href="index.html">Home Usuario</a>
+                            </li>
+                            <li>
+                                <a href="home_empresa.html">Home Empresa</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="home_empresa.html">Login</a>
-                </li>
-                <li>
-                    <a href="index.html">Usuario</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    </nav>
+</header>
+<!-- ===============HEADER=================== -->
 
     <!--nueva versión de article imgen con texto-->
-    <article class="container articlemarta rounded-top">
+    <article class="container articlemarta rounded-top mt-5 pt-5">
         <div class="row justify-content-center ml-1 mr-1 letramarta">
             <h1 class="pt-5">WELCOME TO GEEK JOBS!</h1>
         </div>

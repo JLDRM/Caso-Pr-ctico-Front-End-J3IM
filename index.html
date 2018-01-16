@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <div class="cover-container">
 
     <!-- empieza navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top nanvbar-custom" id="menu">
@@ -59,7 +60,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
+    
 
         <!-- vídeo principal -->
         <div class="row-fluid videorelative">
@@ -81,7 +82,7 @@
             </div>
         </div>
         <!-- container con redes sociales  -->
-        <form class="form-horizontal" role="form" method="POST" action="/login">
+        <form novalidate class="form-horizontal" >
             <div class="container-fluid sociallinks">
                 <div class="row">
                     <div class="col-md-4"></div>
@@ -107,7 +108,8 @@
                                 <div class="input-group-addon" style="width: 2.6rem">
                                     <i class="fa fa-at"></i>
                                 </div>
-                                <input type="text" name="email" class="form-control" id="email" placeholder="usuario@email.com" required autofocus>
+                                <input type="email" name="email" class="form-control" id="mail" placeholder="usuario@email.com">
+                                <span class="error" aria-live="polite"></span>
                             </div>
                         </div>
                         <div class="form-group has-danger">
@@ -116,7 +118,8 @@
                                 <div class="input-group-addon" style="width: 2.6rem">
                                     <i class="fa fa-key"></i>
                                 </div>
-                                <input type="password" name="password" class="form-control" id="password" required>
+                                <input type="password" name="password" class="form-control" id="pass" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$">
+                                <span class="errorp" aria-live="polite"></span>
                             </div>
                         </div>
                     </div>
@@ -248,5 +251,6 @@
 <script src="./assets/libs/js/jquery/jquery.min.js"></script>
 <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="home_johnny.js"></script>
+<script src="assets/js/validacionForm.js"></script>
 
 </html>

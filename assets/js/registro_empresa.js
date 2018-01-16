@@ -46,19 +46,19 @@ $("#bot").click((evnt) => {
             idreg: "Este campo es obligatorio.",
         },
         submitHandler: function (form) {
-            console.log("entra submithandler:",form)
+            console.log("entra submithandler:", form)
             jQuery.ajax({
-                url: "http://www.mocky.io/v2/5a5cc2e02e0000ef1a9f840f",
-                type: "POST",
-                success: function(){
-                    alert('Registrado correctamente.'),
-                    location.href = "http://www.mocky.io/v2/5a5cc2e02e0000ef1a9f840f",
-                },
-                error: function(){
-                    alert('Los sentimos, se ha producido un error.')
+                url: "http://www.mocky.io/v2/5a5dcdac330000510c19190f",
+                type: "POST"
+            }).done(
+                function () {
+                    alert('Registrado correctamente.');
+                    form.submit();
                 }
-            })
-            form.submit();
+                ).fail(function () {
+                    alert('Los sentimos, se ha producido un error.');
+                });
+
         }
     });
 
@@ -68,7 +68,7 @@ $("#bot").click((evnt) => {
     $("#contraseña").rules("add", { regex: "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$" });
     $("#nif").rules("add", { regex: "^[A-Za-z][0-9]{8}$" });
     $("#telefono").rules("add", { regex: "^[0-9]{9}$" });
-   
+
     t.form();
 });
 

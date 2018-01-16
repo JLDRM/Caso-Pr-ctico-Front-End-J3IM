@@ -22,6 +22,10 @@ $("#bot").click((evnt) => {
             contraseña: {
                 required: true,
             },
+            ccontraseña:{
+                required: true,
+                equalTo: "#contraseña"
+            },
             empresa: {
                 required: true,
             },
@@ -40,6 +44,7 @@ $("#bot").click((evnt) => {
             apellido: "Por favor, introduce tu apellido.",
             email: "Por favor, introduce tu email.",
             contraseña: "Por favor, introduce una contraseña.",
+            ccontraseña: "Por favor, introduce la confirmación de la contraseña.",
             empresa: "Por favor, introduce el nombre de tu empresa.",
             nif: "Por favor, introduce el NIF de tu empresa.",
             telefono: "Por favor, introduce un número de teléfono.",

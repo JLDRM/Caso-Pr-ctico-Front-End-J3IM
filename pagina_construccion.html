@@ -13,7 +13,13 @@
   <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap-social.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="homebootsjoh.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <style>
+    .const {
+      padding: 50px;
+      margin: 100px auto;
+    }
+  </style>
   <!-- Inicio Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
@@ -33,7 +39,6 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <!-- dropdown de HOME -->
@@ -50,7 +55,6 @@
               </li>
             </ul>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
           </li>
@@ -63,102 +67,106 @@
   </nav>
 
   <!-- div en construccion -->
-  <div class="jumbotron">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-      <img src="https://78.media.tumblr.com/e2d00ecb4e7127c04fa350bd33784813/tumblr_nwe6e8Kujv1uo15q5o1_500.gif" alt="">
-    </div>
 
-
-    <!-- FOOTER -->
-    <footer>
-      <div id="gjFooter" class="container">
-        <div class="row">
-          <!-- LOGO -->
-          <div class="col-md-3 col-sm-3">
-            <h5></h5>
-            <a href="./index.html">
-              <img src="./assets/img/logo1.png" alt="">
-            </a>
-          </div>
-          <!-- ================================= -->
-          <!-- LINKS -->
-          <div class="col-sm-2">
-            <h5>GeekJobs</h5>
-            <ul>
-              <li>
-                <a href="./index.html">Inicio</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <a href="#"></a>
-              </li>
-            </ul>
-          </div>
-          <!-- ================================= -->
-          <!-- LINKS GEEK -->
-          <div class="col-sm-2">
-            <h5>Geeks</h5>
-            <ul>
-              <li>
-                <a href="./index.html">Iniciar Sesión</a>
-              </li>
-              <li>
-                <a href="./registrousuario.html">Regístrarse</a>
-              </li>
-              <li>
-                <a href="./perfil_usuario.html">Ver perfil</a>
-              </li>
-            </ul>
-          </div>
-          <!-- ================================= -->
-          <!-- LINKS EMPRESA -->
-          <div class="col-sm-2">
-            <h5>Empresas</h5>
-            <ul>
-              <li>
-                <a href="./home_empresa.html">Iniciar Sesión</a>
-              </li>
-              <li>
-                <a href="./registro_empresa.html">Regístrarse</a>
-              </li>
-              <li>
-                <a href="./pagina_construccion.html">Ver peril</a>
-              </li>
-            </ul>
-          </div>
-          <!-- ================================= -->
-          <!-- REDES SOCIALES -->
-          <div class="col-sm-3">
-            <div class="social-networks">
-              <a href="#" class="twitter">
-                <i class="fa fa-twitter"></i>
-              </a>
-              <a href="#" class="facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="#" class="google">
-                <i class="fa fa-google-plus"></i>
-              </a>
-            </div>
-            <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
-          </div>
-          <!-- ================================= -->
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-lg-10 const">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <img src="https://78.media.tumblr.com/e2d00ecb4e7127c04fa350bd33784813/tumblr_nwe6e8Kujv1uo15q5o1_500.gif" alt="">
         </div>
-        <!-- COPYRIGHT -->
-        <div class="footer-copyright">
-          <div class="container-fluid">
-            Todos los derechos reservados © 2018:
-            <a href="https://www.MDBootstrap.com">
-              <strong> Thee GeekJobs Company</strong>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div id="gjFooter" class="container">
+      <div class="row">
+        <!-- LOGO -->
+        <div class="col-md-3 col-sm-3">
+          <h5></h5>
+          <a href="./index.html">
+            <img src="./assets/img/logo1.png" alt="">
+          </a>
+        </div>
+        <!-- ================================= -->
+        <!-- LINKS -->
+        <div class="col-sm-2">
+          <h5>GeekJobs</h5>
+          <ul>
+            <li>
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <!-- ================================= -->
+        <!-- LINKS GEEK -->
+        <div class="col-sm-2">
+          <h5>Geeks</h5>
+          <ul>
+            <li>
+              <a href="./index.html">Iniciar Sesión</a>
+            </li>
+            <li>
+              <a href="./registrousuario.html">Regístrarse</a>
+            </li>
+            <li>
+              <a href="./perfil_usuario.html">Ver perfil</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ================================= -->
+        <!-- LINKS EMPRESA -->
+        <div class="col-sm-2">
+          <h5>Empresas</h5>
+          <ul>
+            <li>
+              <a href="./home_empresa.html">Iniciar Sesión</a>
+            </li>
+            <li>
+              <a href="./registro_empresa.html">Regístrarse</a>
+            </li>
+            <li>
+              <a href="./pagina_construccion.html">Ver peril</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ================================= -->
+        <!-- REDES SOCIALES -->
+        <div class="col-sm-3">
+          <div class="social-networks">
+            <a href="#" class="twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="google">
+              <i class="fa fa-google-plus"></i>
             </a>
           </div>
+          <a class="btn btn-default" href="./pagina_construccion.html">Contáctenos</a>
         </div>
         <!-- ================================= -->
       </div>
-    </footer>
+      <!-- COPYRIGHT -->
+      <div class="footer-copyright">
+        <div class="container-fluid">
+          Todos los derechos reservados © 2018:
+          <a href="https://www.MDBootstrap.com">
+            <strong> Thee GeekJobs Company</strong>
+          </a>
+        </div>
+      </div>
+      <!-- ================================= -->
+    </div>
+  </footer>
 </body>
 <script src="./assets/libs/js/jquery/jquery.min.js"></script>
 <script src="./assets/libs/js/bootstrap/bootstrap.bundle.min.js"></script>

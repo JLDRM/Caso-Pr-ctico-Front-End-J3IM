@@ -51,25 +51,6 @@ class UsuariosFormatter {
         // console.log(this.usuarios[0].nombre); // Comprobar que llega la informacion a la función
     }
 }
-class UsuarioGeek {
-    constructor(nombre, apellidos, fotoPerfil, descripcion, habilidadesPrincipales, habilidades, portafolio, experiencia, formacion) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.fotoPerfil = fotoPerfil;
-        this.descripcion = descripcion;
-        this.habilidadesPrincipales = habilidadesPrincipales; // Array
-        this.habilidades = habilidades;
-        this.portafolio = portafolio;
-        this.experiencia = experiencia;
-        this.formacion = formacion;
-    }
-
-    mostrarUsuario() {
-        console.log(this.nombre, this.apellidos, this.fotoPerfil);
-    }
-
-
-}
 
 // Closure que se ejecuta al cargar la página: Perfil Usuario
 var perfilUsuario = (function () {

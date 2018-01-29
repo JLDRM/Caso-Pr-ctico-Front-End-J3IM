@@ -71,9 +71,8 @@ class UsuarioGeek {
 
 }
 
-function Init() {
+// Closure que se ejecuta al cargar la página: Perfil Usuario
+var perfilUsuario = (function () {
     var usuariosCtrl = new ListaUsuariosController();
     usuariosCtrl.getUsuarios();
-}
-
-Init();
+})();

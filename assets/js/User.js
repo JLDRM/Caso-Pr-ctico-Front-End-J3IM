@@ -1,4 +1,4 @@
-// CLASE USUARIO GEEK
+// PROTOTIPO USUARIO GEEK
 
 // Version 2 con closure
 var Usuario = (function () {
@@ -17,19 +17,8 @@ var Usuario = (function () {
         this.password = pass;
         this.telefono = tel;
         this.hobby = hob;
-    };
-    // Métodos
-    User.prototype = {
-        registrarUsuario: function (nom, cognom, correu, pass, tel, hab, hob) {
-            this.nombre = nom;
-            this.apellidos = cognom;
-            this.email = correu;
-            this.password = pass;
-            this.telefono = tel;
-            this.habilidades = hab;
-            this.hobby = hob;
-        }
     }
+
     return User;
 })();
 

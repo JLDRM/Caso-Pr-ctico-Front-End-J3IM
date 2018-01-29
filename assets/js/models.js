@@ -20,3 +20,5 @@ var Usuario = (function () {
 
     return User;
 })();
+
+// PROTOTIPO USUARIO EMPRESA

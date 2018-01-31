@@ -1,5 +1,4 @@
 // PROTOTIPO USUARIO GEEK
-
 var Usuario = (function () {
     // Constructor
     function User(nom, cognom, foto, desc, habP, hab, port, exp, form, correu, pass, tel, hob) {
@@ -22,7 +21,6 @@ var Usuario = (function () {
 })();
 
 // PROTOTIPO USUARIO EMPRESA
-
 export var Empresa = (function () {
     // Constructor
     function Empresa(nombre, apellido, email, contraseña, ccontraseña, empresa, nif, telefono, stack) {

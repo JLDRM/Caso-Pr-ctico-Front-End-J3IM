@@ -28,20 +28,11 @@ var Geek = (function () {
 	};
 
 	function enviarUsuarioMongo(newUser) {
-		var data = stringify(newUser);
-		$.ajax({
-			url: 'https://www.evstest.com/G3v1LastVersion/portal/portal_action.php',
-			data: data,
-			method: 'get',
-			dataType: 'json',
-			success: function (response) {
-				console.log(response);
-				location.href = response;
-			},
-			error: function (error) {
-				alert(newUser);
-			}
-		})
+		$.getJSON('http://www.mocky.io/v2/5a71d46b2f0000351277647a', function(json, textStatus) {
+			location.href=json;
+		});
+
+
 	};
 
 	function getUsuarios() {

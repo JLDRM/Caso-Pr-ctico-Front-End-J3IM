@@ -77,16 +77,9 @@ $("#bot").click((evnt) => {
 
     t.form();
 });
+
 //Validación alta oferta
-$.validator.addMethod(
-    "regex",
-    function (value, element, regexp) {
-      var re = new RegExp(regexp);
-      return this.optional(element) || re.test(value);
-    },
-    "Por favor, introduce datos correctos."
-  );
-  $("#bot").click((evnt) => {
+  $("#bott").click((evnt) => {
     let t = $("form").validate({
       rules: {
         position: {

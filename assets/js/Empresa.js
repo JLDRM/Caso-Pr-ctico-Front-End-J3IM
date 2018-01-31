@@ -27,18 +27,17 @@ var Empresa = (function () {
 })();
 
 $('#bot').click(function () {
-    $.post("http://www.mocky.io/v2/5a7095fd330000173fff5d5f",
-        {
-            nombre: document.getElementById("nombre_e").value,
-            apellido: document.getElementById("apellido_e").value,
-            email: document.getElementById("email_e").value,
-            contraseña: document.getElementById("contraseña_e").value,
-            empresa: document.getElementById("empresa_e").value,
-            nif: document.getElementById("nif_e").value,
-            telefono: document.getElementById("telefono_e").value,
-            stack: document.getElementById("stack_e").value,
-        }, function (data, status) {
-            window.location.href = '/altaoferta.html';
-        });
+    $.post("http://www.mocky.io/v2/5a7095fd330000173fff5d5f", {
+        nombre: document.getElementById("nombre_e").value,
+        apellido: document.getElementById("apellido_e").value,
+        email: document.getElementById("email_e").value,
+        contraseña: document.getElementById("contraseña_e").value,
+        empresa: document.getElementById("empresa_e").value,
+        nif: document.getElementById("nif_e").value,
+        telefono: document.getElementById("telefono_e").value,
+        stack: document.getElementById("stack_e").value,
+    }, function (data, status) {
+        window.location.href = '/altaoferta.html';
+    });
     console.log("nombre");
 });

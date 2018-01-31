@@ -16,3 +16,32 @@ $(window).scroll(function () {
     }
 });
 
+
+
+$("#bttn-emp").click(function () {
+    event.preventDefault();
+    $.post("http://www.mocky.io/v2/5a71af282f00003512776376",
+        {
+            mailemp: document.getElementById("mail-emp").value,
+            passemp: document.getElementById("pass-emp").value
+        },
+        function (data, status) {
+            window.location.href = '/pagina_construccion.html';
+        }).fail(err => {
+            console.log(err);
+        });
+});
+
+$("#bttn").click(function () {
+    event.preventDefault();
+    $.post("http://www.mocky.io/v2/5a71af982f0000a91377637c",
+        {
+            mail: document.getElementById("mail").value,
+            pass: document.getElementById("pass").value
+        },
+        function (data, status) {
+            window.location.href = './perfil_usuario.html';
+        }).fail(err => {
+            console.log(err);
+        });
+});

@@ -16,3 +16,20 @@ var App = (function(){
 
 })();
 
+var AppEmpr = (function(){
+	
+		function getFromFormEmpresa(event){
+			dataFormEmpresa=event.target.getElementsByTagName('input');
+			var datosEmpresa ={};
+			for (var i = 0; i < dataFormEmpresa.length; i++) {
+				datosEmpresa[dataFormEmpresa[i].name] = dataFormEmpresa[i].value;
+			};
+			console.log(datosEmpresa);
+			EmpresaGeek.crearEmpresaGeek(datosEmpresa);
+		}
+	
+		return {
+			datosFormEmpresa:getFromFormEmpresa
+		};
+	
+	})();

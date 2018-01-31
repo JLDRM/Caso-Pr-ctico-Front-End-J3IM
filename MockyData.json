@@ -1,0 +1,119 @@
+[{
+    "imgBackground": "",
+    "imgUsuari": "",
+    "NomUsari": "Johnny",
+
+    "Descripci�n": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Tempora recusandae obcaecati illum inventore ? Quae et odit magni dicta temporibus,
+    perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.Quas,
+    enim consequatur.
+    ",
+
+    "Habilidades Principales" : "[{"
+    Programaci� n ","
+    Dise� o Web ","
+    Dise� o Gr� fico ","
+    HTML "}]",
+
+    "Otras Habilidades": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Tempora recusandae obcaecati illum inventore ? Quae et odit magni dicta temporibus,
+    perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.Quas,
+    enim consequatur.
+    ",
+
+    "Portafolio" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Tempora recusandae obcaecati illum inventore ? Quae et odit magni dicta temporibus,
+    perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.Quas,
+    enim consequatur.
+    ",
+
+    "Experiencia" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Tempora recusandae obcaecati illum inventore ? Quae et odit magni dicta temporibus,
+    perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.Quas,
+    enim consequatur.
+    ",
+
+    "Formaci�n" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Tempora recusandae obcaecati illum inventore ? Quae et odit magni dicta temporibus,
+    perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.Quas,
+    enim consequatur.
+    "
+}]
+
+//http://www.mocky.io/v2/5a3cc2ca310000950cb592a5
+
+
+/* ==========================
+REGISTRO EMPRESA
+============================= */
+
+{
+    "Nombre": "Marta",
+    "Apellido": "Martínez",
+    "Email": "email@gmail.com",
+    "Contraseña": "abcdE12/7",
+    "Empresa": "Geek Jobs",
+    "NIF": "F12345678",
+    "Telefono": "723456789",
+    "Stack tecnologico": ["HTML", " CSS", " JS "],
+    "Seguridad": "5"
+}
+//http://www.mocky.io/v2/5a54a81e2d000026225b1cb3
+
+
+/* ==========================
+DATOS USUARIO
+============================= */
+
+[{
+    "Título de la oferta": "Frontend developer con Javascript y React",
+    "Descripción de la oferta": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Tempora recusandae obcaecati illum inventore ? Quae et odit magni dicta temporibus,
+    perspiciatis facere maxime accusantium modi quidem quaerat quibusdam.Quas,
+    enim consequatur.
+    ",
+    "Formción" : "Ingeniería informática",
+    "Ubicación": "Villanueva del Trabuco",
+    "Años de experiencia": "3",
+    "Salario": "24.000€",
+    "Idiomas": [{
+        "Inglés",
+        "Castellano",
+        "Italiano"
+    }],
+    "Soft Skills": [{
+        "Trabajo en equipo",
+        "Habilidades de venta",
+        "Resiliencia"
+    }],
+    "Hard Skills": [{
+        "Javascript",
+        "HTML5",
+        "CSS3"
+    }]
+
+}]
+
+
+/* ==========================
+OBJETO PERFIL USUARIO
+        ============================= */
+
+[{
+    "nombre": "Carles",
+    "apellidos": "Puigdemont",
+    "fotoPerfil": "http://fotos02.farodevigo.es/2017/10/26/328x206/comparecencia.jpg",
+    "descripcion": "Carles Puigdemont Casamajón es un político y periodista español que desempeñó como cargos más relevantes la alcaldía de Gerona entre 2011 y 2016 y el de la presidencia de la Generalidad de Cataluña entre 2016 y 2017.",
+    "habilidadesPrincipales": [
+        "Programación",
+        "Diseño Web"
+    ],
+    "habilidades": "Mis otras habilidades.",
+    "portafolio": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae obcaecati illum inventore? Quae et odit magni dicta temporibus, perspiciatis facere maxime accusantium modi quidem quaerat quibusdam. Quas, enim consequatur.",
+    "experiencia": "Desde que empezó a estudiar Filología Catalana, Carles Puigdemont ha trabajado como redactor y corrector lingüístico en un gran número de publicaciones. Se ha especializado en gestión de periodismo electrónico y ha orientado su labor a impulsar proyectos de comunicación.",
+    "formacion": "Carles Puigdemont estudió Filología Catalana e inició su andadura en el periodismo escribiendo para diversos periódicos y publicaciones.",
+    "email": "pugi69belgica@bgov.be",
+    "password": "detenedme"
+}]
+
+//http://www.mocky.io/v2/5a7190212f000035127762e5

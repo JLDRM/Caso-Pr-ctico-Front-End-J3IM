@@ -2,6 +2,7 @@ var App = (function () {
 	function loadValidacion() {
 		window.onload = () => {
 			Validacion.validacionUsuario();
+			Validacion.ValidarFormEmpresa();
 		}
 	}
 
@@ -16,7 +17,7 @@ var App = (function () {
 	}
 
 	function getFromFormEmpresa(event) {
-		dataFormEmpresa = event.target.getElementsByTagName('input');
+		dataFormEmpresa = event;
 		var datosEmpresa = {};
 		for (var i = 0; i < dataFormEmpresa.length; i++) {
 			datosEmpresa[dataFormEmpresa[i].name] = dataFormEmpresa[i].value;

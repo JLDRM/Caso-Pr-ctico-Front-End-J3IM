@@ -2,7 +2,7 @@ var App = (function () {
 	function loadValidacion() {
 		window.onload = () => {
 			Validacion.validacionUsuario();
-			Validacion.ValidarFormEmpresa();
+			//Validacion.ValidarFormEmpresa();
 		}
 	}
 

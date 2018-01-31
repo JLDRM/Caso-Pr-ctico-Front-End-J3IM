@@ -1,39 +1,30 @@
-
 /* NAVBAR */
 .navbar-brand {
-    width:50px;
+  width:50px;
 }
 .navbar {
-    background-color: #073549;
+  background-color: #073549;
 }
 .navbarscroll {
-    background-color: #272727;
-    transition: 1s;
+  background-color: #272727;
+  transition: 1s;
 }
-video { 
-        max-width: 100%;
-        height: auto;
-        background: rgba(0,0,0,1);
-  }
 
-.videorelative {
-    position: relative;
+/* EFECTO DROPDOWN */
+.dropdown-menu {
+  background-color: #073549;
+  transition: 1s;
+  padding-left: 30%;
+  border: 0;
 }
-/* EFECTO DROPDOWN*/
-  .dropdown-menu {
-    background-color: #073549;
-    transition: 1s;
-    padding-left: 30%;
-    border: 0;
-  }
 
-  .dropdown-scroll {
-    background-color: #272727;
-    transition: 1s;
-    padding-left: 30%;
-    border: 0;
-  }
+.dropdown-scroll {
+  background-color: #272727;
+  transition: 1s;
+  padding-left: 30%;
+  border: 0;
+}
 
-  .dropdown-menu a {
-    color: white;
-  }
+.dropdown-menu a {
+  color: white;
+}

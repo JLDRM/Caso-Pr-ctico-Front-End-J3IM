@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/libs/css/bootstrap/bootstrap-social.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="homebootsjoh.css">
+    <link rel="stylesheet" href="./assets/css/style_home_nav.css">
     <!-- Inicio Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
@@ -50,30 +50,33 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="pagina_construccion.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pagina_construccion.html">Contacto</a>
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">Inicia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary btn-xs" href="registrousuario.html" role="button">Regístrate</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-
-        <!-- vídeo principal -->
-        <div class="row-fluid videorelative">
-            <div class="videoabsolute">
-                <h1 id="tituloportada">La Mayor Comunidad Geek</h1>
-                <h6 id="subtituloportada">Las mejores ofertas de trabajo</h6>
-            </div>
-            <video preload="" autoplay loop>
-                <source src="./assets/video/video_1.mp4" type="video/mp4">
-            </video>
+        <!-- jumbrotron imagen -->
+        <div class="jumbotron">
+            <h1>El universo Geeks Jobs te espera.</h1>
+            <p>Las mejores ofertas tecnológicas del momento.</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="#login" role="button">Empieza!</a>
+            </p>
         </div>
+
         <!-- div login -->
-        <div class="row titulform">
+        <div class="row titulform" id="login">
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <h2>Bienvenidos a Geek Jobs</h2>
@@ -253,4 +256,5 @@
 
 <script src="assets/js/validacionForm.js"></script>
 <script src="assets/js/home_johnny.js"></script>
+
 </html>

@@ -19,31 +19,18 @@ var EmpresaGeek = (function () {
             ObjetoEmpresa.contraseña, ObjetoEmpresa.empresa, ObjetoEmpresa.nif, ObjetoEmpresa.telefono,
             ObjetoEmpresa.stack);
         console.log(empresaNueva);
-        //enviarEmpresaMongo(empresaNueva);
+        enviarEmpresaMongo(empresaNueva);
  
     };
  
-    /*function enviarEmpresaMongo(newEmpresa){
-        var data = stringify(newEmpresa);
-        $.ajax({
-            url : '',
-            data : data,
-            method : 'post', 
-            dataType : 'json',
-            success : function(response){
-                console.log(response);
-                location.href=response;
-            },
-            error: function(error){
-                alert(newEmpresa);
-            }
-        })
-    };*/
+    function enviarEmpresaMongo(newEmpresa){
+        window.location.href = './altaoferta.html';
+    };
     
     return{
         empresa: Empresa,
         crearEmpresaGeek: crearEmpresaNueva,
-       // subirAServidor: enviarEmpresaMongo
+        subirAServidor: enviarEmpresaMongo
     }
  
     

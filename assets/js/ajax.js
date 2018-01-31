@@ -1,6 +1,6 @@
 function Ajax(method, url, onSuccess) {
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             onSuccess(JSON.parse(this.responseText));
         }

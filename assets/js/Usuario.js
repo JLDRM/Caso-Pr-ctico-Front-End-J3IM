@@ -1,58 +1,23 @@
-class ListaUsuariosController {
-    constructor() {
+var ListaUsuariosController = (function () {
+    // Constructor
+    function LUController() {
         this.usuarios = [];
-        this.modalidad = [];
-        this.usuariosFormatter = new UsuariosFormatter();
     }
-    getUsuarios() {
-        Ajax("GET", "http://www.mocky.io/v2/5a534e5f300000271c1ebe8f", (data) => {
-            this.usuarios = data;
-            this.usuariosFormatter.usuarios = data;
-            this.usuariosFormatter.ShowUsuario(document.getElementById("perfil"));
-        });
+    // Methods
+    LUController.prototype = {
+        getUsuarios: function () {
+            Ajax("GET", "http://www.mocky.io/v2/5a7190212f000035127762e5", (data) => {
+                this.usuarios = data;
+                var renderizar = new Renderer('./assets/templates/perfilUsuario.hbs', this.usuarios, 'section');
+                console.log(renderizar.render)
+                renderizar.render();
+            });
+        }
     }
-    // Setter
-    setLocales(data) {
-        this.locales = data;
-    }
-}
+    return LUController;
+})();
 
-class UsuariosFormatter {
-    constructor(usuarios) {
-        this.usuarios = usuarios;
-    }
-    ShowUsuario(container) {
-        container.innerHTMl = "";
-
-        let img = document.getElementById("fotoPerfil");
-        img.style.backgroundImage = "url('" + this.usuarios[0].fotoPerfil + "')";
-
-        let nombreApellidos = document.getElementById("nombre");
-        nombreApellidos.innerText = this.usuarios[0].nombre + " " + this.usuarios[0].apellidos;
-
-        let descripcion = document.getElementById("desc");
-        descripcion.innerHTML = "<p>" + this.usuarios[0].descripcion + "</p>";
-
-        let habilidadesPrincipales = document.getElementById("habP");
-        habilidadesPrincipales.innerHTML = "<div class='card-body mm'><ul>" + "<li><a class='b' href='#'>" + this.usuarios[0].habilidadesPrincipales[0] + "</a></li>" + "<li><a class='b' href='#'>" + this.usuarios[0].habilidadesPrincipales[1] + "</a></li>" + "</ul></div>";
-
-        let habilidades = document.getElementById("hab");
-        habilidades.innerHTML = "<p>" + this.usuarios[0].habilidades + "</p>";
-
-        let portafolio = document.getElementById("por");
-        portafolio.innerHTML = "<p>" + this.usuarios[0].portafolio + "</p>";
-
-        let experiencia = document.getElementById("exp");
-        experiencia.innerHTML = "<p>" + this.usuarios[0].experiencia + "</p>";
-
-        let formacion = document.getElementById("for");
-        formacion.innerHTML = "<p>" + this.usuarios[0].formacion + "</p>";
-
-        // console.log(this.usuarios[0].nombre); // Comprobar que llega la informacion a la función
-    }
-}
-
-// Closure que se ejecuta al cargar la página: Perfil Usuario
+// Init: Perfil Usuario
 var perfilUsuario = (function () {
     var usuariosCtrl = new ListaUsuariosController();
     usuariosCtrl.getUsuarios();

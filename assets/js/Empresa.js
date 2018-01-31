@@ -19,11 +19,11 @@ var EmpresaGeek = (function () {
             ObjetoEmpresa.contraseña, ObjetoEmpresa.empresa, ObjetoEmpresa.nif, ObjetoEmpresa.telefono,
             ObjetoEmpresa.stack);
         console.log(empresaNueva);
-        enviarEmpresaMongo(empresaNueva);
+        //enviarEmpresaMongo(empresaNueva);
  
     };
  
-    function enviarEmpresaMongo(newEmpresa){
+    /*function enviarEmpresaMongo(newEmpresa){
         var data = stringify(newEmpresa);
         $.ajax({
             url : '',
@@ -38,12 +38,12 @@ var EmpresaGeek = (function () {
                 alert(newEmpresa);
             }
         })
-    };
+    };*/
     
     return{
         empresa: Empresa,
         crearEmpresaGeek: crearEmpresaNueva,
-        subirAServidor: enviarEmpresaMongo
+       // subirAServidor: enviarEmpresaMongo
     }
  
     

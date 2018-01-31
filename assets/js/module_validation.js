@@ -138,12 +138,8 @@ var valRegOferta = (function ValidarFormAltaOferta() {
             // in the "action" attribute of the form when valid
 
             submitHandler: function (form) {
-                event.preventDefault();
                 console.log("entra submithandler:", form);
-                var datosAltaOferta = form.getElementsByTagName("input");
-                console.log(datosAltaOferta);
-                App.datosAltaOferta(datosAlta);
-                /*$.ajax({
+                $.ajax({
                     url: "http://www.mocky.io/v2/5a5dcc5c330000a50219190b",
                     type: "POST"
                 }).done(
@@ -153,7 +149,7 @@ var valRegOferta = (function ValidarFormAltaOferta() {
                     }
                     ).fail(function () {
                         alert('Los sentimos, se ha producido un error.');
-                    });*/
+                    });
             }
         });
         $("#tituloPosicion").rules("add", { regex: "^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$" });
@@ -165,4 +161,5 @@ var valRegOferta = (function ValidarFormAltaOferta() {
         $("#hardSkills").rules("add", { regex: "[a-zA-Z0-9,_]*$" });
         t.form();
     });
-});
+    return ValidarFormAltaOferta;
+})();

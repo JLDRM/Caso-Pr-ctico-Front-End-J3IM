@@ -40,7 +40,7 @@ $("#bttn").click(function () {
             pass: document.getElementById("pass").value
         },
         function (data, status) {
-            window.location.href = './perfil_usuario.html';
+            window.location.href = '/perfil_usuario.html';
         }).fail(err => {
             console.log(err);
         });

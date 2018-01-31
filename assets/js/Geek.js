@@ -29,7 +29,7 @@ function crearUsuarioNuevo(ObjetoUsuario){
 };
 
 function enviarUsuarioMongo(newUser){
-	var data = stringify(newUSer);
+	var data = stringify(newUser);
 	$.ajax({
 		url : 'https://www.evstest.com/G3v1LastVersion/portal/portal_action.php',
 		data : data,
@@ -48,7 +48,7 @@ function enviarUsuarioMongo(newUser){
 return{
 	usuario: Usuario,
 	crearGeek: crearUsuarioNuevo,
-	subirServidor: enviarUsuarioMongo
-}
+	//subirServidor: enviarUsuarioMongo
+};
 
 })();

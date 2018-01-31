@@ -1,6 +1,5 @@
 
-var valRegUsuario=(function ValidarFormUsuario (){
-
+var Validacion=(function(){
   var form  = document.getElementsByTagName('form')[0];
   var nombre = document.getElementById('nombre');
   var apell = document.getElementById('apellido');
@@ -21,6 +20,7 @@ var valRegUsuario=(function ValidarFormUsuario (){
   var errhabili = document.querySelector('.errorh');
   var errhobby = document.querySelector('.errorb');
 
+  function valRegUsuario (){
   //NOMBRE
   nombre.addEventListener("keyup", function (event) {
     event.preventDefault();
@@ -56,7 +56,7 @@ var valRegUsuario=(function ValidarFormUsuario (){
     } else{
       erremail.innerHTML = "¡Yo esperaba una dirección de correo, honey!";
       erremail.className = "error active";
-      
+
     }
 
   }, false);
@@ -90,7 +90,7 @@ var valRegUsuario=(function ValidarFormUsuario (){
     } else{
       errtelef.innerHTML = "¡Como vamos a llamarte si nos engañas, honey!";
       errtelef.className = "error active";
-      
+
     }
 
   }, false);
@@ -124,7 +124,6 @@ var valRegUsuario=(function ValidarFormUsuario (){
   //EVENTO DE ENVIAR INFORMACIÓN
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-    
 
     var isNokMail="";
     var isNokNombre="";
@@ -143,20 +142,20 @@ var valRegUsuario=(function ValidarFormUsuario (){
     var pintoclaset="error";
     var pintoclaseh="error";
     var pintoclaseb="error";
-    
+
     if(email.value=="" || !email.validity.valid){
       isNokMail="¡Yo esperaba una dirección de correo, honey!";
-      
+
     }
 
     if(nombre.value=="" || nombre.validity.patternMismatch){
       isNokNombre="¡Como te llamas, honey! No pongas cosas raras!";
-      
+
     }
 
     if(apell.value=="" || apell.validity.patternMismatch){
       isNokApell="¡Como te llamas, honey! No pongas cosas raras!";
-      
+
     }
 
     if(pass.value==""|| pass.validity.patternMismatch){
@@ -164,7 +163,7 @@ var valRegUsuario=(function ValidarFormUsuario (){
       +"- Una letra minuscula "
       +"- Un numero - Un caracter especial  - Minimo 6 caracteres, honey!"
       ;
-      
+
     }
 
     if(confipass.value=="" || confipass.validity.patternMismatch){
@@ -172,7 +171,7 @@ var valRegUsuario=(function ValidarFormUsuario (){
       +"- Una letra minuscula "
       +"- Un numero - Un caracter especial  - Minimo 6 caracteres, honey!"
       ;
-      
+
     }
 
     if(pass.value!=confipass.value){
@@ -181,17 +180,17 @@ var valRegUsuario=(function ValidarFormUsuario (){
 
     if(telef.value==""||telef.validity.patternMismatch){
       isNokTelef="¡Como vamos a llamarte si nos engañas, honey!";
-      
+
     }
 
     if(habili.value=="" || habili.validity.patternMismatch){
       isNokHabili="¡No seas tan humilde fella! a No pongas cosas raras!";
-      
+
     }
 
     if(hobby.value=="" || hobby.validity.patternMismatch){
       isNokHobby="¡Va que como geek el javascript seguro te pone! No escribas cosas raras!";
-      
+
     }
 
     errnombre.innerHTML = isNokNombre;
@@ -211,13 +210,13 @@ var valRegUsuario=(function ValidarFormUsuario (){
 
     errtelef.innerHTML = isNokTelef;
     errtelef.className = pintoclaset;
-    
+
     errhabili.innerHTML = isNokHabili;
     errhabili.className = pintoclaseh;
-    
+
     errhobby.innerHTML = isNokHobby;
     errhobby.className = pintoclaseb;  
-    
+
     if(!isNokMail && !isNokNombre && !isNokApell && !isNokPass && !isNokConfipass && !isDiferentPass&& !isNokTelef && !isNokHabili &&!isNokHobby){
       console.log(event);
       App.datosForm(event);
@@ -225,29 +224,13 @@ var valRegUsuario=(function ValidarFormUsuario (){
     }
   },false);
 
-  return ValidarFormUsuario;
+
+};
+return{
+  validacionUsuario: valRegUsuario,
+  
+}
+
+}; 
 
 })(); 
-
-
-
-/*var url = "http://www.mocky.io/v2/5a5390ae300000e22c1ebfe4";
-    var request = new XMLHttpRequest();
-
-    request.open("POST", url);
-    request.onload = function () {
-      if (request.status == 200) {
-
-          console.log(request.response);
-
-          location.href=request.response;
-
-      }
-    };
-    request.send();*/
-
-
-
-
-
-

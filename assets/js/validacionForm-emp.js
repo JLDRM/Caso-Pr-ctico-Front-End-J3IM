@@ -1,7 +1,7 @@
 var form  = document.getElementsByTagName('form')[0];
 
-var email = document.getElementById('mail');
-var pass = document.getElementById('pass');
+var email = document.getElementById('mail-emp');
+var pass = document.getElementById('pass-emp');
 
 var errormail = document.querySelector('.error');
 var errorpass = document.querySelector('.errorp');

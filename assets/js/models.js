@@ -22,3 +22,32 @@ var Usuario = (function () {
 })();
 
 // PROTOTIPO USUARIO EMPRESA
+
+export var Empresa = (function () {
+    // Constructor
+    function Empresa(nombre, apellido, email, contraseña, ccontraseña, empresa, nif, telefono, stack) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.emai = email;
+        this.contraseña = contraseña;
+        this.ccontraseña = ccontraseña;
+        this.empresa = empresa;
+        this.nif = nif;
+        this.telefono = telefono;
+        this.stack = stack;
+    };
+    // Methods
+    Empresa.prototype = {
+        registrarEmpresa: function (nombre, apellido, email, contraseña, empresa, nif, telefono, stack) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.emai = email;
+            this.contraseña = contraseña;
+            this.empresa = empresa;
+            this.nif = nif;
+            this.telefono = telefono;
+            this.stack = stack;
+        }
+    }
+    return Empresa;
+})();
